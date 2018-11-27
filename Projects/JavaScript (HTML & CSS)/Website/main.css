@@ -1,0 +1,17 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.main{
+  font-family: monospace;
+}
+
+#header{
+  font-size: 20px;
+  color:#b16808;
+  text-align: center;
+  border: 2px solid #FF9966;
+  padding: 2px 8px;
+  cursor: pointer;
+}

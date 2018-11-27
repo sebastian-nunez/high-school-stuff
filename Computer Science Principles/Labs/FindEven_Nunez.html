@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Even Number Lab</title>
+    </head>
+    
+<body>
+    
+    <script>
+
+        testNum();
+
+        function testNum(){
+            
+            var num = parseInt(prompt("Enter number:",""));
+
+            document.write("The starting number is: " + num);
+
+            var remainder = num % 2;
+
+                if (remainder === 0){
+                    document.write("<br>" + num + " is even");
+                    } else {
+                        document.write("<br>" + num + " is odd");
+                    }
+
+                for (var i = 0;i < 15; i++){
+
+                    num++;
+                    remainder = num % 2;
+
+                    if (remainder === 0){
+                        document.write("<br>" + num + " is even");
+                        } else {
+                            document.write("<br>" + num + " is odd");
+                        }
+                }
+            }
+
+    </script>
+    
+</body>
+    
+</html>
