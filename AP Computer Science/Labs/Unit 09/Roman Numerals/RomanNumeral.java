@@ -33,7 +33,6 @@ public class RomanNumeral {
 
     public Integer getNumber() {
         int output = 0;
-
         return output;
     }
 
