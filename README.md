@@ -23,8 +23,8 @@ Personal archive to store/backup some of personal and school work, allowing ease
 
 -   HTML/CSS
 -   JavaScript
--   Python
 -   Java
+-   Python
 -   Markdown
 
 [Back To The Top](#computer-science---archive)
