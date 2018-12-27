@@ -2,7 +2,7 @@
 
 ![Project Image](https://raw.githubusercontent.com/Binaryify/OneDark-Pro/master/static/screenshot1.png)
 
-> Editor: Visual Studio Code
+> **Editor**: Visual Studio Code
 
 ---
 
