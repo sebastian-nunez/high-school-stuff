@@ -1,4 +1,4 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+//Â© A+ Computer Science  -  www.apluscompsci.com
 //Name -  Sebastian Nunez
 //Date - 11/28/18
 //Class - 10th
@@ -33,7 +33,7 @@ public class RPSRunner
          response = keyboard.next().charAt(0);
          out.println();
          
-         } while(response != 'N');
+         } while(response == 'y' || response == 'Y');
          		
 	}
 }
