@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RomanNumeralRunner",
+            "request": "launch",
+            "mainClass": "RomanNumeralRunner",
+            "projectName": "Computer Science_b2873ad8"
+        }
+    ]
+}
