@@ -1,6 +1,6 @@
 # **Computer Science - Archive**
 
-![Project Image](https://raw.githubusercontent.com/Binaryify/OneDark-Pro/master/static/screenshot1.png)
+![Project Image](https://lh3.googleusercontent.com/KB7UgXej7SVZFSBiLCs1D74S9fU42x09XzkIspv3743qzpbLTU_I4Esyx8CVhJKyfuNKZMysnkgnTw=w1605-h1009-rw-no)
 
 > Editor: Visual Studio Code
 
