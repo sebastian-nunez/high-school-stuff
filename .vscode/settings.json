@@ -30,5 +30,6 @@
         "typescript",
         "typescriptreact",
         "yml"
-    ]
+    ],
+    "cSpell.language": "en,en-US,en-GB"
 }
