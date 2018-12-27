@@ -217,7 +217,7 @@ window.onload = function() {
 
 MIT License
 
-Copyright (c) [2018][sebastian nunez]
+Copyright (c) 2018-2019 Sebastian Nunez
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
