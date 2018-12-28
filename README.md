@@ -45,14 +45,14 @@ Personal archive to store/backup some of my personal and school work, allowing e
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>Snake Game</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <canvas id="canvas" width="650" height="650"></canvas>
+        <script src="snake.js"></script>
         <style>
             canvas {
                 background-color: #000;
             }
         </style>
     </head>
-    <canvas id="canvas" width="650" height="650"></canvas>
-    <script src="snake.js"></script>
 </html>
 ```
 
