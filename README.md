@@ -6,7 +6,7 @@
 
 ---
 
-### **Table of Contents**
+## **Contents**
 
 -   [Description](#description)
 -   [Sample Code](#sample-code)
