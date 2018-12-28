@@ -19,7 +19,7 @@
 
 Personal archive to store/backup some of my personal and school work, allowing ease of acess to numerous files.
 
-#### Programming Languages:
+#### **Languages:**
 
 -   HTML/CSS
 -   JavaScript
