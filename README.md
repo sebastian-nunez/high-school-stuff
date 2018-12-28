@@ -17,7 +17,7 @@
 
 ## **Description**
 
-Personal archive to store/backup some of personal and school work, allowing ease of acess to a number of files.
+Personal archive to store/backup some of my personal and school work, allowing ease of acess to numerous files.
 
 #### Technologies
 
