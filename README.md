@@ -27,7 +27,7 @@ Personal archive to store/backup some of my personal and school work, allowing e
 -   Python
 -   Markdown
 
-[Back to the Top](#computer-science---archive)
+[Back to the top](#computer-science---archive)
 
 ---
 
@@ -209,7 +209,7 @@ window.onload = function() {
 };
 ```
 
-[Back to the Top](#computer-science---archive)
+[Back to the top](#computer-science---archive)
 
 ---
 
@@ -237,7 +237,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[Back to the Top](#computer-science---archive)
+[Back to the top](#computer-science---archive)
 
 ---
 
@@ -245,4 +245,4 @@ SOFTWARE.
 
 -   Twitter - [@mikozera](https://twitter.com/mikozera)
 
-[Back to the Top](#computer-science---archive)
+[Back to the top](#computer-science---archive)
