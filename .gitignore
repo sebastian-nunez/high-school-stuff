@@ -1,3 +1,7 @@
+# Config
+/.vscode
+launch.json
+
 # Compiled source #
 *.com
 *.class
@@ -29,7 +33,3 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
-
-# Personal Config
-/.vscode
-launch.json
