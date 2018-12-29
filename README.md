@@ -27,8 +27,6 @@ Personal archive to store/backup some of my personal and school work, allowing e
 -   Python
 -   Markdown
 
-[Back to the top](#computer-science---archive)
-
 ---
 
 ## **Sample Code**
@@ -209,15 +207,11 @@ window.onload = function() {
 };
 ```
 
-[Back to the top](#computer-science---archive)
-
 ---
 
 ## **License**
 
 [MIT](https://raw.githubusercontent.com/mikozera/Computer-Science-Archive/master/LICENSE)
-
-[Back to the top](#computer-science---archive)
 
 ---
 
@@ -225,4 +219,3 @@ window.onload = function() {
 
 -   Twitter - [@mikozera](https://twitter.com/mikozera)
 
-[Back to the top](#computer-science---archive)
