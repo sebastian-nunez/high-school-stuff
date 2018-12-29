@@ -2,14 +2,14 @@
 
 ![Project Image](https://lh3.googleusercontent.com/Lv_KUrY6oKwqtIiuOxnU9bMNMmrGHUB7P4iqkaA8i7j0P4pa_m1PFdqCFEyCOXzyThnV9AYBZYgi8Q=w1920-h1078-rw-no)
 
-> **Editor**: Visual Studio Code
+> **Editor:** Visual Studio Code
 
 ---
 
-## **Contents**
+## **Table of Contents**
 
 -   [Description](#description)
--   [Sample Code](#sample-code)
+-   [Snake Game](#sample-code)
 -   [License](#license)
 
 ---
@@ -18,7 +18,7 @@
 
 Personal archive to store/backup some of my personal and school work, allowing ease of acess to numerous files.
 
-#### **Languages:**
+### **Languages:**
 
 -   HTML/CSS
 -   JavaScript
@@ -28,13 +28,11 @@ Personal archive to store/backup some of my personal and school work, allowing e
 
 ---
 
-## **Sample Code**
+## **Snake Game**
 
-### Snake Game
+### HTML/CSS
 
-##### HTML/CSS
-
-```HTML
+```html
 <!DOCTYPE html>
 <html>
     <head>
@@ -53,9 +51,9 @@ Personal archive to store/backup some of my personal and school work, allowing e
 </html>
 ```
 
-##### JavaScript
+### JavaScript
 
-```JavaScript
+```javascript
 window.onload = function() {
     const cvs = document.getElementById("canvas");
     const ctx = cvs.getContext("2d");
@@ -211,4 +209,3 @@ window.onload = function() {
 ## **License**
 
 [MIT](https://raw.githubusercontent.com/mikozera/Computer-Science-Archive/master/LICENSE)
-
