@@ -11,7 +11,6 @@
 -   [Description](#description)
 -   [Sample Code](#sample-code)
 -   [License](#license)
--   [Author](#author)
 
 ---
 
@@ -206,12 +205,6 @@ window.onload = function() {
     setInterval(draw, 60);
 };
 ```
-
----
-
-## **Source**
-
-[GitHub](https://github.com/mikozera/Computer-Science-Archive)
 
 ---
 
