@@ -209,13 +209,13 @@ window.onload = function() {
 
 ---
 
-## **License**
+## **Source**
 
-[MIT](https://raw.githubusercontent.com/mikozera/Computer-Science-Archive/master/LICENSE)
+[GitHub](https://github.com/mikozera/Computer-Science-Archive)
 
 ---
 
-## **Author**
+## **License**
 
--   Twitter - [@mikozera](https://twitter.com/mikozera)
+[MIT](https://raw.githubusercontent.com/mikozera/Computer-Science-Archive/master/LICENSE)
 
