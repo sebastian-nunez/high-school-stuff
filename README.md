@@ -1,4 +1,4 @@
-# **Computer Science - Archive**
+# **Computer Science - Archive** <!-- omit in toc -->
 
 ![Project Image](https://lh3.googleusercontent.com/Lv_KUrY6oKwqtIiuOxnU9bMNMmrGHUB7P4iqkaA8i7j0P4pa_m1PFdqCFEyCOXzyThnV9AYBZYgi8Q=w1920-h1078-rw-no)
 
@@ -6,11 +6,15 @@
 
 ---
 
-## **Table of Contents**
+## **Table of Contents** <!-- omit in toc -->
 
--   [Description](#description)
--   [Snake Game](#sample-code)
--   [License](#license)
+- [**Description**](#description)
+  - [Languages](#languages)
+- [**Snake Game**](#snake-game)
+  - [HTML/CSS](#htmlcss)
+  - [JavaScript](#javascript)
+- [**License**](#license)
+  - [MIT](#mit)
 
 ---
 
@@ -18,9 +22,9 @@
 
 Personal archive to store/backup some of my personal and school work, allowing ease of acess to numerous files.
 
-### **Languages:**
+### Languages
 
--   HTML/CSS
+-   HTML
 -   JavaScript
 -   Java
 -   Python
@@ -208,4 +212,24 @@ window.onload = function() {
 
 ## **License**
 
-[MIT](https://raw.githubusercontent.com/mikozera/Computer-Science-Archive/master/LICENSE)
+### MIT
+
+Copyright (c) 2018 Sebastian Nunez
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
