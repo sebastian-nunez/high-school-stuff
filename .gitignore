@@ -1,6 +1,7 @@
 # Config
 .vscode
 Temporary
+.idea
 
 # Compiled source #
 *.com
