@@ -6,7 +6,7 @@
 
 ---
 
-## **Table of Contents** <!-- omit in toc -->
+## **Contents** <!-- omit in toc -->
 
 - [**Description**](#description)
   - [Languages](#languages)
