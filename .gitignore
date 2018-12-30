@@ -1,7 +1,7 @@
 # Config
-.vscode
-Temporary
-.editorconfig
+#.vscode
+#Temporary
+#.editorconfig
 
 # Compiled source #
 *.com
