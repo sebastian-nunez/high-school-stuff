@@ -24,11 +24,11 @@ Personal archive to store/backup some of my personal and school work, allowing e
 
 ### Languages
 
--   HTML
--   JavaScript
--   Java
--   Python
--   Markdown
+- HTML
+- JavaScript
+- Java
+- Python
+- Markdown
 
 ---
 

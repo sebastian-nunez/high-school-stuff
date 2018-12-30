@@ -8,46 +8,46 @@
 import static java.lang.System.*;
 
 public class RomanNumeral {
-    private Integer number;
-    private String roman;
+  private Integer number;
+  private String roman;
 
-    private final static int[] NUMBERS = { 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 };
+  private final static int[] NUMBERS = { 1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1 };
 
-    private final static String[] LETTERS = { "M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I" };
+  private final static String[] LETTERS = { "M", "CM", "D", "CD", "C", "XC", "L", "XL", "X", "IX", "V", "IV", "I" };
 
-    public RomanNumeral(String str) {
-        roman = str;
+  public RomanNumeral(String str) {
+    roman = str;
+  }
+
+  public RomanNumeral(Integer orig) {
+    number = orig;
+  }
+
+  public void setNumber(Integer num) {
+    number = num;
+  }
+
+  public void setRoman(String rom) {
+    roman = rom;
+  }
+
+  public Integer getNumber() {
+    int output = 0;
+    return output;
+  }
+
+  public String toString() {
+    String output = "";
+    int index = 0;
+
+    for (int num : NUMBERS) {
+      while (number >= num) {
+        output += LETTERS[index];
+        number -= num;
+      }
+      index++;
     }
 
-    public RomanNumeral(Integer orig) {
-        number = orig;
-    }
-
-    public void setNumber(Integer num) {
-        number = num;
-    }
-
-    public void setRoman(String rom) {
-        roman = rom;
-    }
-
-    public Integer getNumber() {
-        int output = 0;
-        return output;
-    }
-
-    public String toString() {
-        String output = "";
-        int index = 0;
-
-        for (int num : NUMBERS) {
-            while (number >= num) {
-                output += LETTERS[index];
-                number -= num;
-            }
-            index++;
-        }
-
-        return output + "\n";
-    }
+    return output + "\n";
+  }
 }
