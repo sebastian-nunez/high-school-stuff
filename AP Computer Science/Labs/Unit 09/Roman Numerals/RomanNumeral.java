@@ -32,8 +32,9 @@ public class RomanNumeral {
     }
 
     public Integer getNumber() {
-        int output = 0;
-        return output;
+        Integer output = 0;
+        String firstRoman = roman.substring(roman.length() - 1);
+        return Integer.valueOf(firstRoman);
     }
 
     public String toString() {
