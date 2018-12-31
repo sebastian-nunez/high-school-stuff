@@ -33,8 +33,35 @@ public class RomanNumeral {
 
     public Integer getNumber() {
         Integer output = 0;
-        String firstRoman = roman.substring(roman.length() - 1);
-        return Integer.valueOf(firstRoman);
+
+        while (roman.length() > 0) {
+            int index = 0;
+            for (String letter : LETTERS) {
+                if (roman.length() == 1) {
+                    String firstRoman = roman.substring(0, 1);
+                    if (firstRoman.equals(letter)) {
+                        output += NUMBERS[index];
+                        roman = roman.substring(1);
+                    }
+                    index++;
+                } else if (roman.length() > 1) {
+                    String firstRoman = roman.substring(0, 1);
+                    String firstRomanPair = roman.substring(0, 2);
+
+                    if (firstRoman.equals(letter)) {
+                        output += NUMBERS[index];
+                        roman = roman.substring(1);
+                    } else if (firstRomanPair.equals(letter)) {
+                        output += NUMBERS[index];
+                        roman = roman.substring(2);
+                    }
+                    index++;
+                }
+
+            }
+
+        }
+        return output;
     }
 
     public String toString() {
