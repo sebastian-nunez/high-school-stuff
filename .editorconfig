@@ -8,3 +8,6 @@ indent_style = space
 max_line_length = 80
 end_of_line = lf
 insert_final_newline = true
+
+[*.java]
+max_line_length = 120

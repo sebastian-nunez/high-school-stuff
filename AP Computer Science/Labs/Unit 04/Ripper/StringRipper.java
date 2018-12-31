@@ -1,4 +1,5 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+
+//ï¿½ A+ Computer Science  -  www.apluscompsci.com
 //Name - Sebastian Nunez
 //Date - 10/01/2018
 //Class - 10th
@@ -6,32 +7,26 @@
 
 import static java.lang.System.*;
 
-public class StringRipper
-{
-	private String word;
-	
-	public StringRipper()
-	{
-      word = "";
-	}
+public class StringRipper {
+    private String word;
 
-	public StringRipper(String s)
-	{
-      setString(s);
-	}
-	
-   public void setString(String s)
-   {
-      word = s;
-   }	
+    public StringRipper() {
+        word = "";
+    }
 
-	public String ripString(int x, int y)
-	{
-		return word.substring(x,y);
-	}
+    public StringRipper(String s) {
+        setString(s);
+    }
 
- 	public String toString()
- 	{
- 		return word + "\n\n";
-	}
+    public void setString(String s) {
+        word = s;
+    }
+
+    public String ripString(int x, int y) {
+        return word.substring(x, y);
+    }
+
+    public String toString() {
+        return word + "\n\n";
+    }
 }

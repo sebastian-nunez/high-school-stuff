@@ -1,4 +1,5 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+
+//ï¿½ A+ Computer Science  -  www.apluscompsci.com
 //Name - Sebastian Nunez
 //Date - 11/02/18
 //Class - 10th
@@ -6,40 +7,34 @@
 
 import static java.lang.System.*;
 
-public class GCD
-{
-	private int one, two;
+public class GCD {
+    private int one, two;
 
-	public GCD()
-	{
-      one = two = 0;
-	}
+    public GCD() {
+        one = two = 0;
+    }
 
-	public GCD(int numOne, int numTwo)
-	{
-      setNums(numOne,numTwo);
-	}
+    public GCD(int numOne, int numTwo) {
+        setNums(numOne, numTwo);
+    }
 
-	public void setNums(int numOne, int numTwo)
-	{
-      one = numOne;
-      two = numTwo;
-	}
+    public void setNums(int numOne, int numTwo) {
+        one = numOne;
+        two = numTwo;
+    }
 
-	public long getGCD( )
-	{
-      long gcd = 0;
+    public long getGCD() {
+        long gcd = 0;
 
-      for (int i = two; i >= one; i--){
-         if (one%i == 0 && two%i == 0)
-            return i;
-      }
-        
-		return 1;
-   }
-	
-	public String toString()
-	{
-		return "the gcd of " + one + " and " + two + " is " + getGCD() + "\n";
-	}
+        for (int i = two; i >= one; i--) {
+            if (one % i == 0 && two % i == 0)
+                return i;
+        }
+
+        return 1;
+    }
+
+    public String toString() {
+        return "the gcd of " + one + " and " + two + " is " + getGCD() + "\n";
+    }
 }
