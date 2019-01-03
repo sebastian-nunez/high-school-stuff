@@ -1,10 +1,10 @@
-//(c) A+ Computer Science  -  www.apluscompsci.com
-//Name:: Sebastian Nunez
-//Date:: 08/31/18
+// (c) A+ Computer Science - www.apluscompsci.com
+// Name:: Sebastian Nunez
+// Date:: 08/31/18
 
-//yearBorn should ask the user for their name and
-//their birth year, calculate their age, and then
-//print a greeting that uses their name and age
+// yearBorn should ask the user for their name and
+// their birth year, calculate their age, and then
+// print a greeting that uses their name and age
 
 import java.util.Scanner;
 

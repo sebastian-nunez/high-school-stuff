@@ -1,9 +1,9 @@
 
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 12/23/18
-//Class - 10th
-//Lab  - Fun House Two
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 12/23/18
+// Class - 10th
+// Lab - Fun House Two
 
 public class ArrayFunHouseTwo {
     //goingUp() will return true if all numbers
@@ -14,7 +14,7 @@ public class ArrayFunHouseTwo {
         int prevNum = 0;
         int count = 0;
 
-        for (int item : numArray) {
+        for (int item: numArray) {
             if (prevNum <= item) {
                 count++;
             }
@@ -35,7 +35,7 @@ public class ArrayFunHouseTwo {
         int prevNum = numArray[0];
         int count = 0;
 
-        for (int item : numArray) {
+        for (int item: numArray) {
             if (prevNum >= item) {
                 count++;
             }

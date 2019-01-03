@@ -1,9 +1,9 @@
 
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 12/20/18
-//Class - Fun House One
-//Lab  - 10th
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 12/20/18
+// Class - Fun House One
+// Lab - 10th
 
 import java.lang.System;
 import java.lang.Math;
@@ -23,7 +23,7 @@ public class ArrayFunHouse {
     //getCount() will return number of times val is present
     public static int getCount(int[] numArray, int val) {
         int count = 0;
-        for (int item : numArray) {
+        for (int item: numArray) {
             if (item == val) {
                 count++;
             }
@@ -34,7 +34,7 @@ public class ArrayFunHouse {
     public static int[] removeVal(int[] numArray, int val) {
         int[] output = new int[numArray.length - getCount(numArray, val)];
         int index = 0;
-        for (int item : numArray) {
+        for (int item: numArray) {
             if (item != val) {
                 output[index] = item;
                 index++;

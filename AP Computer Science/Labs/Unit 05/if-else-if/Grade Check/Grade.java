@@ -1,9 +1,9 @@
 
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 10/22/18
-//Class - 10th
-//Lab  - Grade Checker
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 10/22/18
+// Class - 10th
+// Lab - Grade Checker
 
 import static java.lang.System.*;
 

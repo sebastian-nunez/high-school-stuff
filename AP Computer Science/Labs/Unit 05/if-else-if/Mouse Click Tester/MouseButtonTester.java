@@ -1,9 +1,9 @@
 
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 10/23/18
-//Class - 10th
-//Lab  - Mouse Button Tester
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 10/23/18
+// Class - 10th
+// Lab - Mouse Button Tester
 
 import java.awt.Graphics;
 import java.awt.Color;

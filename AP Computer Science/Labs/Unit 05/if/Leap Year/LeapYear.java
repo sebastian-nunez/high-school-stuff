@@ -1,8 +1,8 @@
 
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 10/09/18
-//Lab  - Leap Year
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 10/09/18
+// Lab - Leap Year
 
 import static java.lang.System.*;
 import java.util.Scanner;

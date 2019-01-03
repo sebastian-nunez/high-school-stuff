@@ -1,14 +1,14 @@
 
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 09/26/18
-//Class - 10th
-//Lab  - Triangle
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 09/26/18
+// Class - 10th
+// Lab - Triangle
 
 import java.util.Scanner;
 import java.lang.Math.*;
 
-public class TriangleRunner //this class is used to test Triangle
+public class TriangleRunner // this class is used to test Triangle
 {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);

@@ -1,9 +1,9 @@
 
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 10/11/18
-//Class - 10th
-//Lab  - Distance Formula
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 10/11/18
+// Class - 10th
+// Lab - Distance Formula
 
 import java.util.Scanner;
 import static java.lang.System.*;

@@ -1,9 +1,9 @@
 
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date -  11/29/18
-//Class - 10th
-//Lab  - Guessing Game
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 11/29/18
+// Class - 10th
+// Lab - Guessing Game
 
 import java.util.Scanner;
 
@@ -17,7 +17,7 @@ public class GuessingGame {
     public void playGame() {
         Scanner keyboard = new Scanner(System.in);
 
-        int randNum = (int) (Math.random() * upperBound) + 1;
+        int randNum = (int)(Math.random() * upperBound) + 1;
         int numGuess = 0;
         int guess = -1;
 

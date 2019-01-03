@@ -1,7 +1,7 @@
 
-//(c) A+ Computer Science
-//www.apluscompsci.com
-//Name - Sebastian Nunez
+// (c) A+ Computer Science
+// www.apluscompsci.com
+// Name - Sebastian Nunez
 
 import static java.lang.System.*;
 
@@ -32,31 +32,31 @@ public class TenToAny {
         //determines the tempNewNum which is the coverted String (w/ the newBase) but it remains in reverse order of what it should be
         do {
             //determines the rational remainder (aka the last digit of the new base)
-            lastDigit = (int) ((double) base10 % newBase);
+            lastDigit = (int)((double)base10 % newBase);
 
             //when the lastDigit is greater than 9, the digit is converted to hex and added to the tempNewNum (when it is not, the lastDigit is simply added to the tempNewNum)
             if (lastDigit > 9) {
                 switch (lastDigit) {
-                case 10:
-                    tempNewNum += "A";
-                    break;
-                case 11:
-                    tempNewNum += "B";
-                    break;
-                case 12:
-                    tempNewNum += "C";
-                    break;
-                case 13:
-                    tempNewNum += "D";
-                    break;
-                case 14:
-                    tempNewNum += "E";
-                    break;
-                case 15:
-                    tempNewNum += "F";
-                    break;
-                default:
-                    return "not supported";
+                    case 10:
+                        tempNewNum += "A";
+                        break;
+                    case 11:
+                        tempNewNum += "B";
+                        break;
+                    case 12:
+                        tempNewNum += "C";
+                        break;
+                    case 13:
+                        tempNewNum += "D";
+                        break;
+                    case 14:
+                        tempNewNum += "E";
+                        break;
+                    case 15:
+                        tempNewNum += "F";
+                        break;
+                    default:
+                        return "not supported";
                 }
 
             } else {

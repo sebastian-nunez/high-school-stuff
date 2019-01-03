@@ -1,9 +1,9 @@
 
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 10/11/18
-//Class - 10th
-//Lab  - String Ends With
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 10/11/18
+// Class - 10th
+// Lab - String Ends With
 
 import static java.lang.System.*;
 import java.util.Scanner;

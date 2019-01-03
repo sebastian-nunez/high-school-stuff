@@ -1,9 +1,9 @@
 
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 10/31/18
-//Class - 10th
-//Lab  - Count Pairs
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 10/31/18
+// Class - 10th
+// Lab - Count Pairs
 
 import static java.lang.System.*;
 

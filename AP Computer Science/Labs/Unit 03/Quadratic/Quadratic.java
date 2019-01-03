@@ -1,9 +1,9 @@
 
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 09/26/18
-//Class - 10th
-//Lab  - Quadratic
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 09/26/18
+// Class - 10th
+// Lab - Quadratic
 
 import java.util.Scanner;
 import static java.lang.System.*;

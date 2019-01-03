@@ -1,8 +1,8 @@
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 09/15/18
-//Class - 10th
-//Lab  - Slope of a Line
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 09/15/18
+// Class - 10th
+// Lab - Slope of a Line
 
 public class LineRunner {
     public static void main(String[] args) {

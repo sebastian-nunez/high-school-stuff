@@ -1,9 +1,9 @@
 
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 12/07/18
-//Class - 10th
-//Lab  - Tringle Two
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 12/07/18
+// Class - 10th
+// Lab - Tringle Two
 
 import static java.lang.System.*;
 

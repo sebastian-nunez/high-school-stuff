@@ -1,9 +1,9 @@
 
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 10/11/18
-//Class - 10th
-//Lab  - Discount Determiner
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 10/11/18
+// Class - 10th
+// Lab - Discount Determiner
 
 import static java.lang.System.*;
 import java.util.Scanner;

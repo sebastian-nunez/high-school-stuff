@@ -1,8 +1,8 @@
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 09/15/18
-//Class - 10th
-//Lab  - Average
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 09/15/18
+// Class - 10th
+// Lab - Average
 
 public class Average {
     //instance variables

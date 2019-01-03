@@ -1,9 +1,9 @@
 
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 09/26/18
-//Class - 10th
-//Lab  - Distance
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 09/26/18
+// Class - 10th
+// Lab - Distance
 
 import java.util.Scanner;
 import static java.lang.System.*;

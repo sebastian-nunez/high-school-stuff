@@ -1,9 +1,9 @@
 
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 11/01/18
-//Class - 10th
-//Lab  - Vowel Counter
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 11/01/18
+// Class - 10th
+// Lab - Vowel Counter
 
 import static java.lang.System.*;
 

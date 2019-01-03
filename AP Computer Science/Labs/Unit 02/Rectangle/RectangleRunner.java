@@ -1,8 +1,8 @@
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 09/15/18
-//Class - 10th
-//Lab  - Rectangle Perimeter
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 09/15/18
+// Class - 10th
+// Lab - Rectangle Perimeter
 
 public class RectangleRunner {
     public static void main(String[] args) {

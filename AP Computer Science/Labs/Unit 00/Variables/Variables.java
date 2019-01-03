@@ -1,10 +1,10 @@
-//(c) A+ Computer Science
-//www.apluscompsci.com
+// (c) A+ Computer Science
+// www.apluscompsci.com
 
-//Name - Sebastian Nunez
-//Date - 08/31/18
-//Class - 10th
-//Lab  - Variables Lab
+// Name - Sebastian Nunez
+// Date - 08/31/18
+// Class - 10th
+// Lab - Variables Lab
 
 public class Variables {
     public static void main(String[] args) {

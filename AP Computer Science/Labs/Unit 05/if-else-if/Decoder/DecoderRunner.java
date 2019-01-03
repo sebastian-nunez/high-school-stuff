@@ -1,9 +1,9 @@
 
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 10/22/18
-//Class - 10th
-//Lab  - Decoder
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 10/22/18
+// Class - 10th
+// Lab - Decoder
 
 import static java.lang.System.*;
 import java.util.Scanner;

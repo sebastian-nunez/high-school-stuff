@@ -1,10 +1,10 @@
-//(c) A+ Computer Science
-//www.apluscompsci.com
+// (c) A+ Computer Science
+// www.apluscompsci.com
 
-//Name - Sebastian Nunez
-//Date - 08/31/18
-//Class - 10th
-//Lab  - ASCII Box Lab
+// Name - Sebastian Nunez
+// Date - 08/31/18
+// Class - 10th
+// Lab - ASCII Box Lab
 
 public class AsciiBox2 {
     public static void main(String[] args) {

@@ -1,9 +1,9 @@
 
-//© A+ Computer Science  -  www.apluscompsci.com
-//Name -  Sebastian Nunez
-//Date - 11/28/18
-//Class - 10th
-//Lab  - Rock Paper Scissors
+// © A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 11/28/18
+// Class - 10th
+// Lab - Rock Paper Scissors
 
 import java.util.Scanner;
 import static java.lang.System.*;

@@ -1,8 +1,8 @@
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 09/15/18
-//Class - 10th
-//Lab  - Slope of a Line
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 09/15/18
+// Class - 10th
+// Lab - Slope of a Line
 
 public class Line {
     private int xOne, yOne, xTwo, yTwo;
@@ -24,7 +24,7 @@ public class Line {
     }
 
     public void calculateSlope() {
-        slope = ((double) yTwo - (double) yOne) / ((double) xTwo - (double) xOne);
+        slope = ((double)yTwo - (double)yOne) / ((double)xTwo - (double)xOne);
     }
 
     public void print() {

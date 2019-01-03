@@ -1,8 +1,8 @@
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 09/15/18
-//Class - 10th
-//Lab  - Surface Area of a Cube
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 09/15/18
+// Class - 10th
+// Lab - Surface Area of a Cube
 
 public class CubeRunner {
     public static void main(String[] args) {

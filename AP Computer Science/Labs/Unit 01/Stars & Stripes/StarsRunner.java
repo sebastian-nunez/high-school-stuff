@@ -1,6 +1,6 @@
 
-//Name - Sebastian Nunez
-//Date - 09/09/18
+// Name - Sebastian Nunez
+// Date - 09/09/18
 
 import static java.lang.System.*;
 

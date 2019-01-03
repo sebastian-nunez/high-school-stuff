@@ -1,8 +1,8 @@
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 09/18/18
-//Class - 10th
-//Lab  - Fahrenheit to Celsius
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 09/18/18
+// Class - 10th
+// Lab - Fahrenheit to Celsius
 
 public class FahrenheitRunner {
     public static void main(String[] args) {

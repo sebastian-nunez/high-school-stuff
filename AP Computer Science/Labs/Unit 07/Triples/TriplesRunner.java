@@ -7,11 +7,11 @@
 
 public class TriplesRunner {
 
-   public static void main(String args[]) {
-      Triples run = new Triples();
+    public static void main(String args[]) {
+        Triples run = new Triples();
 
-      run.setNum(110);
-      System.out.println(run);
+        run.setNum(110);
+        System.out.println(run);
 
-   }
+    }
 }

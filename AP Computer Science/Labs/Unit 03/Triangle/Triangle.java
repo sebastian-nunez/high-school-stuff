@@ -1,9 +1,9 @@
 
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 09/26/18
-//Class - 10th
-//Lab  - Triangle
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 09/26/18
+// Class - 10th
+// Lab - Triangle
 
 import java.util.Scanner;
 import java.lang.Math.*;
@@ -34,7 +34,7 @@ public class Triangle {
     }
 
     public void calcArea() {
-        double s = (double) perimeter / 2;
+        double s = (double)perimeter / 2;
         theArea = Math.sqrt(s * (s - sideA) * (s - sideB) * (s - sideC));
 
     }

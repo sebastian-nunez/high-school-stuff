@@ -1,9 +1,9 @@
 
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 09/26/18
-//Class - 10th
-//Lab  - Miles Per Hour
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 09/26/18
+// Class - 10th
+// Lab - Miles Per Hour
 
 import java.util.Scanner;
 import static java.lang.System.*;
@@ -36,6 +36,6 @@ public class MilesPerHour {
 
     public void print() {
         out.println();
-        out.println(distance + " miles in " + hours + " hours and " + minutes + " minutes = " + (int) mph + " MPH\n\n");
+        out.println(distance + " miles in " + hours + " hours and " + minutes + " minutes = " + (int)mph + " MPH\n\n");
     }
 }

@@ -1,9 +1,9 @@
 
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 11/02/18
-//Class - 10th
-//Lab  - Decreasing Word
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 11/02/18
+// Class - 10th
+// Lab - Decreasing Word
 
 import static java.lang.System.*;
 

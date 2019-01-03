@@ -1,9 +1,9 @@
 
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 09/09/18
-//Class - 10th
-//Lab  - Big House
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 09/09/18
+// Class - 10th
+// Lab - Big House
 
 import javax.swing.JFrame;
 

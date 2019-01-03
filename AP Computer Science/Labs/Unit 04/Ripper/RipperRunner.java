@@ -1,9 +1,9 @@
 
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 10/01/2018
-//Class - 10th
-//Lab  - String Ripper
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 10/01/2018
+// Class - 10th
+// Lab - String Ripper
 
 import static java.lang.System.*;
 
