@@ -16,31 +16,26 @@ public class GuessingGame
     }
 
     public void playGame() {
-        try {
-            Scanner keyboard = new Scanner(System.in);
+        Scanner keyboard = new Scanner(System.in);
 
-            int randNum = (int)(Math.random() * upperBound) + 1;
-            int numGuess = 0;
-            int guess = -1;
+        int randNum = (int)(Math.random() * upperBound) + 1;
+        int numGuess = 0;
+        int guess = -1;
 
-            do {
-                System.out.print("Enter a number between 1 and " + upperBound + " :: ");
-                guess = keyboard.nextInt();
+        do {
+            System.out.print("Enter a number between 1 and " + upperBound + " :: ");
+            guess = keyboard.nextInt();
 
-                if ((guess < 1) || (guess > upperBound)) {
-                    System.out.println("The number is out of range!");
-                } else if (randNum == guess) {
-                    numGuess++;
-                    System.out.println("\nIt took you " + numGuess + " guesses to guess " + randNum + "\n");
-                } else {
-                    numGuess++;
-                }
+            if ((guess < 1) || (guess > upperBound)) {
+                System.out.println("The number is out of range!");
+            } else if (randNum == guess) {
+                numGuess++;
+                System.out.println("\nIt took you " + numGuess + " guesses to guess " + randNum + "\n");
+            } else {
+                numGuess++;
+            }
 
-            } while (guess != randNum);
-        } finally {
-            keyboard.close();
-        }
-
+        } while (guess != randNum);
     }
 
     public String toString() {

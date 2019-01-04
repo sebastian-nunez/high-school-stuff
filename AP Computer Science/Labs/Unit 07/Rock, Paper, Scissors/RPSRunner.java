@@ -15,7 +15,6 @@ public class RPSRunner
         char response;
 
         //add in a do while loop after you get the basics up and running
-
         do {
             String player = "";
 
@@ -24,7 +23,7 @@ public class RPSRunner
 
             //read in the player value
             RockPaperScissors game = new RockPaperScissors();
-            game.setPlayers(player);
+            game.setPlayers(player.toUpperCase());
             out.println(game);
             out.println(game.determineWinner() + "\n");
 
@@ -33,7 +32,6 @@ public class RPSRunner
             response = keyboard.next().charAt(0);
             out.println();
 
-        } while (response == 'y' || response == 'Y');
-
+        } while (Character.toUpperCase(response) == 'Y');
     }
 }

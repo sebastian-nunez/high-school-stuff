@@ -24,7 +24,11 @@ public class RockPaperScissors
     }
 
     public void setPlayers(String player) {
-        playChoice = player;
+        if (player.equals("R") || player.equals("P") || player.equals("S")) {
+            playChoice = player;
+        } else {
+            playChoice = "INVALID INPUT";
+        }
 
         int num = (int)(Math.random() * 3);
 
