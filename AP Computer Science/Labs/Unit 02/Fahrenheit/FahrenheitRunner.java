@@ -4,7 +4,8 @@
 // Class - 10th
 // Lab - Fahrenheit to Celsius
 
-public class FahrenheitRunner {
+public class FahrenheitRunner
+{
     public static void main(String[] args) {
         //instantiation
         Fahrenheit test = new Fahrenheit();

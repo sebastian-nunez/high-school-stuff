@@ -4,7 +4,8 @@
 // Class - 10th
 // Lab - Rectangle Perimeter
 
-public class Rectangle {
+public class Rectangle
+{
     private int length;
     private int width;
     private int perimeter;

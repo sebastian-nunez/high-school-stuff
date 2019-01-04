@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class MorseCode {
+public class MorseCode
+{
     private char letter;
 
     public MorseCode() {

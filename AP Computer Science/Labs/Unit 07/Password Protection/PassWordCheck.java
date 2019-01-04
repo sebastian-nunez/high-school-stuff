@@ -1,14 +1,15 @@
 
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name -  Sebastian Nunez
-//Date - 11/27/18
-//Class - 10th
-//Lab  - Password Protection
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 11/27/18
+// Class - 10th
+// Lab - Password Protection
 
 import java.util.Scanner;
 import static java.lang.System.*;
 
-class PassWordCheck {
+class PassWordCheck
+{
     private String password;
 
     public PassWordCheck() {

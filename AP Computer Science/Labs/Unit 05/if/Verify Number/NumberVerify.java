@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class NumberVerify {
+public class NumberVerify
+{
     public static boolean isOdd(int num) {
         int calc = num % 2;
 

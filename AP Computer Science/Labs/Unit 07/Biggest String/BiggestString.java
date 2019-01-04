@@ -1,13 +1,14 @@
 
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name -  Sebastian Nunez
-//Date - 11/28/18
-//Class - 10th
-//Lab  - Biggest String
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 11/28/18
+// Class - 10th
+// Lab - Biggest String
 
 import static java.lang.System.*;
 
-public class BiggestString {
+public class BiggestString
+{
     private String one, two, three;
 
     public BiggestString() {

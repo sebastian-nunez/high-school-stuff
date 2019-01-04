@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class Decoder {
+public class Decoder
+{
     private char letter;
 
     public Decoder() {

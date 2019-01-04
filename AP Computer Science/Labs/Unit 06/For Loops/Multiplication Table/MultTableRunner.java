@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class MultTableRunner {
+public class MultTableRunner
+{
     public static void main(String[] args) {
         //add test cases
         MultTable test = new MultTable(5, 5);

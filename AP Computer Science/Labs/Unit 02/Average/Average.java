@@ -4,7 +4,8 @@
 // Class - 10th
 // Lab - Average
 
-public class Average {
+public class Average
+{
     //instance variables
     private double one, two, average;
 

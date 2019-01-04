@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class TwoToTenRunner {
+public class TwoToTenRunner
+{
     public static void main(String[] args) {
         //add test cases
         TwoToTen test = new TwoToTen("1010");

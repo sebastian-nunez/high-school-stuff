@@ -9,7 +9,8 @@ import java.awt.Graphics;
 import java.awt.Color;
 import java.awt.Canvas;
 
-public class BigHouse extends Canvas {
+public class BigHouse extends Canvas
+{
     public BigHouse() //constructor - sets up the class
     {
         setSize(800, 600);

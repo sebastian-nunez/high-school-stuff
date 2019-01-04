@@ -4,7 +4,8 @@
 // Class - 10th
 // Lab - Surface Area of a Cube
 
-public class CubeRunner {
+public class CubeRunner
+{
     public static void main(String[] args) {
         Cube test = new Cube();
         test.setSide(112);

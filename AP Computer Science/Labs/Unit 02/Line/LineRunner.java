@@ -4,7 +4,8 @@
 // Class - 10th
 // Lab - Slope of a Line
 
-public class LineRunner {
+public class LineRunner
+{
     public static void main(String[] args) {
         //instantiation
         Line test = new Line(1, 9, 14, 2);

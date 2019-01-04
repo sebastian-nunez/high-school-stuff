@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class RomanNumeralRunner {
+public class RomanNumeralRunner
+{
     public static void main(String args[]) {
         RomanNumeral test = new RomanNumeral(10);
         out.println("10 is " + test.toString());

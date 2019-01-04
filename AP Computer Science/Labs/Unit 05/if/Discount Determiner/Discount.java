@@ -8,7 +8,8 @@
 import static java.lang.System.*;
 import java.util.Scanner;
 
-public class Discount {
+public class Discount
+{
     //instance variables and constructors could be used, but are not really needed
 
     //getDiscountedBill() will return final amount of the bill

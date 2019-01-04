@@ -1,13 +1,14 @@
 
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 11/02/18
-//Class - 10th
-//Lab  - Binary to Ten
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 11/02/18
+// Class - 10th
+// Lab - Binary to Ten
 
 import static java.lang.System.*;
 
-public class TwoToTen {
+public class TwoToTen
+{
     private String binary;
 
     public TwoToTen() {
@@ -27,7 +28,7 @@ public class TwoToTen {
 
         for (int i = 0; i <= binary.length() - 1; i++) {
             if (binary.charAt(i) == '1')
-                ten += (long) Math.pow(2, (binary.length() - 1) - i);
+                ten += (long)Math.pow(2, (binary.length() - 1) - i);
         }
 
         return ten;

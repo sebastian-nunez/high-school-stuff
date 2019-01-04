@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class AddStrings {
+public class AddStrings
+{
     private String first, last;
     private String sum;
 

@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class BoxRunner {
+public class BoxRunner
+{
     public static void main(String[] args) {
         //add test cases
         Box test = new Box("hippo");

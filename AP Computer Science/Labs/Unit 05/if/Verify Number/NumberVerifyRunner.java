@@ -8,7 +8,8 @@
 import static java.lang.System.*;
 import java.util.Scanner;
 
-public class NumberVerifyRunner {
+public class NumberVerifyRunner
+{
     public static void main(String[] args) {
         //add in input
         System.out.println("111 is odd :: " + NumberVerify.isOdd(111));

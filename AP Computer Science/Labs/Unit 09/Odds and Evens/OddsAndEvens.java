@@ -5,7 +5,8 @@
 // Class - 10th
 // Lab - Odds and Evens
 
-public class OddsAndEvens {
+public class OddsAndEvens
+{
     private static int countEm(int[] array, boolean odd) {
         int oddCount = 0;
         for (int item: array) {

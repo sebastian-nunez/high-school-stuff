@@ -1,13 +1,14 @@
 
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date -  11/27/18
-//Class - 10th
-//Lab  - Biggest Double
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 11/27/18
+// Class - 10th
+// Lab - Biggest Double
 
 import static java.lang.System.*;
 
-public class DoubleRunner {
+public class DoubleRunner
+{
     public static void main(String[] args) {
         //BiggestDouble run = new BiggestDouble(4.5,6.7,7.8,9.0);
         BiggestDouble run = new BiggestDouble(4.5, 3, 5, 9);

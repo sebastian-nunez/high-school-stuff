@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class RipperRunner {
+public class RipperRunner
+{
     public static void main(String[] args) {
         StringRipper demo = new StringRipper("chicken");
         out.println(demo.ripString(3, 6));

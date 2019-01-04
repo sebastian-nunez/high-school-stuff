@@ -4,7 +4,8 @@
 // Class - 10th
 // Lab - For Loop Runner
 
-public class ForLoopDemoRunner {
+public class ForLoopDemoRunner
+{
     public static void main(String[] args) {
         ForLoopDemo.runForLoop(2, 90, 5);
         System.out.println();

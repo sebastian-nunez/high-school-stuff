@@ -4,7 +4,8 @@
 // Class - 10th
 // Lab - Area of a Circle
 
-public class Circle {
+public class Circle
+{
     private double radius;
     private double area;
 

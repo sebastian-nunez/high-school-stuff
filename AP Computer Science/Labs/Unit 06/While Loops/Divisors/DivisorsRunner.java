@@ -1,11 +1,12 @@
 
-//(c) A+ Computer Science
-//www.apluscompsci.com
-//Name - Sebastian Nunez
+// (c) A+ Computer Science
+// www.apluscompsci.com
+// Name - Sebastian Nunez
 
 import static java.lang.System.*;
 
-public class DivisorsRunner {
+public class DivisorsRunner
+{
     public static void main(String args[]) {
         //add test cases
         out.println("10 has the divisors " + Divisors.getDivisors(10) + "\n");

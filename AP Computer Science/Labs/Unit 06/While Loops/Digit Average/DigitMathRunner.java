@@ -5,7 +5,8 @@
 
 import static java.lang.System.*;
 
-public class DigitMathRunner {
+public class DigitMathRunner
+{
     public static void main(String args[]) {
         //add test cases
         out.printf("234 has an average of %.1f\n\n", DigitMath.averageDigits(234));

@@ -1,14 +1,15 @@
 
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name -  Sebastian Nunez
-//Date - 11/28/18
-//Class - 10th
-//Lab  - Rock Paper Scissors
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 11/28/18
+// Class - 10th
+// Lab - Rock Paper Scissors
 
 import java.util.Scanner;
 import static java.lang.System.*;
 
-public class RockPaperScissors {
+public class RockPaperScissors
+{
     private String playChoice;
     private String compChoice;
 
@@ -25,18 +26,18 @@ public class RockPaperScissors {
     public void setPlayers(String player) {
         playChoice = player;
 
-        int num = (int) (Math.random() * 3);
+        int num = (int)(Math.random() * 3);
 
         switch (num) {
-        case 0:
-            compChoice = "R";
-            break;
-        case 1:
-            compChoice = "P";
-            break;
-        case 2:
-            compChoice = "S";
-            break;
+            case 0:
+                compChoice = "R";
+                break;
+            case 1:
+                compChoice = "P";
+                break;
+            case 2:
+                compChoice = "S";
+                break;
         }
     }
 

@@ -7,7 +7,8 @@
 
 import java.util.Scanner;
 
-public class Histogram {
+public class Histogram
+{
     //add and int[] array instance variable
 
     //constructor

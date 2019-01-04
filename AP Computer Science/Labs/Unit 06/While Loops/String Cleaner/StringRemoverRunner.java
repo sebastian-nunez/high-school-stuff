@@ -5,7 +5,8 @@
 
 import static java.lang.System.*;
 
-public class StringRemoverRunner {
+public class StringRemoverRunner
+{
     public static void main(String args[]) {
         //add test cases
         StringRemover test = new StringRemover("xR-MxR-MHelloxR-M", "R-M");

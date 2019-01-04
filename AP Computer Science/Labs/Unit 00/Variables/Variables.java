@@ -6,7 +6,8 @@
 // Class - 10th
 // Lab - Variables Lab
 
-public class Variables {
+public class Variables
+{
     public static void main(String[] args) {
         //define 1 variable of each of the
         //following data types

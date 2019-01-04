@@ -1,14 +1,15 @@
 
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 12/07/18
-//Class - 10th
-//Lab  - Triangle One
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 12/07/18
+// Class - 10th
+// Lab - Triangle One
 
 import static java.lang.System.*;
 import java.util.Scanner;
 
-public class TriangleOneRunner {
+public class TriangleOneRunner
+{
 
     public static void main(String args[]) {
         Scanner keyboard = new Scanner(System.in);

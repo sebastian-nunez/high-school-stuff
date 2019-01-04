@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class StarsAndStripes {
+public class StarsAndStripes
+{
     public StarsAndStripes() {
         out.println("StarsAndStripes");
     }

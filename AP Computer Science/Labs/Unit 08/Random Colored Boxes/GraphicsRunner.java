@@ -1,13 +1,14 @@
 
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 12/10/18
-//Class - 10th
-//Lab  - Random Colored Boxes
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 12/10/18
+// Class - 10th
+// Lab - Random Colored Boxes
 
 import javax.swing.JFrame;
 
-public class GraphicsRunner extends JFrame {
+public class GraphicsRunner extends JFrame
+{
     private static final int WIDTH = 800;
     private static final int HEIGHT = 600;
 

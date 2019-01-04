@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class StringRipper {
+public class StringRipper
+{
     private String word;
 
     public StringRipper() {

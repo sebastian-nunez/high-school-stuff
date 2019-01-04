@@ -8,7 +8,8 @@
 import java.util.Scanner;
 import java.lang.Math.*;
 
-public class Triangle {
+public class Triangle
+{
     private int sideA, sideB, sideC;
     private double perimeter;
     private double theArea;

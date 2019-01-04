@@ -8,7 +8,8 @@
 import static java.lang.System.*;
 import java.util.Scanner;
 
-public class DecoderRunner {
+public class DecoderRunner
+{
     public static void main(String args[]) {
         //Scanner
         Scanner keyboard = new Scanner(in);

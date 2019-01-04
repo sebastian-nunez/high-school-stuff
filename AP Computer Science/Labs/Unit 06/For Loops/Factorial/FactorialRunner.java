@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class FactorialRunner {
+public class FactorialRunner
+{
     public static void main(String[] args) {
         //add test cases
         Factorial test = new Factorial(5);

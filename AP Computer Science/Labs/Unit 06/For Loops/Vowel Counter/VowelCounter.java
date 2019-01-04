@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class VowelCounter {
+public class VowelCounter
+{
     public static String getNumberString(String s) {
         int count = 0;
         String finalString = "";

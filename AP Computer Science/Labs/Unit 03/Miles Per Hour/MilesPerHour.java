@@ -9,7 +9,8 @@ import java.util.Scanner;
 import static java.lang.System.*;
 import static java.lang.Math.*;
 
-public class MilesPerHour {
+public class MilesPerHour
+{
     private int distance, hours, minutes;
     private double mph;
 

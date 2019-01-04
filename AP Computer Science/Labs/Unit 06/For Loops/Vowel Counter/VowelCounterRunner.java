@@ -1,13 +1,14 @@
 
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 11/01/18
-//Class - 10th
-//Lab  - Vowel Counter
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 11/01/18
+// Class - 10th
+// Lab - Vowel Counter
 
 import static java.lang.System.*;
 
-public class VowelCounterRunner {
+public class VowelCounterRunner
+{
     public static void main(String[] args) {
         System.out.println(VowelCounter.getNumberString("abcdef"));
         System.out.println(VowelCounter.getNumberString("hhhhhhh"));

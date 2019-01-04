@@ -4,7 +4,8 @@
 // Class - 10th
 // Lab - Slope of a Line
 
-public class Line {
+public class Line
+{
     private int xOne, yOne, xTwo, yTwo;
     private double slope;
 

@@ -5,7 +5,8 @@
 // Class - 10th
 // Lab - Triples
 
-public class Triples {
+public class Triples
+{
     private int number;
 
     public Triples() {
@@ -39,8 +40,8 @@ public class Triples {
         for (int a = 3; a <= number; a++) {
             for (int b = a + 1; b <= number; b++) {
                 double c = Math.sqrt(a * a + b * b);
-                if (c == Math.floor(c) && greatestCommonFactor(a, b, (int) c) <= 1) {
-                    output += a + " " + b + " " + (int) c + "\n";
+                if (c == Math.floor(c) && greatestCommonFactor(a, b, (int)c) <= 1) {
+                    output += a + " " + b + " " + (int)c + "\n";
                 }
             }
         }

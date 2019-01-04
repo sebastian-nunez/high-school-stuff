@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class CoolNumbers {
+public class CoolNumbers
+{
     /*
      *method isCoolNumber will return true if
      *	num % 3-6 all have a remainder of 1

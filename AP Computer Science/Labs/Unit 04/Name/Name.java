@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class Name {
+public class Name
+{
     private String name;
 
     public Name() {

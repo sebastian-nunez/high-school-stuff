@@ -7,7 +7,8 @@
 
 import javax.swing.JFrame;
 
-public class GraphicsRunner extends JFrame {
+public class GraphicsRunner extends JFrame
+{
     private static final int WIDTH = 800;
     private static final int HEIGHT = 600;
 

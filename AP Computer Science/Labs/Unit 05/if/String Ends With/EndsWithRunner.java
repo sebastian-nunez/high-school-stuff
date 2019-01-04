@@ -8,7 +8,8 @@
 import static java.lang.System.*;
 import java.util.Scanner;
 
-public class EndsWithRunner {
+public class EndsWithRunner
+{
     public static void main(String[] args) {
         System.out.println(StringUtilities.endsWith("chicken", "en"));
         System.out.println(StringUtilities.endsWith("chicken", "dog"));

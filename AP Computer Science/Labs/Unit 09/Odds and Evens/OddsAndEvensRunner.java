@@ -7,7 +7,8 @@
 
 import java.util.Arrays;
 
-public class OddsAndEvensRunner {
+public class OddsAndEvensRunner
+{
     public static void main(String args[]) {
         //add test cases
         int[] one = {2, 4, 6, 8, 10, 12, 14};

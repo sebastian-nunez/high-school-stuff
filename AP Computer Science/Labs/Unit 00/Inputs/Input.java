@@ -9,7 +9,8 @@
 import static java.lang.System.*;
 import java.util.Scanner;
 
-public class Input {
+public class Input
+{
 
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);

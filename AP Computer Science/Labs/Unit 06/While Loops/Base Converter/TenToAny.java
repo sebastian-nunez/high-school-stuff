@@ -3,9 +3,8 @@
 // www.apluscompsci.com
 // Name - Sebastian Nunez
 
-import static java.lang.System.*;
-
-public class TenToAny {
+public class TenToAny
+{
     private int base10;
     private int newBase;
 

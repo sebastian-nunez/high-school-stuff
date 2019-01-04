@@ -8,7 +8,8 @@
 import java.lang.System;
 import java.lang.Math;
 
-public class ArrayFunHouse {
+public class ArrayFunHouse
+{
     //instance variables and constructors could be used, but are not really needed
 
     //getSum() will return the sum of the numbers from start to stop, not including stop

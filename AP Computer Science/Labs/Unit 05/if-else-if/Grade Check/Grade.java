@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class Grade {
+public class Grade
+{
     private int numGrade;
 
     public Grade() {

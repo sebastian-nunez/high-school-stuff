@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class Social {
+public class Social
+{
     private String socialNum;
     private int sum;
 

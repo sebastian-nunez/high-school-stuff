@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class NameRunner {
+public class NameRunner
+{
     public static void main(String[] args) {
         Name person = new Name("Sally Baker");
         System.out.println(person.getFirst());

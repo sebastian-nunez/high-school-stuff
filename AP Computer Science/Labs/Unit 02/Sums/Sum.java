@@ -1,10 +1,11 @@
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 09/14/18
-//Class - 10th
-//Lab  - Sum
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 09/14/18
+// Class - 10th
+// Lab - Sum
 
-public class Sum {
+public class Sum
+{
     //instance variables
     private double one, two, sum;
 

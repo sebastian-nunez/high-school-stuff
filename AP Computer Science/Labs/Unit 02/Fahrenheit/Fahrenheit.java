@@ -4,7 +4,8 @@
 // Class - 10th
 // Lab - Fahrenheit to Celsius
 
-public class Fahrenheit {
+public class Fahrenheit
+{
     private double fahrenheit;
 
     public void setFahrenheit(double fahren) {

@@ -1,9 +1,9 @@
 
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 12/10/18
-//Class - 10th
-//Lab  - Random Colored Boxes
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 12/10/18
+// Class - 10th
+// Lab - Random Colored Boxes
 
 import java.awt.Graphics;
 import java.awt.Color;
@@ -15,7 +15,8 @@ import java.awt.event.ActionEvent;
 import java.awt.Canvas;
 import javax.swing.JPanel;
 
-public class RandomColoredBoxes extends JPanel {
+public class RandomColoredBoxes extends JPanel
+{
     private Timer timer;
     private final static int SLEEP = 110;
 
@@ -49,9 +50,9 @@ public class RandomColoredBoxes extends JPanel {
         //draw random colored boxes
         for (int x = 80; x <= getWidth() - 100; x += 40) {
             for (int y = 120; y <= getHeight() - 40; y += 40) {
-                int r = (int) (Math.random() * 256);
-                int g = (int) (Math.random() * 256);
-                int b = (int) (Math.random() * 256);
+                int r = (int)(Math.random() * 256);
+                int g = (int)(Math.random() * 256);
+                int b = (int)(Math.random() * 256);
 
                 Color randColor = new Color(r, g, b);
                 window.setColor(randColor);

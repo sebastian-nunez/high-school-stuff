@@ -9,7 +9,8 @@ import java.util.Scanner;
 import static java.lang.System.*;
 import static java.lang.Math.*;
 
-public class Quadratic {
+public class Quadratic
+{
     private int a, b, c;
     private double rootOne;
     private double rootTwo;

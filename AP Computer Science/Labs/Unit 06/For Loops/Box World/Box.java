@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class Box {
+public class Box
+{
     private String word;
 
     public Box() {

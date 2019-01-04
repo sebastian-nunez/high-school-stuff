@@ -9,7 +9,8 @@ import java.util.Scanner;
 import static java.lang.System.*;
 import static java.lang.Math.*;
 
-public class Distance {
+public class Distance
+{
     private int x1, y1, x2, y2;
 
     public Distance() {

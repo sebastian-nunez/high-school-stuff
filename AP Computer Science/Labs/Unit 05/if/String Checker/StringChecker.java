@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class StringChecker {
+public class StringChecker
+{
     private String word;
 
     public StringChecker() {

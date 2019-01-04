@@ -5,7 +5,8 @@
 
 import static java.lang.System.*;
 
-class StringRemover {
+class StringRemover
+{
     private String sentence;
     private String remove;
 

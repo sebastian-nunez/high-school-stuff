@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class HexToBinary {
+public class HexToBinary
+{
     private char hex;
 
     public HexToBinary() {

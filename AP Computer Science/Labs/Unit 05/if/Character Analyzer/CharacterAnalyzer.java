@@ -8,7 +8,8 @@
 import static java.lang.System.*;
 import java.util.Scanner;
 
-public class CharacterAnalyzer {
+public class CharacterAnalyzer
+{
     private char theChar;
 
     public CharacterAnalyzer() {

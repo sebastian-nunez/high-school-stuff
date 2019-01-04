@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class Monster {
+public class Monster
+{
     private String name;
     private int howBig;
 

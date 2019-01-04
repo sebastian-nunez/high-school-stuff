@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class FirstAndLast {
+public class FirstAndLast
+{
     private String word;
 
     public FirstAndLast(String s) {

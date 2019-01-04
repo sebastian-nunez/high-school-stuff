@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class GCD {
+public class GCD
+{
     private int one, two;
 
     public GCD() {
@@ -28,10 +29,9 @@ public class GCD {
 
         for (int i = two; i >= one; i--) {
             if (one % i == 0 && two % i == 0)
-                return i;
+                gcd = i;
         }
-
-        return 1;
+        return gcd;
     }
 
     public String toString() {

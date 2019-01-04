@@ -5,7 +5,8 @@
 
 import static java.lang.System.*;
 
-public class ReverseNumberRunner {
+public class ReverseNumberRunner
+{
     public static void main(String args[]) {
         //add test cases
         ReverseNumber test = new ReverseNumber(234);

@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class TriangleTwo {
+public class TriangleTwo
+{
     private int size;
 
     private String letter;

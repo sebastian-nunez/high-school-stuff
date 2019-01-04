@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class NumberCompare {
+public class NumberCompare
+{
     private int one, two;
 
     public NumberCompare() {

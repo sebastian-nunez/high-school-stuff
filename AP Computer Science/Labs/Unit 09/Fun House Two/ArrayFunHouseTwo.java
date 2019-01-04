@@ -5,7 +5,8 @@
 // Class - 10th
 // Lab - Fun House Two
 
-public class ArrayFunHouseTwo {
+public class ArrayFunHouseTwo
+{
     //goingUp() will return true if all numbers
     //in numArray are in increasing order
     //[1,2,6,9,23] returns true

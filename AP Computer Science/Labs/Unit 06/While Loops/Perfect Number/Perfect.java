@@ -1,11 +1,12 @@
 
-//(c) A+ Computer Science
-//www.apluscompsci.com
-//Name - Sebastian Nunez
+// (c) A+ Computer Science
+// www.apluscompsci.com
+// Name - Sebastian Nunez
 
 import static java.lang.System.*;
 
-public class Perfect {
+public class Perfect
+{
     private int number;
 
     //add constructors

@@ -4,7 +4,8 @@
 // Class - 10th
 // Lab - Surface Area of a Cube
 
-public class Cube {
+public class Cube
+{
     private int side;
     private int surfaceArea;
 

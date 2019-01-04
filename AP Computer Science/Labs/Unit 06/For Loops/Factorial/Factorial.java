@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class Factorial {
+public class Factorial
+{
     private int number;
 
     public Factorial() {

@@ -8,7 +8,8 @@
 import static java.lang.System.*;
 import java.lang.Math;
 
-public class Prime {
+public class Prime
+{
     private int number;
 
     public Prime() {

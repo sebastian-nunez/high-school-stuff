@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class WordsCompareRunner {
+public class WordsCompareRunner
+{
     public static void main(String args[]) {
         //add test cases
         WordsCompare test = new WordsCompare();

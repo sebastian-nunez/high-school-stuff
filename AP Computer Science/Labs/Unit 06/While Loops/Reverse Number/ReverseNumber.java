@@ -5,7 +5,8 @@
 
 import static java.lang.System.*;
 
-public class ReverseNumber {
+public class ReverseNumber
+{
     private int number;
 
     //add constructors

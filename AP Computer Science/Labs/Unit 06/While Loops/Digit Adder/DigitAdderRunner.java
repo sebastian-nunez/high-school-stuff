@@ -1,11 +1,12 @@
 
-//(c) A+ Computer Science
-//www.apluscompsci.com
-//Name - Sebastian Nunez
+// (c) A+ Computer Science
+// www.apluscompsci.com
+// Name - Sebastian Nunez
 
 import static java.lang.System.*;
 
-public class DigitAdderRunner {
+public class DigitAdderRunner
+{
     public static void main(String args[]) {
         //add test cases
         out.println(DigitAdder.sumDigits(234) + " is the sum of the digits 234" + "\n");

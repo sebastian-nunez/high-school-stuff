@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class SocialRunner {
+public class SocialRunner
+{
     public static void main(String args[]) {
         //add test cases
         Social test = new Social();

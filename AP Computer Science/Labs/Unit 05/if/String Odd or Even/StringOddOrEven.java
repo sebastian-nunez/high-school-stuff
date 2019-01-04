@@ -8,7 +8,8 @@
 import static java.lang.System.*;
 import java.util.Scanner;
 
-public class StringOddOrEven {
+public class StringOddOrEven
+{
     private String word;
 
     public StringOddOrEven() {

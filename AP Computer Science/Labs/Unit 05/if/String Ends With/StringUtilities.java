@@ -8,7 +8,8 @@
 import static java.lang.System.*;
 import java.util.Scanner;
 
-public class StringUtilities {
+public class StringUtilities
+{
     public static boolean endsWith(String a, String b) {
         int lowerBound = a.length() - b.length();
         int upperBound = a.length();

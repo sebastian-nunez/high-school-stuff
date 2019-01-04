@@ -4,7 +4,8 @@
 // Class - 10th
 // Lab - Average
 
-public class AverageRunner {
+public class AverageRunner
+{
     public static void main(String[] args) {
         //instantiation
         Average test = new Average();

@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class NumberCompareRunner {
+public class NumberCompareRunner
+{
     public static void main(String args[]) {
         NumberCompare test = new NumberCompare(5, 6);
         out.println(test);

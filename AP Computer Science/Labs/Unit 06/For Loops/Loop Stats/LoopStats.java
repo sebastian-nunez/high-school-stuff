@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class LoopStats {
+public class LoopStats
+{
     private int start, stop;
 
     public LoopStats() {

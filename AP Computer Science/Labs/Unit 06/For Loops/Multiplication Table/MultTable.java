@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class MultTable {
+public class MultTable
+{
     private int number;
     private int stop;
 

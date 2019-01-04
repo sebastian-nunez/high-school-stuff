@@ -7,7 +7,8 @@
 
 import static java.lang.System.*;
 
-public class StringEquality {
+public class StringEquality
+{
     private String wordOne, wordTwo;
 
     public StringEquality() {

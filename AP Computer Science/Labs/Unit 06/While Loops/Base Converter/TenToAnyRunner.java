@@ -5,7 +5,8 @@
 
 import static java.lang.System.*;
 
-public class TenToAnyRunner {
+public class TenToAnyRunner
+{
     public static void main(String args[]) {
         //add test cases
         TenToAny test = new TenToAny(234, 9);

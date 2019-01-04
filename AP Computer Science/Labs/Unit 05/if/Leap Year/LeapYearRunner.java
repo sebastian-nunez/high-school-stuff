@@ -7,7 +7,8 @@
 import static java.lang.System.*;
 import java.util.Scanner;
 
-public class LeapYearRunner {
+public class LeapYearRunner
+{
     public static void main(String args[]) {
         //instantiation
         Scanner keyboard = new Scanner(System.in);

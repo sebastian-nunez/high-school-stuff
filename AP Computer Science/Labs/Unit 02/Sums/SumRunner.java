@@ -4,7 +4,8 @@
 // Class - 10th
 // Lab - Sum
 
-public class SumRunner {
+public class SumRunner
+{
     public static void main(String[] args) {
         Sum test = new Sum();
         test.setNums(5, 5);

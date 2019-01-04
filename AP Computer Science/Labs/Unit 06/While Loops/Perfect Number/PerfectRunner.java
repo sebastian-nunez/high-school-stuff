@@ -1,11 +1,12 @@
 
-//(c) A+ Computer Science
-//www.apluscompsci.com
-//Name - Sebastian Nunez
+// (c) A+ Computer Science
+// www.apluscompsci.com
+// Name - Sebastian Nunez
 
 import static java.lang.System.*;
 
-public class PerfectRunner {
+public class PerfectRunner
+{
     public static void main(String args[]) {
         //add test cases
         Perfect test = new Perfect(496);

@@ -4,7 +4,8 @@
 // Class - 10th
 // Lab - Rectangle Perimeter
 
-public class RectangleRunner {
+public class RectangleRunner
+{
     public static void main(String[] args) {
         Rectangle test = new Rectangle();
         test.setLengthWidth(2, 6);

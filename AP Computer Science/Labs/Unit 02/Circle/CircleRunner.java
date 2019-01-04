@@ -4,7 +4,8 @@
 // Class - 10th
 // Lab - Area of a Circle
 
-public class CircleRunner {
+public class CircleRunner
+{
     public static void main(String[] args) {
         //instantiation
         Circle test = new Circle();

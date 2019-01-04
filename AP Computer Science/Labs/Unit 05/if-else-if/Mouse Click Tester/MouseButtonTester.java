@@ -12,7 +12,8 @@ import javax.swing.JFrame;
 import java.awt.event.MouseListener;
 import java.awt.event.MouseEvent;
 
-public class MouseButtonTester extends JFrame implements MouseListener {
+public class MouseButtonTester extends JFrame implements MouseListener
+{
     private int mouseX, mouseY;
     private int mouseButton;
     private boolean isFirstRun;
