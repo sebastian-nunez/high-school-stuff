@@ -8,7 +8,7 @@ public class FibonacciRunner
 {
     public static void main(String args[]) {
         //add test cases
-        Fibonacci test = new Fibonacci(50);
+        Fibonacci test = new Fibonacci(100);
         System.out.println(test.getFib(1));
         System.out.println(test.getFib(2));
         System.out.println(test.getFib(3));
@@ -20,7 +20,7 @@ public class FibonacciRunner
         System.out.println(test.getFib(21));
         System.out.println(test.getFib(31));
         System.out.println(test.getFib(41));
-        System.out.println(test.getFib(46));
+        System.out.println(test.getFib(80));
         test.setSeqSize(1);
         System.out.println(test.getFib(1));
         test.setSeqSize(2);
