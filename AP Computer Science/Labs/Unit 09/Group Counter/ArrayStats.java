@@ -33,12 +33,12 @@ public class ArrayStats
             subGroupSize++;
             index++;
             if (index == array.length) {
-               if (array[index - 1] == array[baseNumIndex]) {
-                  if (subGroupSize >= groupSize) {
-                    cnt++;
-                  }
-               }
-               break;
+                if (array[index - 1] == array[baseNumIndex]) {
+                    if (subGroupSize >= groupSize) {
+                        cnt++;
+                    }
+                }
+                break;
             } else if (array[baseNumIndex] != array[index]) {
                 if (subGroupSize >= groupSize) {
                     cnt++;
@@ -46,7 +46,7 @@ public class ArrayStats
                 baseNumIndex = index;
                 subGroupSize = 0;
             }
-         } while (array[baseNumIndex] == array[index]);
+        } while (array[baseNumIndex] == array[index]);
         return cnt;
     }
 
