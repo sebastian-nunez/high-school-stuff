@@ -26,36 +26,27 @@ public class ArrayStats
 
     public int getCount(int groupSize) {
         int cnt = 0;
-        int tempCnt = 0;
-        int baseNum = array[0];
-        int indexOfBaseNum = 0;
-        for (int index = 0; index < array.length; index++) {
-            if (array[index] == baseNum) {
-                tempCnt++;
-                if (tempCnt % groupSize == 0) {
+        int baseNumIndex = 0;
+        int index = 0;
+        int subGroupSize = 0;
+        do {
+            subGroupSize++;
+            index++;
+            if (index == array.length) {
+               if (array[index - 1] == array[baseNumIndex]) {
+                  if (subGroupSize >= groupSize) {
                     cnt++;
-                    tempCnt = 0;
-                    for (int nextDifNum = index + 1; nextDifNum < array.length; nextDifNum++) {
-                        if (array[index] != array[nextDifNum]) {
-                            index = nextDifNum - 1;
-                            baseNum = array[nextDifNum];
-                            indexOfBaseNum = nextDifNum;
-                            break;
-                        } else if (nextDifNum == array.length - 1) {
-                            index = array.length - 1;
-                            indexOfBaseNum = array.length - 1;
-                            break;
-                        }
-                    }
+                  }
+               }
+               break;
+            } else if (array[baseNumIndex] != array[index]) {
+                if (subGroupSize >= groupSize) {
+                    cnt++;
                 }
-            } else if (index - indexOfBaseNum == 1) {
-                baseNum = array[index];
-                tempCnt = 0;
-            } else {
-                baseNum = array[index - 1];
-                tempCnt = 0;
+                baseNumIndex = index;
+                subGroupSize = 0;
             }
-        }
+         } while (array[baseNumIndex] == array[index]);
         return cnt;
     }
 
