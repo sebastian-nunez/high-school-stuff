@@ -29,7 +29,7 @@ public class ArrayStats
         int baseNumIndex = 0;
         int index = 0;
         int subGroupSize = 0;
-        do {
+        while (array[baseNumIndex] == array[index]) {
             subGroupSize++;
             index++;
             if (index == array.length) {
@@ -46,7 +46,7 @@ public class ArrayStats
                 baseNumIndex = index;
                 subGroupSize = 0;
             }
-        } while (array[baseNumIndex] == array[index]);
+        }
         return cnt;
     }
 
