@@ -5,18 +5,18 @@
 
 int main()
 {
-    int x = 5;
-    long y = 1000000;
+  int x = 5;
+  long y = 1000000;
 
-    float z = 0.123456;
-    double a = 123000000.00215536874;
+  float z = 0.123456;
+  double a = 123000000.00215536874;
 
-    char letraFavorita = 'a';
+  char letraFavorita = 'a';
 
-    // BYTE = 8 BITS: 0000 0000 (0-255)
-    char miNombre[] = "Sebastian";
+  // BYTE = 8 BITS: 0000 0000 (0-255)
+  char miNombre[] = "Sebastian";
 
-    printf("%s", miNombre);
+  printf("%s", miNombre);
 
-    return 0;
+  return 0;
 }

@@ -9,19 +9,19 @@ import java.util.Scanner;
 
 public class LeapYear
 {
-    public static boolean isLeapYear(int year) {
-        int calc = year % 4;
+  public static boolean isLeapYear(int year) {
+    int calc = year % 4;
 
-        if (calc == 0)
-            return true;
+    if (calc == 0)
+      return true;
 
-        return false;
-    }
+    return false;
+  }
 
-    public void result(int year) {
-        if (isLeapYear(year))
-            out.println(year + " is a leap year.\n");
-        if (isLeapYear(year) == false)
-            out.println(year + " NOT a leap year.\n");
-    }
+  public void result(int year) {
+    if (isLeapYear(year))
+      out.println(year + " is a leap year.\n");
+    if (isLeapYear(year) == false)
+      out.println(year + " NOT a leap year.\n");
+  }
 }

@@ -7,7 +7,7 @@ Type
 	Grass/Poison
 Evolves To
 	Ivysaur
-	http://pokemon.wikia.com/wiki/Ivysaur 
+	http://pokemon.wikia.com/wiki/Ivysaur
 
 
 Name
@@ -18,8 +18,8 @@ Type
 	Fire
 Evolves To
 	Charmeleon
-	http://pokemon.wikia.com/wiki/Charmeleon 
-	
+	http://pokemon.wikia.com/wiki/Charmeleon
+
 
 Name
 	Squirtle
@@ -30,7 +30,3 @@ Type
 Evolves To
 	Wartortle
 	http://pokemon.wikia.com/wiki/Wartortle
-
-
-
-

@@ -10,40 +10,40 @@ import java.util.Scanner;
 
 public class HexToBinaryRunner
 {
-    public static void main(String args[]) {
-        //Scanner
-        Scanner keyboard = new Scanner(in);
+  public static void main(String args[]) {
+    //Scanner
+    Scanner keyboard = new Scanner(in);
 
-        //add test cases
-        HexToBinary test = new HexToBinary();
+    //add test cases
+    HexToBinary test = new HexToBinary();
 
-        out.print("Enter a letter :: ");
-        test.setHex(keyboard.next().charAt(0));
-        out.println(test);
+    out.print("Enter a letter :: ");
+    test.setHex(keyboard.next().charAt(0));
+    out.println(test);
 
-        out.print("Enter a letter :: ");
-        test.setHex(keyboard.next().charAt(0));
-        out.println(test);
+    out.print("Enter a letter :: ");
+    test.setHex(keyboard.next().charAt(0));
+    out.println(test);
 
-        out.print("Enter a letter :: ");
-        test.setHex(keyboard.next().charAt(0));
-        out.println(test);
+    out.print("Enter a letter :: ");
+    test.setHex(keyboard.next().charAt(0));
+    out.println(test);
 
-        out.print("Enter a letter :: ");
-        test.setHex(keyboard.next().charAt(0));
-        out.println(test);
+    out.print("Enter a letter :: ");
+    test.setHex(keyboard.next().charAt(0));
+    out.println(test);
 
-        out.print("Enter a letter :: ");
-        test.setHex(keyboard.next().charAt(0));
-        out.println(test);
+    out.print("Enter a letter :: ");
+    test.setHex(keyboard.next().charAt(0));
+    out.println(test);
 
-        out.print("Enter a letter :: ");
-        test.setHex(keyboard.next().charAt(0));
-        out.println(test);
+    out.print("Enter a letter :: ");
+    test.setHex(keyboard.next().charAt(0));
+    out.println(test);
 
-        out.print("Enter a letter :: ");
-        test.setHex(keyboard.next().charAt(0));
-        out.println(test);
+    out.print("Enter a letter :: ");
+    test.setHex(keyboard.next().charAt(0));
+    out.println(test);
 
-    }
+  }
 }

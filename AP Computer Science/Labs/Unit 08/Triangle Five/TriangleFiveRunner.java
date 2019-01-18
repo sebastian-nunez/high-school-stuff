@@ -1,15 +1,15 @@
-//� A+ Computer Science  -  www.apluscompsci.com
-//Name - Sebastian Nunez
-//Date - 12/12/18
-//Class - 10th
-//Lab  - Triangle 5
+
+// � A+ Computer Science - www.apluscompsci.com
+// Name - Sebastian Nunez
+// Date - 12/12/18
+// Class - 10th
+// Lab - Triangle 5
 
 import static java.lang.System.*;
 
 public class TriangleFiveRunner
 {
-   public static void main(String args[])
-   {
+   public static void main(String args[]) {
       // Test cases
       TriangleFive run = new TriangleFive('C', 4);
       System.out.println(run);
@@ -34,5 +34,5 @@ public class TriangleFiveRunner
       run.setAmount(8);
       System.out.println(run);
       System.out.println();
-	}
+   }
 }

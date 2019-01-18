@@ -11,46 +11,46 @@ import java.util.Scanner;
 
 public class ArrayStats
 {
-    //instance variable
-    private int[] array;
+  //instance variable
+  private int[] array;
 
-    //constructor
-    public ArrayStats(int[] arr) {
-        setArray(arr);
-    }
+  //constructor
+  public ArrayStats(int[] arr) {
+    setArray(arr);
+  }
 
-    //set method
-    public void setArray(int[] arr) {
-        array = arr;
-    }
+  //set method
+  public void setArray(int[] arr) {
+    array = arr;
+  }
 
-    public int getCount(int groupSize) {
-        int cnt = 0;
-        int baseNumIndex = 0;
-        int index = 0;
-        int subGroupSize = 0;
-        while (array[baseNumIndex] == array[index]) {
-            subGroupSize++;
-            index++;
-            if (index == array.length) {
-                if (array[index - 1] == array[baseNumIndex]) {
-                    if (subGroupSize >= groupSize) {
-                        cnt++;
-                    }
-                }
-                break;
-            } else if (array[baseNumIndex] != array[index]) {
-                if (subGroupSize >= groupSize) {
-                    cnt++;
-                }
-                baseNumIndex = index;
-                subGroupSize = 0;
-            }
+  public int getCount(int groupSize) {
+    int cnt = 0;
+    int baseNumIndex = 0;
+    int index = 0;
+    int subGroupSize = 0;
+    while (array[baseNumIndex] == array[index]) {
+      subGroupSize++;
+      index++;
+      if (index == array.length) {
+        if (array[index - 1] == array[baseNumIndex]) {
+          if (subGroupSize >= groupSize) {
+            cnt++;
+          }
         }
-        return cnt;
+        break;
+      } else if (array[baseNumIndex] != array[index]) {
+        if (subGroupSize >= groupSize) {
+          cnt++;
+        }
+        baseNumIndex = index;
+        subGroupSize = 0;
+      }
     }
+    return cnt;
+  }
 
-    public String toString() {
-        return Arrays.toString(array);
-    }
+  public String toString() {
+    return Arrays.toString(array);
+  }
 }

@@ -7,46 +7,46 @@
 
 public class Triples
 {
-    private int number;
+  private int number;
 
-    public Triples() {
-        this(0);
+  public Triples() {
+    this(0);
+  }
+
+  public Triples(int num) {
+    setNum(num);
+  }
+
+  private int greatestCommonFactor(int a, int b, int c) {
+    int max = number;
+    int factorCount = 1;
+
+    for (int i = 2; i <= max; i++) {
+      if (a % i == 0 && b % i == 0 && c % i == 0) {
+        factorCount++;
+      }
     }
 
-    public Triples(int num) {
-        setNum(num);
-    }
+    return factorCount;
+  }
 
-    private int greatestCommonFactor(int a, int b, int c) {
-        int max = number;
-        int factorCount = 1;
+  public void setNum(int num) {
+    number = num;
+  }
 
-        for (int i = 2; i <= max; i++) {
-            if (a % i == 0 && b % i == 0 && c % i == 0) {
-                factorCount++;
-            }
+  public String toString() {
+    String output = "";
+
+    for (int a = 3; a <= number; a++) {
+      for (int b = a + 1; b <= number; b++) {
+        double c = Math.sqrt(a * a + b * b);
+        if (c == Math.floor(c) && greatestCommonFactor(a, b, (int)c) <= 1) {
+          output += a + " " + b + " " + (int)c + "\n";
         }
-
-        return factorCount;
+      }
     }
 
-    public void setNum(int num) {
-        number = num;
-    }
-
-    public String toString() {
-        String output = "";
-
-        for (int a = 3; a <= number; a++) {
-            for (int b = a + 1; b <= number; b++) {
-                double c = Math.sqrt(a * a + b * b);
-                if (c == Math.floor(c) && greatestCommonFactor(a, b, (int)c) <= 1) {
-                    output += a + " " + b + " " + (int)c + "\n";
-                }
-            }
-        }
-
-        return output + "\n";
-    }
+    return output + "\n";
+  }
 
 }

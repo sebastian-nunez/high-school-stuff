@@ -10,12 +10,12 @@ import java.util.Scanner;
 
 public class StringUtilities
 {
-    public static boolean endsWith(String a, String b) {
-        int lowerBound = a.length() - b.length();
-        int upperBound = a.length();
+  public static boolean endsWith(String a, String b) {
+    int lowerBound = a.length() - b.length();
+    int upperBound = a.length();
 
-        if (a.substring(lowerBound, upperBound).equals(b))
-            return true;
-        return false;
-    }
+    if (a.substring(lowerBound, upperBound).equals(b))
+      return true;
+    return false;
+  }
 }

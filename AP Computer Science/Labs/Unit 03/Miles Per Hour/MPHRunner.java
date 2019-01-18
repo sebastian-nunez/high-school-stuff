@@ -11,64 +11,64 @@ import static java.lang.Math.*;
 
 public class MPHRunner
 {
-    public static void main(String[] args) {
-        Scanner keyboard = new Scanner(in);
+  public static void main(String[] args) {
+    Scanner keyboard = new Scanner(in);
 
-        //Input #1
-        out.print("Enter the distance :: ");
-        int dist = keyboard.nextInt();
+    //Input #1
+    out.print("Enter the distance :: ");
+    int dist = keyboard.nextInt();
 
-        out.print("Enter the hours :: ");
-        int hrs = keyboard.nextInt();
+    out.print("Enter the hours :: ");
+    int hrs = keyboard.nextInt();
 
-        out.print("Enter the minutes :: ");
-        int mins = keyboard.nextInt();
+    out.print("Enter the minutes :: ");
+    int mins = keyboard.nextInt();
 
-        //Instantiation
-        MilesPerHour test = new MilesPerHour(dist, hrs, mins);
-        test.calcMPH();
-        test.print();
+    //Instantiation
+    MilesPerHour test = new MilesPerHour(dist, hrs, mins);
+    test.calcMPH();
+    test.print();
 
-        //Input #2
-        out.print("Enter the distance :: ");
-        dist = keyboard.nextInt();
+    //Input #2
+    out.print("Enter the distance :: ");
+    dist = keyboard.nextInt();
 
-        out.print("Enter the hours :: ");
-        hrs = keyboard.nextInt();
+    out.print("Enter the hours :: ");
+    hrs = keyboard.nextInt();
 
-        out.print("Enter the minutes :: ");
-        mins = keyboard.nextInt();
+    out.print("Enter the minutes :: ");
+    mins = keyboard.nextInt();
 
-        test.setNums(dist, hrs, mins);
-        test.calcMPH();
-        test.print();
+    test.setNums(dist, hrs, mins);
+    test.calcMPH();
+    test.print();
 
-        //Input #3
-        out.print("Enter the distance :: ");
-        dist = keyboard.nextInt();
+    //Input #3
+    out.print("Enter the distance :: ");
+    dist = keyboard.nextInt();
 
-        out.print("Enter the hours :: ");
-        hrs = keyboard.nextInt();
+    out.print("Enter the hours :: ");
+    hrs = keyboard.nextInt();
 
-        out.print("Enter the minutes :: ");
-        mins = keyboard.nextInt();
+    out.print("Enter the minutes :: ");
+    mins = keyboard.nextInt();
 
-        test.setNums(dist, hrs, mins);
-        test.calcMPH();
-        test.print();
+    test.setNums(dist, hrs, mins);
+    test.calcMPH();
+    test.print();
 
-        //Input #4
-        out.print("Enter the distance :: ");
-        dist = keyboard.nextInt();
+    //Input #4
+    out.print("Enter the distance :: ");
+    dist = keyboard.nextInt();
 
-        out.print("Enter the hours :: ");
-        hrs = keyboard.nextInt();
+    out.print("Enter the hours :: ");
+    hrs = keyboard.nextInt();
 
-        out.print("Enter the minutes :: ");
-        mins = keyboard.nextInt();
+    out.print("Enter the minutes :: ");
+    mins = keyboard.nextInt();
 
-        test.setNums(dist, hrs, mins);
-        test.calcMPH();
-        test.print();
-    }
+    test.setNums(dist, hrs, mins);
+    test.calcMPH();
+    test.print();
+  }
 }
