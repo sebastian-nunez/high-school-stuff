@@ -1,180 +1,172 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>HTML Basics</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-    </head>
-    <body>
-        <a href="semanticTags.html">Go to Semantic Tags</a>
-        <!-- Headings -->
-        <h1>Heading One</h1>
-        <h2>Heading Two</h2>
-        <h3>Heading Three</h3>
-        <h4>Heading Four</h4>
-        <h5>Heading Five</h5>
-        <h6>Heading Seven</h6>
 
-        <!-- Paragraphs -->
-        <p>
-            <strong>Lorem</strong> ipsum <del>dolor</del> sit
-            <sup>amet</sup> consectetur <ins>adipisicing</ins> elit.
-            Perspiciatis consequuntur natus quam in dignissimos! Labore
-            perferendis possimus voluptate vel placeat voluptatem, nulla
-            assumenda ex minima voluptatum. Tempora omnis eveniet sapiente.
-        </p>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>HTML Basics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
 
-        <p>
-            <em>Lorem</em> ipsum <small>dolor</small> sit
-            <sub>amet</sub> consectetur <ins>adipisicing</ins> elit. Labore ex
-            totam quas asperiores adipisci dolorem, odio, magni enim hic
-            aspernatur dolore cum eos delectus obcaecati, mollitia recusandae
-            quae nam! Neque!
-        </p>
+<body>
+    <a href="semanticTags.html">Go to Semantic Tags</a>
+    <!-- Headings -->
+    <h1>Heading One</h1>
+    <h2>Heading Two</h2>
+    <h3>Heading Three</h3>
+    <h4>Heading Four</h4>
+    <h5>Heading Five</h5>
+    <h6>Heading Seven</h6>
 
-        <!-- Unordered List -->
-        <ul>
-            <li>List item</li>
-            <li>List item</li>
-            <li>List item</li>
-            <li>List item</li>
-        </ul>
+    <!-- Paragraphs -->
+    <p>
+        <strong>Lorem</strong> ipsum <del>dolor</del> sit
+        <sup>amet</sup> consectetur <ins>adipisicing</ins> elit.
+        Perspiciatis consequuntur natus quam in dignissimos! Labore
+        perferendis possimus voluptate vel placeat voluptatem, nulla
+        assumenda ex minima voluptatum. Tempora omnis eveniet sapiente.
+    </p>
 
-        <!-- Ordered List -->
-        <ol>
-            <li>List item</li>
-            <li>List item</li>
-            <li>List item</li>
-            <li>List item</li>
-        </ol>
+    <p>
+        <em>Lorem</em> ipsum <small>dolor</small> sit
+        <sub>amet</sub> consectetur <ins>adipisicing</ins> elit. Labore ex
+        totam quas asperiores adipisci dolorem, odio, magni enim hic
+        aspernatur dolore cum eos delectus obcaecati, mollitia recusandae
+        quae nam! Neque!
+    </p>
 
-        <!-- Table -->
-        <table>
-            <thead>
-                <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>Age</th>
-                </tr>
-            </thead>
+    <!-- Unordered List -->
+    <ul>
+        <li>List item</li>
+        <li>List item</li>
+        <li>List item</li>
+        <li>List item</li>
+    </ul>
 
-            <tbody>
-                <tr>
-                    <td>Mike Holt</td>
-                    <td>mholt@gmail.com</td>
-                    <td>67</td>
-                </tr>
-                <tr>
-                    <td>Christina Diaz</td>
-                    <td>cdiaz@gmail.com</td>
-                    <td>24</td>
-                </tr>
-                <tr>
-                    <td>Elizabeth Norris</td>
-                    <td>enorris@gmail.com</td>
-                    <td>51</td>
-                </tr>
-                <tr>
-                    <td>Teresa Colon</td>
-                    <td>tcolon@gmail.com</td>
-                    <td>40</td>
-                </tr>
-            </tbody>
-        </table>
+    <!-- Ordered List -->
+    <ol>
+        <li>List item</li>
+        <li>List item</li>
+        <li>List item</li>
+        <li>List item</li>
+    </ol>
 
+    <!-- Table -->
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Mike Holt</td>
+                <td>mholt@gmail.com</td>
+                <td>67</td>
+            </tr>
+            <tr>
+                <td>Christina Diaz</td>
+                <td>cdiaz@gmail.com</td>
+                <td>24</td>
+            </tr>
+            <tr>
+                <td>Elizabeth Norris</td>
+                <td>enorris@gmail.com</td>
+                <td>51</td>
+            </tr>
+            <tr>
+                <td>Teresa Colon</td>
+                <td>tcolon@gmail.com</td>
+                <td>40</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br />
+
+    <!-- Form -->
+    <form action="#" method="#">
+        <div>
+            <label>Full Name:</label>
+            <input type="text" name="firstName" placeholder="Enter full name" required/>
+        </div>
         <br />
-
-        <!-- Form -->
-        <form action="#" method="#">
-            <div>
-                <label>Full Name:</label>
-                <input
-                    type="text"
-                    name="firstName"
-                    placeholder="Enter full name"
-                />
-            </div>
-            <br />
-            <div>
-                <label>Email:</label>
-                <input
-                    type="email"
-                    name="email"
-                    placeholder="Enter a valid email"
-                />
-            </div>
-            <br />
-            <div>
-                <label>Message:</label>
-                <textarea
-                    name="message"
-                    cols="30"
-                    rows="5"
-                    placeholder="Enter text..."
-                ></textarea>
-            </div>
-            <br />
-            <div>
-                <label>Gender:</label>
-                <select name="gender">
-                    <option value="select">Select</option>
-                    <option value="male">Male</option>
-                    <option value="female">Female</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
-            <br />
-            <div>
-                <label>Age:</label>
-                <input type="number" name="age" placeholder="Enter age" />
-            </div>
-            <br />
-            <div>
-                <label>Birthday:</label> <input type="date" name="birthday" />
-            </div>
-            <br />
-            <input type="submit" name="submit" value="Submit" />
-        </form>
-
+        <div>
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="Enter a valid email" required />
+        </div>
         <br />
+        <div>
+            <label>Message:</label>
+            <textarea name="message" cols="30" rows="5" placeholder="Enter text..."></textarea>
+        </div>
         <br />
-
-        <!-- Button -->
-        <button onclick="">Click Me</button>
-
+        <div>
+            <label>Gender:</label>
+            <select name="gender">
+                <option value="select">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
         <br />
+        <div>
+            <label>Age:</label>
+            <input type="number" name="age" placeholder="Enter age" />
+        </div>
         <br />
-
-        <!-- Image -->
-        <a href="https://source.unsplash.com/random">
-            <img
-                src="https://source.unsplash.com/random/400x400"
-                alt="random internet image"
-                width="400px"
-                height="auto"
-            />
-        </a>
-
+        <div>
+            <label>Birthday:</label>
+            <input type="date" name="birthday" />
+        </div>
         <br />
+        <div>
+            <label>Color:</label>
+            <input type="color" name="color" />
+        </div>
+        <br />
+        <input type="submit" name="submit" value="Submit" />
+    </form>
 
-        <!-- Quotation -->
-        <blockquote cite="https://freelorem.com/text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit eos
-            expedita eaque? Nostrum suscipit optio quisquam, ipsa doloremque
-            consequatur nisi distinctio consectetur accusantium inventore iure,
-            beatae tempore odit, sed ullam atque ut blanditiis sint enim quidem!
-            Totam numquam quia voluptatibus.
-        </blockquote>
+    <br />
+    <br />
 
-        <!-- Abbreviations -->
-        <p>The <abbr title="World Wide Web">WWW</abbr> is awesome!</p>
+    <!-- Button -->
+    <button onclick="">Click Me</button>
 
-        <!-- Cite -->
-        <p><cite>HTML Basics</cite> by Sebastian</p>
+    <br />
+    <br />
 
-        <div style="margin-top: 25px"></div>
-    </body>
+    <!-- Image -->
+    <a href="https://source.unsplash.com/random">
+        <img src="https://source.unsplash.com/random/400x400" alt="random internet image"
+            width="400px" height="auto" />
+    </a>
+
+    <br />
+
+    <!-- Quotation -->
+    <blockquote cite="https://freelorem.com/text">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit eos
+        expedita eaque? Nostrum suscipit optio quisquam, ipsa doloremque
+        consequatur nisi distinctio consectetur accusantium inventore iure,
+        beatae tempore odit, sed ullam atque ut blanditiis sint enim quidem!
+        Totam numquam quia voluptatibus.
+    </blockquote>
+
+    <!-- Abbreviations -->
+    <p>The <abbr title="World Wide Web">WWW</abbr> is awesome!</p>
+
+    <!-- Cite -->
+    <p><cite>HTML Basics</cite> by Sebastian</p>
+
+    <div style="margin-top: 25px"></div>
+</body>
+
 </html>
 
 <!-- Sebastian Nunez @ 2018 -->
