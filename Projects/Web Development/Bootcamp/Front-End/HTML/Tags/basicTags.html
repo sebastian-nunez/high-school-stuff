@@ -87,55 +87,144 @@
 
     <!-- Form -->
     <form action="#" method="#">
+      <!-- Text -->
       <div>
-        <label>Full Name:</label>
+        <label for="fullname">Full Name:</label>
         <input
           type="text"
-          name="firstName"
+          name="fullname"
+          id="fullname"
           placeholder="Enter full name"
           required
         />
       </div>
+
       <br />
+
+      <!-- Email -->
       <div>
-        <label>Email:</label>
+        <label for="email">Email:</label>
         <input
           type="email"
           name="email"
+          id="email"
           placeholder="Enter a valid email"
           required
         />
       </div>
+
       <br />
+
+      <!-- Password -->
       <div>
-        <label>Message:</label>
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="8-10 characters"
+          maxlength="10"
+          minlength="8"
+        />
+      </div>
+
+      <br />
+
+      <!-- Text-Area -->
+      <div>
+        <label for="message">Message:</label>
         <textarea
           name="message"
+          id="message"
           cols="30"
           rows="5"
           placeholder="Enter text..."
         ></textarea>
       </div>
+
       <br />
+
+      <!-- Select -->
       <div>
-        <label>Gender:</label>
-        <select name="gender">
-          <option value="select">Select</option>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender">
           <option value="male">Male</option>
           <option value="female">Female</option>
           <option value="other">Other</option>
         </select>
       </div>
+
       <br />
+
+      <!-- Number -->
       <div>
-        <label>Age:</label>
-        <input type="number" name="age" placeholder="Enter age" required />
+        <label for="age">Age:</label>
+        <input
+          id="age"
+          type="number"
+          name="age"
+          placeholder="Enter age"
+          required
+        />
       </div>
+
       <br />
-      <div><label>Birthday:</label> <input type="date" name="birthday" /></div>
+
+      <!-- Date -->
+      <div>
+        <label for="birthday">Birthday:</label>
+        <input id="birthday" type="date" name="birthday" />
+      </div>
+
       <br />
-      <div><label>Color:</label> <input type="color" name="color" /></div>
+
+      <!-- Radio -->
+      <div>
+        <p>Status:</p>
+
+        <div>
+          <input type="radio" name="status" id="single" value="single" />
+          <label for="single">Single</label>
+        </div>
+
+        <div>
+          <input type="radio" name="status" id="married" value="married" />
+          <label for="married">Married</label>
+        </div>
+
+        <div>
+          <input
+            type="radio"
+            name="status"
+            id="divorcedORseparated"
+            value="divorcedORseparated"
+          />
+          <label for="divorcedORseparated">Divorced/Separated</label>
+        </div>
+      </div>
+
       <br />
+
+      <!-- Checkbox -->
+      <div>
+        <p>Do you have children?</p>
+        <input type="checkbox" name="children" id="boy" value="boy" />
+        <label for="boy">Boy/s</label>
+        <input type="checkbox" name="children" id="girl" value="girl" />
+        <label for="girl">Girl/s</label>
+      </div>
+
+      <br />
+
+      <!-- Color -->
+      <div>
+        <label for="color">Color:</label>
+        <input id="color" type="color" name="color" />
+      </div>
+
+      <br />
+
+      <!-- Submit -->
       <input type="submit" name="submit" value="Submit" />
     </form>
 
