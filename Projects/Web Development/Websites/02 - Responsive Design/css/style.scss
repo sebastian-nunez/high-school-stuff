@@ -1,1 +1,98 @@
-@import url("https://fonts.googleapis.com/css?family=Catamaran:300,400,700|Cormorant+Garamond:400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Catamaran:300,400,700,900|Cormorant+Garamond:400,400i,700,700i");
+
+$colors: (
+  bg: #f3f3f3,
+  light: #fff,
+  dark: #111,
+  shadow: rgba(0, 0, 0, 0.25)
+);
+
+@function color($color) {
+  @return map-get($colors, $color);
+}
+
+$destop-breakpoint: 768px;
+
+@mixin desktop {
+  @media (max-width: $destop-breakpoint) {
+    @content;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  // box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  font-size: 16px;
+}
+
+body {
+  background-color: color(bg);
+}
+
+header {
+  background-color: color(light);
+  width: 100%;
+  height: 100px;
+
+  .header-brand {
+    font-family: Catamaran;
+    font-size: 24px;
+    font-weight: 900;
+    color: color(dark);
+    text-transform: uppercase;
+    display: block;
+    margin: 0;
+    text-align: center;
+    padding: 11px 0;
+  }
+
+  nav {
+    font-family: Catamaran;
+    ul {
+      display: block;
+      margin: 0 auto;
+      width: fit-content;
+      li {
+        // display: inline-block;
+        float: left;
+        list-style: none;
+        padding: 0 16px;
+        a {
+          font-size: 16px;
+          color: color(dark);
+        }
+      }
+    }
+  }
+
+  .header-cases {
+    display: none;
+  }
+}
+
+main {
+  .index-banner {
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-image: url("../imgs/banner.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    h2 {
+      font-family: Catamaran;
+      font-size: 60px;
+      color: color(light);
+      text-align: center;
+      font-weight: 900;
+      line-height: 1;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 13px color(shadow);
+    }
+  }
+}
