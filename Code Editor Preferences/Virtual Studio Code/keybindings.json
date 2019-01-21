@@ -1,0 +1,51 @@
+[
+  // Windows keybinds
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.terminal.clear",
+    "when": "isWindows && terminalFocus"
+  },
+  {
+    "key": "ctrl+r",
+    "command": "code-runner.run",
+    "when": "isWindows && !terminalFocus"
+  },
+  {
+    "key": "ctrl+shift+e",
+    "command": "workbench.action.terminal.kill",
+    "when": "isWindows && terminalFocus"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "jupyter.execCurrentCell",
+    "when": "isWindows && editorTextFocus"
+  },
+  {
+    "key": "ctrl+alt+`",
+    "command": "shellLauncher.launch",
+    "when": "isWindows"
+  },
+
+  // macOS keybinds
+  {
+    "key": "cmd+k",
+    "command": "workbench.action.terminal.clear",
+    "when": "isMac && terminalFocus"
+  },
+  {
+    "key": "cmd+r",
+    "command": "code-runner.run",
+    "when": "isMac && !terminalFocus"
+  },
+  {
+    "key": "cmd+shift+e",
+    "command": "workbench.action.terminal.kill",
+    "when": "isMac && terminalFocus"
+  },
+  {
+    "key": "cmd+enter",
+    "command": "jupyter.execCurrentCell",
+    "when": "isMac && editorTextFocus"
+  },
+  { "key": "cmd+alt+`", "command": "shellLauncher.launch", "when": "isMac" }
+]
