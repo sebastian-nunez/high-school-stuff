@@ -170,59 +170,29 @@ main {
     @include desktop {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
-      grid-template-rows: repeat(2, 1fr);
       grid-gap: 15px;
-      // grid-template-areas:
-      //   "cases portfolio portfolio lorem"
-      //   "youtube youtube about contact";
-      // align-items: stretch;
-      // justify-content: center;
+      grid-template-areas:
+        "cases portfolio portfolio lorem"
+        "youtube youtube about contact";
 
-      // #index-box-1 {
-      //   // grid-area: cases;
-      //   grid-column: 1/2;
-      //   grid-row: 1/2;
-      // }
-      // #index-box-2 {
-      //   // grid-area: portfolio;
-      //   grid-column: 2/4;
-      //   grid-row: 1/2;
-      // }
-      // #index-box-3 {
-      //   // grid-area: lorem;
-      // }
-      // #index-box-4 {
-      //   // grid-area: youtube;
-      // }
-      // #index-box-5 {
-      //   // grid-area: about;
-      // }
-      // #index-box-6 {
-      //   // grid-area: contact;
-      // }
-    }
-
-    #index-box-1 {
-      // grid-area: cases;
-      grid-column: 1/2;
-      grid-row: 1/2;
-    }
-    #index-box-2 {
-      // grid-area: portfolio;
-      grid-column: 2/4;
-      grid-row: 1/2;
-    }
-    #index-box-3 {
-      // grid-area: lorem;
-    }
-    #index-box-4 {
-      // grid-area: youtube;
-    }
-    #index-box-5 {
-      // grid-area: about;
-    }
-    #index-box-6 {
-      // grid-area: contact;
+      #index-box-1 {
+        grid-area: cases;
+      }
+      #index-box-2 {
+        grid-area: portfolio;
+      }
+      #index-box-3 {
+        grid-area: lorem;
+      }
+      #index-box-4 {
+        grid-area: youtube;
+      }
+      #index-box-5 {
+        grid-area: about;
+      }
+      #index-box-6 {
+        grid-area: contact;
+      }
     }
 
     .index-box {
