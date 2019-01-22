@@ -1,20 +1,25 @@
-@import url("https://fonts.googleapis.com/css?family=Catamaran:300,400,700,900|Cormorant+Garamond:400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Catamaran:300,400,700,900|Cormorant+Garamond:100,100i,400,400i,700,700i");
+
+$root-font: Cantamaram;
+$secondary-font: Cormorant Garamond;
+$root-font-size: 16px;
+
+$destop-breakpoint: 768px;
 
 $colors: (
   bg: #f3f3f3,
   light: #fff,
+  accent: #f2f2f2,
   dark: #111,
-  shadow: rgba(0, 0, 0, 0.25)
+  shadow: rgba(0, 0, 0, 0.3)
 );
 
 @function color($color) {
   @return map-get($colors, $color);
 }
 
-$destop-breakpoint: 768px;
-
 @mixin desktop {
-  @media (max-width: $destop-breakpoint) {
+  @media only screen and (min-width: $destop-breakpoint) {
     @content;
   }
 }
@@ -23,16 +28,19 @@ $destop-breakpoint: 768px;
   margin: 0;
   padding: 0;
   text-decoration: none;
-  // box-sizing: border-box;
 }
 
 html {
   height: 100%;
-  font-size: 16px;
-}
+  font-family: $root-font;
+  font-size: $root-font-size;
 
-body {
-  background-color: color(bg);
+  @include desktop {
+    .container {
+      width: 1000px;
+      margin: 0 auto;
+    }
+  }
 }
 
 header {
@@ -41,7 +49,6 @@ header {
   height: 100px;
 
   .header-brand {
-    font-family: Catamaran;
     font-size: 24px;
     font-weight: 900;
     color: color(dark);
@@ -50,22 +57,44 @@ header {
     margin: 0;
     text-align: center;
     padding: 11px 0;
+
+    @include desktop {
+      margin: 31px 0;
+      text-align: left;
+      line-height: 38px;
+      padding: 0 20px 0 40px;
+      border-right: 3px solid color(dark);
+      float: left;
+    }
   }
 
   nav {
-    font-family: Catamaran;
+    text-transform: uppercase;
+
     ul {
       display: block;
       margin: 0 auto;
       width: fit-content;
+
+      @include desktop {
+        // To calulate correct margin: 100px (nav bar height) - 60px (lineheight) / 2 = 20px
+        margin: 20px 0 0 20px;
+        float: left;
+      }
+
       li {
-        // display: inline-block;
         float: left;
         list-style: none;
         padding: 0 16px;
+
         a {
           font-size: 16px;
           color: color(dark);
+
+          @include desktop {
+            line-height: 60px;
+            font-size: 18px;
+          }
         }
       }
     }
@@ -73,6 +102,19 @@ header {
 
   .header-cases {
     display: none;
+
+    @include desktop {
+      display: block;
+      line-height: 38px;
+      font-size: 18px;
+      color: color(dark);
+      border: 1px solid color(dark);
+      float: right;
+      margin-right: 40px;
+      padding: 0 20px;
+      // Since the border adds 1px to the oversize the of the box, we must substract it from the margin for it to be centered
+      margin-top: 30px;
+    }
   }
 }
 
@@ -84,15 +126,167 @@ main {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include desktop {
+      height: 450px;
+      margin-bottom: 15px;
+    }
+
     h2 {
-      font-family: Catamaran;
       font-size: 60px;
       color: color(light);
       text-align: center;
       font-weight: 900;
-      line-height: 1;
+      line-height: 70px;
       text-transform: uppercase;
-      text-shadow: 2px 2px 13px color(shadow);
+      text-shadow: 2px 2px 10px color(shadow);
+    }
+
+    h1 {
+      font-family: $secondary-font;
+      font-size: 28px;
+      color: color(light);
+      text-align: center;
+      font-weight: 100;
+      font-style: italic;
+      line-height: 40px;
+      text-transform: uppercase;
+      text-shadow: 2px 2px 3px color(shadow);
+
+      @include desktop {
+        display: block;
+        max-width: 580px;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .index-boxes {
+    box-sizing: border-box;
+
+    @include desktop {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-gap: 15px;
+      // grid-template-areas:
+      //   "cases portfolio portfolio lorem"
+      //   "youtube youtube about contact";
+      // align-items: stretch;
+      // justify-content: center;
+
+      // #index-box-1 {
+      //   // grid-area: cases;
+      //   grid-column: 1/2;
+      //   grid-row: 1/2;
+      // }
+      // #index-box-2 {
+      //   // grid-area: portfolio;
+      //   grid-column: 2/4;
+      //   grid-row: 1/2;
+      // }
+      // #index-box-3 {
+      //   // grid-area: lorem;
+      // }
+      // #index-box-4 {
+      //   // grid-area: youtube;
+      // }
+      // #index-box-5 {
+      //   // grid-area: about;
+      // }
+      // #index-box-6 {
+      //   // grid-area: contact;
+      // }
+    }
+
+    #index-box-1 {
+      // grid-area: cases;
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+    #index-box-2 {
+      // grid-area: portfolio;
+      grid-column: 2/4;
+      grid-row: 1/2;
+    }
+    #index-box-3 {
+      // grid-area: lorem;
+    }
+    #index-box-4 {
+      // grid-area: youtube;
+    }
+    #index-box-5 {
+      // grid-area: about;
+    }
+    #index-box-6 {
+      // grid-area: contact;
+    }
+
+    .index-box {
+      margin: 16px 16px 0;
+      height: 80px;
+      text-transform: uppercase;
+      background-color: color(accent);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      @include desktop {
+        margin: 0;
+        height: 250px;
+      }
+
+      h3 {
+        font-size: 28px;
+        color: color(dark);
+        text-align: center;
+        font-weight: 600;
+        line-height: 40px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+footer {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 40px 40px;
+  margin-top: 20px;
+  background-color: color(dark);
+  text-transform: uppercase;
+  display: flex;
+  justify-content: space-between;
+
+  ul {
+    width: fit-content;
+    list-style: none;
+
+    li {
+      display: block;
+      list-style: none;
+
+      a {
+        font-size: 24px;
+        color: color(light);
+        line-height: 43px;
+      }
+    }
+  }
+
+  .footer-links-cases {
+    display: none;
+  }
+
+  .footer-sm {
+    width: 60px;
+
+    i {
+      margin-bottom: 10px;
+      color: white;
     }
   }
 }
