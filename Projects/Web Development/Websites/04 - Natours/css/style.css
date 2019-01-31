@@ -222,9 +222,9 @@ body {
 /* sets the fading-in effect (from the bottom) for a specific button */
 .btn-animated {
   animation: moveInButton;
-  animation-duration: 500ms;
+  animation-duration: 480ms;
   animation-timing-function: ease-out;
-  animation-delay: 750ms;
+  animation-delay: 500ms;
 
   /* automatically applies the styles of the 0% keyframe when the animation starts */
   animation-fill-mode: backwards;
