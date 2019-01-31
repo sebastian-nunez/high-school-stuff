@@ -8,6 +8,7 @@
   },
   "author": "mikozera",
   "license": "MIT",
+  "dependencies": {},
   "devDependencies": {
     "node-sass": "^4.11.0"
   }
