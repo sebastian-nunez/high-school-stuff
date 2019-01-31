@@ -177,8 +177,7 @@ body {
   }
 }
 
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
   display: inline-block;
   padding: 1.5rem 4rem;
   position: relative;

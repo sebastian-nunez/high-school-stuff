@@ -60,29 +60,29 @@ body {
   background-position: top;
 
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-}
 
-// Logo
-.header__logo-box {
-  position: absolute;
+  // Logo
+  &__logo-box {
+    position: absolute;
 
-  top: 4rem;
-  left: 4rem;
-}
+    top: 4rem;
+    left: 4rem;
+  }
 
-.header__logo {
-  height: 3.5rem;
-}
+  &__logo {
+    height: 3.5rem;
+  }
 
-// Header Text
-.header__text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  // Header Text
+  &__text-box {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-  // centers the button since it is being displayed as inline-block
-  text-align: center;
+    // centers the button since it is being displayed as inline-block
+    text-align: center;
+  }
 }
 
 .heading-primary {
@@ -93,30 +93,29 @@ body {
 
   // Fixes the "shake" on the heading animations
   backface-visibility: hidden;
+
+  &--main {
+    display: block;
+
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+
+    animation: moveInLeft;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-out;
+  }
+
+  &--sub {
+    display: block;
+
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+
+    animation: moveInRight 1000ms ease-out;
+  }
 }
-
-.heading-primary--main {
-  display: block;
-
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 3.5rem;
-
-  animation: moveInLeft;
-  animation-duration: 1000ms;
-  animation-timing-function: ease-out;
-}
-
-.heading-primary--sub {
-  display: block;
-
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 1.75rem;
-
-  animation: moveInRight 1000ms ease-out;
-}
-
 // Heading animations
 @keyframes moveInLeft {
   0% {
@@ -163,85 +162,87 @@ body {
 }
 
 // General Button
-.btn:link,
-.btn:visited {
-  // This button is considered text
-  display: inline-block;
-  padding: 1.5rem 4rem;
+.btn {
+  &:link,
+  &:visited {
+    // This button is considered text
+    display: inline-block;
+    padding: 1.5rem 4rem;
 
-  // allows the ::after to be position absolutely to the origin
-  position: relative;
+    // allows the ::after to be position absolutely to the origin
+    position: relative;
 
-  text-transform: uppercase;
-  text-decoration: none;
+    text-transform: uppercase;
+    text-decoration: none;
 
-  border-radius: 10rem;
+    border-radius: 10rem;
 
-  // adds all transitions to the button (depending on which state it is in)
-  transition: all 200ms;
-}
+    // adds all transitions to the button (depending on which state it is in)
+    transition: all 200ms;
+  }
 
-.btn:hover {
-  // moves the button up 3px when hovering
-  transform: translateY(-0.3rem);
+  &:hover {
+    // moves the button up 3px when hovering
+    transform: translateY(-0.3rem);
 
-  // adds a shadow when the button is hovered
-  box-shadow: 0 1rem 2rem rgba(color(pure-black), 0.2);
-}
+    // adds a shadow when the button is hovered
+    box-shadow: 0 1rem 2rem rgba(color(pure-black), 0.2);
+  }
 
-.btn:active {
-  /* moves the button up 1px in relation to link state (which would be 0,0) => goes from -3px to -1px */
-  transform: translateY(-0.1rem);
+  &:active {
+    /* moves the button up 1px in relation to link state (which would be 0,0) => goes from -3px to -1px */
+    transform: translateY(-0.1rem);
 
-  // once the button is clicked, the shadow becomes more dull given a button press effect
-  box-shadow: 0 0.5rem 1rem rgba(color(pure-black), 0.2);
-}
+    // once the button is clicked, the shadow becomes more dull given a button press effect
+    box-shadow: 0 0.5rem 1rem rgba(color(pure-black), 0.2);
+  }
 
-.btn::after {
-  // Trying to mimic the button
-  content: "";
-  display: inline-block;
-  border-radius: 10rem;
+  &::after {
+    // Trying to mimic the button
+    content: "";
+    display: inline-block;
+    border-radius: 10rem;
 
-  // dimensions are treated like child elements of the button
-  height: 100%;
-  width: 100%;
+    // dimensions are treated like child elements of the button
+    height: 100%;
+    width: 100%;
 
-  // Places the second button right behind the original button
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+    // Places the second button right behind the original button
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 
-  // allows the fading-out transition to work
-  transition: all 400ms;
-}
+    // allows the fading-out transition to work (below)
+    transition: all 400ms;
+  }
 
-// once you hover over the button, the ::after state will be triggered
-.btn:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
+  // once you hover over the button, the ::after state will be triggered
+  &:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
 
-  // creates a fading-out effect with the transition
-  opacity: 0;
-}
+    // creates a fading-out effect with the transition
+    opacity: 0;
+  }
 
-// sets the fading-in effect (from the bottom) for a specific button
-.btn--animated {
-  animation: moveInButton;
-  animation-duration: 650ms;
-  animation-timing-function: ease-out;
-  animation-delay: 300ms;
+  // sets the fading-in effect (from the bottom) for a specific button
+  &--animated {
+    animation: moveInButton;
+    animation-duration: 650ms;
+    animation-timing-function: ease-out;
+    animation-delay: 300ms;
 
-  // automatically applies the styles of the 0% keyframe when the animation starts
-  animation-fill-mode: backwards;
-}
+    // automatically applies the styles of the 0% keyframe when the animation starts
+    animation-fill-mode: backwards;
+  }
 
-// White button
-.btn--white {
-  background-color: color(pure-white);
-  color: color(grey-dark);
-}
+  // White button
+  &--white {
+    background-color: color(pure-white);
+    color: color(grey-dark);
 
-.btn--white::after {
-  background-color: color(pure-white);
+    &::after {
+      background-color: color(pure-white);
+    }
+  }
 }
