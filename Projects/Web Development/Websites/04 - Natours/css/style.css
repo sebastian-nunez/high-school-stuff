@@ -58,19 +58,19 @@ body {
 }
 
 /* Logo */
-.logo-box {
+.header__logo-box {
   position: absolute;
 
   top: 4rem;
   left: 4rem;
 }
 
-.logo {
+.header__logo {
   height: 3.5rem;
 }
 
 /* Header Text */
-.text-box {
+.header__text-box {
   position: absolute;
   top: 40%;
   left: 50%;
@@ -89,7 +89,7 @@ body {
   backface-visibility: hidden;
 }
 
-.heading-primary-main {
+.heading-primary--main {
   display: block;
 
   font-size: 6rem;
@@ -101,7 +101,7 @@ body {
   animation-timing-function: ease-out;
 }
 
-.heading-primary-sub {
+.heading-primary--sub {
   display: block;
 
   font-size: 2rem;
@@ -220,22 +220,22 @@ body {
 }
 
 /* sets the fading-in effect (from the bottom) for a specific button */
-.btn-animated {
+.btn--animated {
   animation: moveInButton;
-  animation-duration: 480ms;
+  animation-duration: 650ms;
   animation-timing-function: ease-out;
-  animation-delay: 500ms;
+  animation-delay: 300ms;
 
   /* automatically applies the styles of the 0% keyframe when the animation starts */
   animation-fill-mode: backwards;
 }
 
 /* White button */
-.btn-white {
+.btn--white {
   background-color: #fff;
   color: #777;
 }
 
-.btn-white::after {
+.btn--white::after {
   background-color: #fff;
 }
