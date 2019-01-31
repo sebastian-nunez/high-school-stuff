@@ -1,0 +1,4 @@
+// Extracts the color wanted
+@function color($desired-color) {
+  @return map-get($colors, $desired-color);
+}

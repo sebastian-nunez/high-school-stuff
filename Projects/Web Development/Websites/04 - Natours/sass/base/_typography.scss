@@ -1,0 +1,45 @@
+// General settings
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+
+  color: color(grey-dark);
+  line-height: 1.7;
+
+  padding: 3rem;
+
+  box-sizing: border-box;
+}
+
+.heading-primary {
+  color: color(pure-white);
+  text-transform: uppercase;
+
+  margin-bottom: 6rem;
+
+  // Fixes the "shake" on the heading animations
+  backface-visibility: hidden;
+
+  &--main {
+    display: block;
+
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+
+    animation: moveInLeft;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-out;
+  }
+
+  &--sub {
+    display: block;
+
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+
+    animation: moveInRight 1000ms ease-out;
+  }
+}
