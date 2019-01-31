@@ -30,6 +30,7 @@ html {
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
+  font-size: 1.6rem;
 
   color: #777;
   line-height: 1.7;
@@ -167,7 +168,6 @@ body {
 
   text-transform: uppercase;
   text-decoration: none;
-  font-size: 1.6rem;
 
   border-radius: 10rem;
 
