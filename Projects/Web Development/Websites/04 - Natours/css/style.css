@@ -99,8 +99,6 @@ body {
   color: #777;
   line-height: 1.7;
   padding: 3rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
 .heading-primary {

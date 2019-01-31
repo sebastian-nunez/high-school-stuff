@@ -1,0 +1,4 @@
+// Color extractor
+@function color($desired-color) {
+  @return map-get($colors, $desired-color);
+}
