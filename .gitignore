@@ -1,5 +1,6 @@
 # Config
 Temporary
+node_modules
 *.idea
 *.iml
 
