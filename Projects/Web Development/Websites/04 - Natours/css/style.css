@@ -195,6 +195,12 @@ body {
           box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
 }
 
+.btn:hover::after {
+  -webkit-transform: scaleX(1.4) scaleY(1.6);
+          transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
 .btn:active {
   /* moves the button up 1px in relation to link state (which would be 0,0) => goes from -3px to -1px */
   -webkit-transform: translateY(-0.1rem);
@@ -215,12 +221,6 @@ body {
   z-index: -1;
   -webkit-transition: all 400ms;
   transition: all 400ms;
-}
-
-.btn:hover::after {
-  -webkit-transform: scaleX(1.4) scaleY(1.6);
-          transform: scaleX(1.4) scaleY(1.6);
-  opacity: 0;
 }
 
 .btn--animated {

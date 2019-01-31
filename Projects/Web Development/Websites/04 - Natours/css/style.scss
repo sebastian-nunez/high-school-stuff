@@ -187,6 +187,14 @@ body {
 
     // adds a shadow when the button is hovered
     box-shadow: 0 1rem 2rem rgba(color(pure-black), 0.2);
+
+    // once you hover over the button, the ::after state will be triggered
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+
+      // creates a fading-out effect with the transition
+      opacity: 0;
+    }
   }
 
   &:active {
@@ -215,14 +223,6 @@ body {
 
     // allows the fading-out transition to work (below)
     transition: all 400ms;
-  }
-
-  // once you hover over the button, the ::after state will be triggered
-  &:hover::after {
-    transform: scaleX(1.4) scaleY(1.6);
-
-    // creates a fading-out effect with the transition
-    opacity: 0;
   }
 
   // sets the fading-in effect (from the bottom) for a specific button
