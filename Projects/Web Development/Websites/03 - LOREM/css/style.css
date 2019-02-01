@@ -311,6 +311,27 @@ footer > .container {
   margin: 0.8rem auto;
   -webkit-transform: skewY(-2.5deg);
           transform: skewY(-2.5deg);
+  position: relative;
+}
+
+footer > .container::after {
+  content: "";
+  position: absolute;
+  background-color: #31373d;
+  z-index: 1;
+  width: 100vw;
+  height: 10.5vw;
+  top: 13.5rem;
+  left: -1vw;
+}
+
+@media only screen and (min-width: 768px) {
+  footer > .container::after {
+    width: 100vw;
+    height: 4.5vw;
+    top: 10vw;
+    left: -10vw;
+  }
 }
 
 footer > .container a:visited {
@@ -327,6 +348,7 @@ footer > .container .logo {
 
 footer > .container .footer-contact {
   margin: 0.75rem;
+  margin-bottom: 0.15rem;
   opacity: 0.8;
 }
 
@@ -334,21 +356,4 @@ footer > .container .footer-links li {
   margin: 1.25rem 1.25rem;
   opacity: 0.45;
   display: inline-block;
-}
-
-.filler {
-  width: 100%;
-  height: 205px;
-  background-color: #31373d;
-  display: block;
-  position: absolute;
-  z-index: -2;
-  top: 2020px;
-}
-
-@media only screen and (min-width: 768px) {
-  .filler {
-    height: 245px;
-    top: 2480px;
-  }
 }
