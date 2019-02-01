@@ -1,4 +1,14 @@
-// Extracts the color wanted
-@function color($desired-color) {
-  @return map-get($colors, $desired-color);
+// Gets colors
+@function color($key) {
+  @return map-get($colors, $key);
+}
+
+// Gets breakpoints
+@function breakpoint($key) {
+  @return map-get($breakpoints, $key);
+}
+
+// Gets float-grid
+@function float-grid($key) {
+  @return map-get($float-grid, $key);
 }
