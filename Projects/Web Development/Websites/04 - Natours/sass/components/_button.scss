@@ -34,14 +34,6 @@
     }
   }
 
-  &:active {
-    /* moves the button up 1px in relation to link state (which would be 0,0) => goes from -3px to -1px */
-    transform: translateY(-0.1rem);
-
-    // once the button is clicked, the shadow becomes more dull given a button press effect
-    box-shadow: 0 0.5rem 1rem rgba(color(pure-black), 0.2);
-  }
-
   &::after {
     // Trying to mimic the button
     content: "";
@@ -60,6 +52,14 @@
 
     // allows the fading-out transition to work (below)
     transition: all 300ms;
+  }
+
+  &:active {
+    /* moves the button up 1px in relation to link state (which would be 0,0) => goes from -3px to -1px */
+    transform: translateY(-0.1rem);
+
+    // once the button is clicked, the shadow becomes more dull given a button press effect
+    box-shadow: 0 0.5rem 1rem rgba(color(pure-black), 0.2);
   }
 
   // sets the fading-in effect (from the bottom) for a specific button

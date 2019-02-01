@@ -9,6 +9,6 @@
 }
 
 // Gets float-grid
-@function float-grid($key) {
-  @return map-get($float-grid, $key);
+@function grid($key) {
+  @return map-get($grid, $key);
 }
