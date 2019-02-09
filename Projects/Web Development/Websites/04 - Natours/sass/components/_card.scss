@@ -1,0 +1,82 @@
+.card {
+  // FUNCTIONALITY
+  height: 50rem;
+  position: relative;
+
+  // gives the rotation depth
+  perspective: 150rem;
+
+  // once you hover the card, the card side will be rotated (different rotation for each of the sides
+  &:hover &__side--front {
+    transform: rotateY(180deg);
+  }
+
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  // side properties
+  &__side {
+    height: 50rem;
+    width: 100%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    font-size: 2rem;
+    color: white;
+
+    border-radius: 0.3rem;
+
+    // doesn't allow the image to overflow the parent, so the border radius still works
+    overflow: hidden;
+
+    box-shadow: 0 1.5rem 4rem rgba(color(pure-black), 0.15);
+
+    // hides the back of the card once rotated
+    backface-visibility: hidden;
+
+    transition: all 800ms ease;
+
+    &--front {
+      background-color: color(pure-white);
+    }
+
+    &--back {
+      transform: rotateY(-180deg);
+
+      &-1 {
+        background-image: linear-gradient(
+          to bottom right,
+          color(secondary-light),
+          color(secondary-dark)
+        );
+      }
+    }
+  }
+
+  // STYLING
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+
+    // allows background to be blended
+    background-blend-mode: screen;
+
+    &--1 {
+      background-image: linear-gradient(
+          to bottom right,
+          color(secondary-light),
+          color(secondary-dark)
+        ),
+        url(../img/nat-5.jpg);
+    }
+  }
+
+  &__heading {
+  }
+
+  &__details {
+  }
+}

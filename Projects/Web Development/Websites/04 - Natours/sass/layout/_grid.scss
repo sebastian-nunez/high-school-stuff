@@ -1,5 +1,7 @@
 .row {
   max-width: grid(row-width);
+
+  // centers content within the row
   margin: 0 auto;
 
   &:not(:last-child) {

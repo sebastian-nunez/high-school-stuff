@@ -4,3 +4,31 @@
   padding: 25rem 0;
   margin-top: -20vh;
 }
+
+.section-features {
+  margin-top: -11.2rem;
+  padding: 20rem 0;
+
+  background-image: linear-gradient(
+      to bottom right,
+      rgba(color(primary-light), 0.8),
+      rgba(color(primary-dark), 0.8)
+    ),
+    url(../img/nat-4.jpg);
+  background-size: cover;
+
+  // slants the background upward
+  transform: skewY(-7deg);
+
+  // selects all direct children
+  & > * {
+    transform: skewY(7deg);
+  }
+}
+
+.section-tours {
+  background-color: color(grey-light);
+
+  margin-top: -11.5rem;
+  padding: 25rem 0 50rem 0;
+}

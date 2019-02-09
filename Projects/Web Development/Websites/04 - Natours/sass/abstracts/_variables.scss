@@ -1,10 +1,14 @@
 // Colors
 $colors: (
-  pure-white: #fff,
-  pure-black: #000,
   primary: #55c57a,
   primary-light: #7ed56f,
   primary-dark: #28b485,
+  secondary-light: #ffb900,
+  secondary-dark: #ff7730,
+  tertiary-light: #2998ff,
+  tertiary-dark: #5643fa,
+  pure-white: #fff,
+  pure-black: #000,
   grey-dark: #777,
   grey-light: #f7f7f7
 );
@@ -17,7 +21,7 @@ $font-sizes: (
 // Float grid
 $grid: (
   row-width: 114rem,
-  vertical-gutter: 2rem,
+  vertical-gutter: 6rem,
   horizontal-gutter: 8rem
 );
 
