@@ -5,17 +5,23 @@ $colors: (
   primary: #55c57a,
   primary-light: #7ed56f,
   primary-dark: #28b485,
-  grey-dark: #777
+  grey-dark: #777,
+  grey-light: #f7f7f7
 );
 
-// Breakpoints
-$breakpoints: (
-  desktop: 76.8rem
+// FOnts
+$font-sizes: (
+  default: 1.6rem
 );
 
 // Float grid
 $grid: (
   row-width: 114rem,
-  vertical-gutter: 6rem,
-  horizontal-gutter: 6rem
+  vertical-gutter: 2rem,
+  horizontal-gutter: 8rem
+);
+
+// Breakpoints
+$breakpoints: (
+  desktop: 76.8rem
 );

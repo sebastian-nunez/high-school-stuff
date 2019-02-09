@@ -131,12 +131,63 @@ body {
           animation: moveInRight 1000ms ease-out;
 }
 
+.heading-secondary {
+  display: inline-block;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2rem;
+  background: -webkit-gradient(linear, left top, right top, from(#7ed56f), to(#28b485));
+  background: linear-gradient(to right, #7ed56f, #28b485);
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+.heading-secondary:hover {
+  -webkit-transform: skewY(2deg) skewX(15deg) scale(1.1);
+          transform: skewY(2deg) skewX(15deg) scale(1.1);
+  text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+}
+
+.paragraph:not(:last-child) {
+  margin-bottom: 3rem;
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-margin-bottom-large {
+  margin-bottom: 8rem;
+}
+
+.u-margin-bottom-medium {
+  margin-bottom: 4rem;
+}
+
+.u-margin-bottom-small {
+  margin-bottom: 1.5rem;
+}
+
 .btn:link, .btn:visited {
   display: inline-block;
   padding: 1.5rem 4rem;
   position: relative;
   text-transform: uppercase;
   text-decoration: none;
+  font-size: 1.6rem;
   border-radius: 10rem;
   -webkit-transition: all 200ms;
   transition: all 200ms;
@@ -199,6 +250,78 @@ body {
   background-color: #fff;
 }
 
+.btn-text:link, .btn-text:visited {
+  display: inline-block;
+  font-size: 1.6rem;
+  color: #55c57a;
+  text-decoration: none;
+  border-bottom: 0.1rem solid #55c57a;
+  padding: 0.3rem;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
+}
+
+.btn-text:hover {
+  color: #fff;
+  background-color: #55c57a;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  -webkit-transform: translateY(-0.2rem);
+          transform: translateY(-0.2rem);
+}
+
+.btn-text:active {
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.composition {
+  position: relative;
+}
+
+.composition:hover .composition__photo:not(:hover) {
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.composition__photo {
+  width: 55%;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.2rem;
+  position: absolute;
+  z-index: 0;
+  outline-offset: 1.6rem;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.composition__photo:hover {
+  outline: 1.1rem solid #55c57a;
+  -webkit-transform: scale(1.05) translateY(-0.5rem);
+          transform: scale(1.05) translateY(-0.5rem);
+  -webkit-box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2.5rem 4rem rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.composition__photo--p1 {
+  left: 0;
+  top: -2rem;
+}
+
+.composition__photo--p2 {
+  right: 0;
+  top: 2rem;
+}
+
+.composition__photo--p3 {
+  left: 20%;
+  top: 10rem;
+}
+
 .header {
   height: 95vh;
   position: relative;
@@ -231,12 +354,11 @@ body {
 
 .row {
   max-width: 114rem;
-  background-color: #eee;
   margin: 0 auto;
 }
 
 .row:not(:last-child) {
-  margin-bottom: 6rem;
+  margin-bottom: 8rem;
 }
 
 .row::after {
@@ -246,38 +368,41 @@ body {
 }
 
 .row [class^="col-"] {
-  background-color: orangered;
-  color: #fff;
-  text-align: center;
   float: left;
 }
 
 .row [class^="col-"]:not(:last-child) {
-  margin-right: 6rem;
+  margin-right: 2rem;
 }
 
 .row .col-1-of-2 {
-  width: calc((100% - 6rem) / 2);
+  width: calc((100% - 2rem) / 2);
 }
 
 .row .col-1-of-3 {
-  width: calc((100% - 2 * 6rem) / 3);
+  width: calc((100% - 2 * 2rem) / 3);
 }
 
 .row .col-2-of-3 {
-  width: calc( (2 * (100% - 2 * 6rem) / 3) + 6rem);
+  width: calc( (2 * (100% - 2 * 2rem) / 3) + 2rem);
 }
 
 .row .col-1-of-4 {
-  width: calc((100% - 3 * 6rem) / 4);
+  width: calc((100% - 3 * 2rem) / 4);
 }
 
 .row .col-2-of-4 {
-  width: calc( (2 * ((100% - 3 * 6rem) / 4)) + 6rem);
+  width: calc( (2 * ((100% - 3 * 2rem) / 4)) + 2rem);
 }
 
 .row .col-3-of-4 {
-  width: calc( (3 * ((100% - 3 * 6rem) / 4)) + (2 * 6rem));
+  width: calc( (3 * ((100% - 3 * 2rem) / 4)) + (2 * 2rem));
+}
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh;
 }
 
 *,

@@ -3,12 +3,17 @@
   @return map-get($colors, $key);
 }
 
-// Gets breakpoints
-@function breakpoint($key) {
-  @return map-get($breakpoints, $key);
+// gets fonts
+@function fontSize($key) {
+  @return map-get($font-sizes, $key);
 }
 
 // Gets float-grid
 @function grid($key) {
   @return map-get($grid, $key);
+}
+
+// Gets breakpoints
+@function breakpoint($key) {
+  @return map-get($breakpoints, $key);
 }

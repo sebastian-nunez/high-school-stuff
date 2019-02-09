@@ -1,0 +1,48 @@
+.composition {
+  position: relative;
+
+  // once you hover over the composition, select the photo that is not hovered and scale it down
+  &:hover &__photo:not(:hover) {
+    transform: scale(0.95);
+  }
+
+  &__photo {
+    // define width with %'s for resposiveness of images
+    width: 55%;
+    box-shadow: 0 1.5rem 4rem rgba(color(pure-black), 0.2);
+    border-radius: 0.2rem;
+
+    position: absolute;
+    z-index: 0;
+
+    // moves the outline 20px away from the image border
+    outline-offset: 1.6rem;
+
+    transition: all 200ms ease-in-out;
+
+    &:hover {
+      // adds green outline when hovering each individual image
+      outline: 1.1rem solid color(primary);
+
+      transform: scale(1.05) translateY(-0.5rem);
+      box-shadow: 0 2.5rem 4rem rgba(color(pure-black), 0.4);
+
+      z-index: 1;
+    }
+
+    &--p1 {
+      left: 0;
+      top: -2rem;
+    }
+
+    &--p2 {
+      right: 0;
+      top: 2rem;
+    }
+
+    &--p3 {
+      left: 20%;
+      top: 10rem;
+    }
+  }
+}
