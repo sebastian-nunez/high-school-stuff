@@ -1,6 +1,6 @@
 .card {
   // FUNCTIONALITY
-  height: 50rem;
+  height: 52rem;
   position: relative;
 
   // gives the rotation depth
@@ -17,15 +17,12 @@
 
   // side properties
   &__side {
-    height: 50rem;
+    height: 52rem;
     width: 100%;
 
     position: absolute;
     top: 0;
     left: 0;
-
-    font-size: 2rem;
-    color: white;
 
     border-radius: 0.3rem;
 
@@ -53,16 +50,34 @@
           color(secondary-dark)
         );
       }
+
+      &-2 {
+        background-image: linear-gradient(
+          to bottom right,
+          color(primary-light),
+          color(primary-dark)
+        );
+      }
+      &-3 {
+        background-image: linear-gradient(
+          to bottom right,
+          color(tertiary-light),
+          color(tertiary-dark)
+        );
+      }
     }
   }
 
-  // STYLING
+  // FRONT-SIDE STYLING
   &__picture {
     background-size: cover;
     height: 23rem;
 
     // allows background to be blended
     background-blend-mode: screen;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
 
     &--1 {
       background-image: linear-gradient(
@@ -72,11 +87,120 @@
         ),
         url(../img/nat-5.jpg);
     }
+
+    &--2 {
+      background-image: linear-gradient(
+          to bottom right,
+          color(primary-light),
+          color(primary-dark)
+        ),
+        url(../img/nat-6.jpg);
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+          to bottom right,
+          color(tertiary-light),
+          color(tertiary-dark)
+        ),
+        url(../img/nat-7.jpg);
+    }
   }
 
   &__heading {
+    width: 75%;
+
+    font-size: 2.8rem;
+    font-weight: 300;
+
+    text-align: right;
+    text-transform: uppercase;
+    color: color(pure-white);
+
+    position: absolute;
+    top: 5.2rem;
+    right: 2rem;
+  }
+
+  &__heading-span {
+    padding: 1rem 1.5rem;
+
+    // makes it so the each line of wrapped text is its own "entity"
+    box-decoration-break: clone;
+
+    &--1 {
+      background-image: linear-gradient(
+        to bottom right,
+        rgba(color(secondary-light), 0.88),
+        rgba(color(secondary-dark), 0.88)
+      );
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+        to bottom right,
+        rgba(color(primary-light), 0.88),
+        rgba(color(primary-dark), 0.88)
+      );
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+        to bottom right,
+        rgba(color(tertiary-light), 0.88),
+        rgba(color(tertiary-dark), 0.88)
+      );
+    }
   }
 
   &__details {
+    padding: 3rem;
+
+    ul {
+      list-style: none;
+      width: 80%;
+
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 0.1rem solid color(grey-light-2);
+        }
+      }
+    }
+  }
+
+  // BACK-SIDE STYLING
+  &__cta {
+    // without a set width the button will not show correctly, it will break into a newline
+    width: 90%;
+
+    text-align: center;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__price-box {
+    color: color(pure-white);
+    text-align: center;
+
+    margin-bottom: 8rem;
+  }
+
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 300;
   }
 }

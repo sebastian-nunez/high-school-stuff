@@ -56,7 +56,7 @@
   }
 
   &:active {
-    /* moves the button up 1px in relation to link state (which would be 0,0) => goes from -3px to -1px */
+    // moves the button up 1px in relation to link state (which would be 0,0) => goes from -3px to -1px
     transform: translateY(-0.1rem);
 
     // once the button is clicked, the shadow becomes more dull given a button press effect
@@ -81,6 +81,16 @@
 
     &::after {
       background-color: color(pure-white);
+    }
+  }
+
+  // Green button
+  &--green {
+    background-color: color(primary);
+    color: color(pure-white);
+
+    &::after {
+      background-color: color(primary);
     }
   }
 }
