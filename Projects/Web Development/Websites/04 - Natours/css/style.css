@@ -272,9 +272,9 @@ body {
   color: #55c57a;
   text-decoration: none;
   border-bottom: 0.1rem solid #55c57a;
-  padding: 0.3rem;
-  -webkit-transition: all 200ms;
-  transition: all 200ms;
+  padding: 0.3rem 1rem;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 }
 
 .btn-text:hover {
@@ -527,6 +527,95 @@ body {
   font-weight: 300;
 }
 
+.story {
+  width: 75%;
+  -webkit-transform: skewX(-12deg);
+          transform: skewX(-12deg);
+  font-size: 1.6rem;
+  margin: 0 auto;
+  padding: 6rem;
+  padding-left: 9rem;
+  background-color: rgba(255, 255, 255, 0.6);
+  -webkit-box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.3rem;
+}
+
+.story__shape {
+  width: 15rem;
+  height: 15rem;
+  position: relative;
+  float: left;
+  -webkit-transform: translateX(-3rem) skewX(12deg);
+          transform: translateX(-3rem) skewX(12deg);
+  -webkit-clip-path: circle(50% at 50% 50%);
+          clip-path: circle(50% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
+}
+
+.story__image {
+  height: 100%;
+  -webkit-transform: translateX(-4rem) scale(1.4);
+          transform: translateX(-4rem) scale(1.4);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.story:hover .story__image {
+  -webkit-transform: translateX(-4rem) scale(1);
+          transform: translateX(-4rem) scale(1);
+  -webkit-filter: blur(0.3rem) brightness(80%);
+          filter: blur(0.3rem) brightness(80%);
+}
+
+.story__text {
+  -webkit-transform: skewX(12deg);
+          transform: skewX(12deg);
+}
+
+.story__caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, 20%);
+          transform: translate(-50%, 20%);
+  opacity: 0;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  font-size: 1.7rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.story:hover .story__caption {
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.bg-video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+  opacity: 0.15;
+}
+
+.bg-video__content {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .header {
   height: 95vh;
   position: relative;
@@ -628,7 +717,12 @@ body {
 .section-tours {
   background-color: #f7f7f7;
   margin-top: -11.5rem;
-  padding: 25rem 0 50rem 0;
+  padding: 25rem 0 2rem 0;
+}
+
+.section-stories {
+  position: relative;
+  padding: 10rem 0;
 }
 
 *,
