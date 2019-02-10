@@ -24,7 +24,7 @@
     top: 0;
     left: 0;
 
-    border-radius: 0.3rem;
+    border-radius: spacing(border-radius-normal);
 
     // doesn't allow the image to overflow the parent, so the border radius still works
     overflow: hidden;

@@ -10,13 +10,22 @@ $colors: (
   pure-white: #fff,
   pure-black: #000,
   grey-dark: #777,
+  grey-dark-2: #999,
   grey-light-1: #f7f7f7,
   grey-light-2: #eee
 );
 
-// FOnts
+// Fonts
 $font-sizes: (
   default: 1.6rem
+);
+
+// Spacing
+$spacing-dimensions: (
+  border-radius-normal: 0.3rem,
+  border-radius-large: 10rem,
+  // border-radius-large: 0rem,
+    border-radius-small: 0.2rem
 );
 
 // Float grid

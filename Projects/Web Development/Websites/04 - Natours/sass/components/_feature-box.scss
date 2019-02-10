@@ -5,14 +5,9 @@
   padding: 2.5rem;
 
   background-color: rgba(color(pure-white), 0.8);
-  box-shadow: 0 1.5rem 4rem rgba(color(pure-black), 0.15);
-  border-radius: 0.3rem;
+  border-radius: spacing(border-radius-normal);
 
   transition: transform 300ms;
-
-  &:hover {
-    transform: translateY(-1.5rem) scale(1.03);
-  }
 
   &__icon {
     // icon font is treated as text

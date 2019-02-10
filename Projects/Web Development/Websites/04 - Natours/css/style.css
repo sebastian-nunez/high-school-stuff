@@ -212,14 +212,16 @@ body {
   -webkit-transform: scaleX(1.4) scaleY(1.6);
           transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
+  visibility: visible;
 }
 
 .btn::after {
   content: "";
   display: inline-block;
   border-radius: 10rem;
-  height: 100%;
+  visibility: hidden;
   width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -273,8 +275,8 @@ body {
   text-decoration: none;
   border-bottom: 0.1rem solid #55c57a;
   padding: 0.3rem 1rem;
-  -webkit-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms;
+  transition: all 200ms;
 }
 
 .btn-text:hover {
@@ -291,6 +293,28 @@ body {
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+.btn-clickable:link, .btn-clickable:visited {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.12);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.12);
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.btn-clickable:hover {
+  -webkit-transform: translateY(-1.5rem) scale(1.03);
+          transform: translateY(-1.5rem) scale(1.03);
+  -webkit-box-shadow: 0 2.5rem 8rem rgba(0, 0, 0, 0.18);
+          box-shadow: 0 2.5rem 8rem rgba(0, 0, 0, 0.18);
+}
+
+.btn-clickable:active {
+  -webkit-transform: translateY(-0.5rem) scale(1);
+          transform: translateY(-0.5rem) scale(1);
 }
 
 .composition {
@@ -343,18 +367,11 @@ body {
   text-align: center;
   padding: 2.5rem;
   background-color: rgba(255, 255, 255, 0.8);
-  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   border-radius: 0.3rem;
   -webkit-transition: -webkit-transform 300ms;
   transition: -webkit-transform 300ms;
   transition: transform 300ms;
   transition: transform 300ms, -webkit-transform 300ms;
-}
-
-.feature-box:hover {
-  -webkit-transform: translateY(-1.5rem) scale(1.03);
-          transform: translateY(-1.5rem) scale(1.03);
 }
 
 .feature-box__icon {
@@ -616,6 +633,105 @@ body {
      object-fit: cover;
 }
 
+.form__group:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+.form__input {
+  background-color: #fff;
+  width: 90%;
+  display: block;
+  font-size: 1.5rem;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  border-radius: 0.2rem;
+  border: none;
+  border-bottom: 3px solid transparent;
+  -webkit-transition: all 250ms ease-in-out;
+  transition: all 250ms ease-in-out;
+}
+
+.form__input:focus {
+  outline: none;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid #55c57a;
+}
+
+.form__input:focus:invalid {
+  border-bottom: 3px solid #ff7730;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: #999;
+}
+
+.form__label {
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: 0.7rem;
+  -webkit-transition: all 300ms ease;
+  transition: all 300ms ease;
+}
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-3.5rem);
+          transform: translateY(-3.5rem);
+}
+
+.form__radio-group {
+  width: 49%;
+  display: inline-block;
+}
+
+.form__radio-input {
+  display: none;
+}
+
+.form__radio-label {
+  position: relative;
+  padding-left: 4rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.form__radio-button {
+  display: inline-block;
+  position: absolute;
+  top: -0.4rem;
+  left: 0;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: 5px solid #55c57a;
+}
+
+.form__radio-button::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 50%;
+  background-color: #55c57a;
+  opacity: 0;
+  -webkit-transition: opacity 200ms;
+  transition: opacity 200ms;
+}
+
+.form__radio-input:checked ~ .form__radio-label > .form__radio-button::after {
+  opacity: 1;
+}
+
 .header {
   height: 95vh;
   position: relative;
@@ -717,12 +833,32 @@ body {
 .section-tours {
   background-color: #f7f7f7;
   margin-top: -11.5rem;
-  padding: 25rem 0 2rem 0;
+  padding: 25rem 0 12rem 0;
 }
 
 .section-stories {
   position: relative;
+  padding: 15rem 0;
+}
+
+.section-book {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#7ed56f), to(#28b485));
+  background-image: linear-gradient(to bottom right, #7ed56f, #28b485);
   padding: 10rem 0;
+}
+
+.book {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50.1%), url(../img/nat-10.jpg);
+  background-size: cover;
+  height: 50rem;
+  border-radius: 0.3rem;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.25);
+}
+
+.book__form {
+  width: 50%;
+  padding: 6rem;
 }
 
 *,

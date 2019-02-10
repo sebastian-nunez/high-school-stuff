@@ -11,9 +11,10 @@
 
     text-transform: uppercase;
     text-decoration: none;
+
     font-size: fontSize(default);
 
-    border-radius: 10rem;
+    border-radius: spacing(border-radius-large);
 
     // adds all transitions to the button (depending on which state it is in)
     transition: all 200ms;
@@ -26,12 +27,15 @@
     // adds a shadow when the button is hovered
     box-shadow: 0 1rem 2rem rgba(color(pure-black), 0.2);
 
-    // once you hover over the button, the ::after state will be triggered
+    // // once you hover over the button, the ::after state will be triggered
     &::after {
       transform: scaleX(1.4) scaleY(1.6);
 
       // creates a fading-out effect with the transition
       opacity: 0;
+
+      // makes the splash effect visible once hovering on button
+      visibility: visible;
     }
   }
 
@@ -39,16 +43,20 @@
     // Trying to mimic the button
     content: "";
     display: inline-block;
-    border-radius: 10rem;
+    border-radius: spacing(border-radius-large);
+
+    // ::after remains hidden until hover
+    visibility: hidden;
 
     // dimensions are treated like child elements of the button
-    height: 100%;
     width: 100%;
+    height: 100%;
 
     // Places the second button right behind the original button
     position: absolute;
     top: 0;
     left: 0;
+
     z-index: -1;
 
     // allows the fading-out transition to work (below)
@@ -108,7 +116,7 @@
     border-bottom: 0.1rem solid color(primary);
     padding: 0.3rem 1rem;
 
-    transition: all 200ms ease-in-out;
+    transition: all 200ms;
   }
 
   &:hover {
@@ -121,5 +129,28 @@
   &:active {
     box-shadow: 0 0.5rem 1rem rgba(color(pure-black), 0.15);
     transform: translateY(0);
+  }
+}
+
+// Clickable button
+.btn-clickable {
+  &:link,
+  &:visited {
+    display: inline-block;
+
+    color: inherit;
+    text-decoration: none;
+    box-shadow: 0 1.5rem 4rem rgba(color(pure-black), 0.12);
+
+    transition: all 200ms ease-in-out;
+  }
+
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+    box-shadow: 0 2.5rem 8rem rgba(color(pure-black), 0.18);
+  }
+
+  &:active {
+    transform: translateY(-0.5rem) scale(1);
   }
 }

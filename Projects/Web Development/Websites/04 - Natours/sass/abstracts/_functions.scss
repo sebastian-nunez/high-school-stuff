@@ -8,6 +8,11 @@
   @return map-get($font-sizes, $key);
 }
 
+// gets spacing dimensions
+@function spacing($key) {
+  @return map-get($spacing-dimensions, $key);
+}
+
 // Gets float-grid
 @function grid($key) {
   @return map-get($grid, $key);

@@ -10,7 +10,7 @@
     // define width with %'s for resposiveness of images
     width: 55%;
     box-shadow: 0 1.5rem 4rem rgba(color(pure-black), 0.2);
-    border-radius: 0.2rem;
+    border-radius: spacing(border-radius-small);
 
     position: absolute;
     z-index: 0;
