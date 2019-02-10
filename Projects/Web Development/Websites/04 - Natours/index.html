@@ -16,7 +16,7 @@
     <title>Natours | Exciting tours for adventurous people</title>
   </head>
   <body>
-    <!-- Header -->
+    <!-- Header Section -->
     <header class="header">
       <!-- Logo -->
       <div class="header__logo-box">
@@ -41,7 +41,7 @@
     </header>
 
     <main>
-      <!-- About -->
+      <!-- About Section -->
       <section class="section-about">
         <!-- Main Heading -->
         <div class="u-center-text u-margin-bottom-large">
@@ -168,7 +168,7 @@
         </div>
       </section>
 
-      <!-- Tours -->
+      <!-- Tours Section -->
       <section class="section-tours">
         <div class="u-center-text u-margin-bottom-large">
           <h2 class="heading-secondary">
@@ -310,7 +310,7 @@
           </div>
         </div>
 
-        <!-- button -->
+        <!-- discover more button -->
         <div class="u-center-text u-margin-top-extra-large">
           <a href="#" class="btn btn--green">Discover all tours</a>
         </div>
@@ -405,7 +405,7 @@
         </div>
       </section>
 
-      <!-- Booking -->
+      <!-- Booking Section -->
       <section class="section-book">
         <div class="row">
           <!-- Book -->
@@ -424,6 +424,7 @@
                 <div class="form__group">
                   <input
                     type="text"
+                    name="fullName"
                     class="form__input"
                     id="fullName"
                     placeholder="Full Name"
@@ -439,9 +440,10 @@
                 <div class="form__group">
                   <input
                     type="email"
+                    name="emailAddress"
                     class="form__input"
                     id="email"
-                    placeholder="Email Adress"
+                    placeholder="Email Address"
                     required
                   />
 
@@ -450,8 +452,8 @@
                   </label>
                 </div>
 
-                <!-- Tour size -->
-                <div class="form__group">
+                <!-- Tour size - Radio buttons -->
+                <div class="form__group u-margin-bottom-medium">
                   <!-- small group -->
                   <div class="form__radio-group">
                     <input
@@ -459,7 +461,7 @@
                       name="groupSize"
                       class="form__radio-input"
                       id="smallGroup"
-                      value="small group"
+                      value="small"
                     />
 
                     <label for="smallGroup" class="form__radio-label">
@@ -475,7 +477,7 @@
                       name="groupSize"
                       class="form__radio-input"
                       id="largeGroup"
-                      value="large group"
+                      value="large"
                     />
 
                     <label for="largeGroup" class="form__radio-label">
@@ -485,8 +487,11 @@
                   </div>
                 </div>
 
+                <!-- Submit button -->
                 <div class="form__group">
-                  <button class="btn btn--green">Next step &rarr;</button>
+                  <button type="submit" class="btn btn--green">
+                    Next step &rarr;
+                  </button>
                 </div>
               </form>
             </div>
@@ -495,6 +500,58 @@
       </section>
     </main>
 
+    <!-- Footer  -->
+    <footer class="footer">
+      <!-- logo-box -->
+      <div class="footer__logo-box">
+        <img
+          src="img/logo-green-1x.png"
+          alt="full size logo"
+          class="footer__logo"
+        />
+      </div>
+
+      <div class="row">
+        <!-- Navigation -->
+        <div class="col-1-of-2">
+          <div class="footer__navigation">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Company</a>
+              </li>
+
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact us</a>
+              </li>
+
+              <li class="footer__item">
+                <a href="#" class="footer__link">Carrers</a>
+              </li>
+
+              <li class="footer__item">
+                <a href="#" class="footer__link">Privacy policy</a>
+              </li>
+
+              <li class="footer__item">
+                <a href="#" class="footer__link">Terms</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="col-1-of-2">
+          <p class="footer__copyright">
+            Built by
+            <a href="#" class="footer__link">Sebastian Nunez</a>. Designed by
+            <a href="#" class="footer__link">Jonas Schmedtmann</a>.
+            <span class="footer__copyright-span">
+              Copyright &copy; Natours 2019.
+            </span>
+          </p>
+        </div>
+      </div>
+    </footer>
     <!--
     <section class="grid-test">
       <div class="row">

@@ -1,5 +1,7 @@
 // General Button
 .btn {
+  // <a> and <button> styling applied
+  &,
   &:link,
   &:visited {
     // This button is considered text
@@ -15,6 +17,10 @@
     font-size: fontSize(default);
 
     border-radius: spacing(border-radius-large);
+
+    // change for the <button> element
+    border: none;
+    cursor: pointer;
 
     // adds all transitions to the button (depending on which state it is in)
     transition: all 200ms;
@@ -63,7 +69,11 @@
     transition: all 300ms;
   }
 
-  &:active {
+  &:active,
+  &:focus {
+    // adjustment for the <button> tag (while it is focused)
+    outline: none;
+
     // moves the button up 1px in relation to link state (which would be 0,0) => goes from -3px to -1px
     transform: translateY(-0.1rem);
 

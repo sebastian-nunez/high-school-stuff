@@ -36,7 +36,7 @@
 .section-stories {
   position: relative;
 
-  padding: 15rem 0;
+  padding: 15rem 0 11rem 0;
 }
 
 .section-book {
@@ -45,7 +45,7 @@
     color(primary-light),
     color(primary-dark)
   );
-  padding: 10rem 0;
+  padding: 11rem 0;
 }
 
 .book {
@@ -59,7 +59,7 @@
     url(../img/nat-10.jpg);
   background-size: cover;
 
-  height: 50rem;
+  height: 52.5rem;
 
   border-radius: spacing(border-radius-normal);
   box-shadow: 0 1.5rem 4rem rgba(color(pure-black), 0.25);

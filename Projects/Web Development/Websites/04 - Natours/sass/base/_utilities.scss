@@ -1,25 +1,26 @@
 // center text
 .u-center-text {
-  text-align: center;
+  text-align: center !important;
 }
 
 // margin-bottom
 .u-margin-bottom-large {
-  margin-bottom: 8rem;
+  margin-bottom: 8rem !important;
 }
 
 .u-margin-bottom-medium {
-  margin-bottom: 4rem;
+  margin-bottom: 4rem !important;
 }
 
 .u-margin-bottom-small {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.5rem !important;
 }
 
 // margin-top
 .u-margin-top-large {
-  margin-top: 8rem;
+  margin-top: 8rem !important;
 }
+
 .u-margin-top-extra-large {
-  margin-top: 10rem;
+  margin-top: 10rem !important;
 }
