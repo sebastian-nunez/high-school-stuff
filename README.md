@@ -24,7 +24,7 @@ Personal archive to store/backup some of my personal and school work, allowing e
 
 ### Languages
 
-- HTML
+- HTML/CSS
 - JavaScript
 - Java
 - Python
