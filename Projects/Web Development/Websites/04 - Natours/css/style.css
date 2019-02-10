@@ -874,6 +874,166 @@ body {
   text-align: center;
 }
 
+.navigation__checkbox {
+  display: none;
+}
+
+.navigation__button {
+  background-color: #fff;
+  width: 7rem;
+  height: 7rem;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 0.85rem 3rem rgba(0, 0, 0, 0.13);
+          box-shadow: 0 0.85rem 3rem rgba(0, 0, 0, 0.13);
+  position: fixed;
+  top: 6rem;
+  right: 6rem;
+  text-align: center;
+  z-index: 200;
+  -webkit-transition: -webkit-transform 150ms;
+  transition: -webkit-transform 150ms;
+  transition: transform 150ms;
+  transition: transform 150ms, -webkit-transform 150ms;
+}
+
+.navigation__button:hover {
+  cursor: pointer;
+  -webkit-transform: translateY(-0.3rem);
+          transform: translateY(-0.3rem);
+}
+
+.navigation__button:active {
+  -webkit-transform: translateY(-0.1rem);
+          transform: translateY(-0.1rem);
+}
+
+.navigation__background {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  position: fixed;
+  top: 6.5rem;
+  right: 6.5rem;
+  z-index: 100;
+  background-image: radial-gradient(#7ed56f, #28b485);
+  -webkit-transition: -webkit-transform 750ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition: -webkit-transform 750ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 750ms cubic-bezier(0.86, 0, 0.07, 1);
+  transition: transform 750ms cubic-bezier(0.86, 0, 0.07, 1), -webkit-transform 750ms cubic-bezier(0.86, 0, 0.07, 1);
+}
+
+.navigation__nav {
+  height: 100vh;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 150;
+  opacity: 0;
+  width: 0;
+  -webkit-transition: all 700ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 700ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.navigation__list {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  list-style: none;
+  text-align: center;
+}
+
+.navigation__item {
+  margin: 1rem;
+}
+
+.navigation__link, .navigation__link:link, .navigation__link:visited {
+  display: block;
+  font-size: 3.5rem;
+  font-weight: 300;
+  letter-spacing: 0.5rem;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 1.5rem 2.5rem;
+  background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50.3%);
+  background-size: 220%;
+  -webkit-transition: all 310ms 40ms;
+  transition: all 310ms 40ms;
+}
+
+.navigation__link:hover, .navigation__link:active {
+  color: #55c57a;
+  background-position: 100%;
+}
+
+.navigation__checkbox:checked ~ .navigation__background {
+  -webkit-transform: scale(80);
+          transform: scale(80);
+}
+
+.navigation__checkbox:checked ~ .navigation__nav {
+  opacity: 1;
+  width: 100%;
+  visibility: visible;
+}
+
+.navigation__icon {
+  position: relative;
+  margin-top: 50%;
+}
+
+.navigation__icon, .navigation__icon::before, .navigation__icon::after {
+  display: inline-block;
+  width: 3rem;
+  height: 2px;
+  background-color: #333;
+}
+
+.navigation__icon::before, .navigation__icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  -webkit-transition: top 80ms ease-out, -webkit-transform 250ms ease;
+  transition: top 80ms ease-out, -webkit-transform 250ms ease;
+  transition: top 80ms ease-out, transform 250ms ease;
+  transition: top 80ms ease-out, transform 250ms ease, -webkit-transform 250ms ease;
+}
+
+.navigation__icon::before {
+  top: -0.8rem;
+}
+
+.navigation__icon::after {
+  top: 0.8rem;
+}
+
+.navigation__button:hover .navigation__icon::before {
+  top: -1rem;
+}
+
+.navigation__button:hover .navigation__icon::after {
+  top: 1rem;
+}
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon {
+  background-color: transparent;
+}
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::before {
+  top: 0;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.navigation__checkbox:checked + .navigation__button .navigation__icon::after {
+  top: 0;
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+}
+
 .section-about {
   background-color: #f7f7f7;
   padding: 25rem 0;
