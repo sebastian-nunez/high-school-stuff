@@ -27,7 +27,7 @@
     // adds a shadow when the button is hovered
     box-shadow: 0 1rem 2rem rgba(color(pure-black), 0.2);
 
-    // // once you hover over the button, the ::after state will be triggered
+    // once you hover over the button, the ::after state will be triggered
     &::after {
       transform: scaleX(1.4) scaleY(1.6);
 
