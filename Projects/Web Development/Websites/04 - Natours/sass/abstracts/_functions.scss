@@ -19,6 +19,6 @@
 }
 
 // Gets breakpoints
-@function breakpoint($key) {
+@function breakPoint($key) {
   @return map-get($breakpoints, $key);
 }
