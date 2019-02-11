@@ -208,7 +208,7 @@
       </section>
 
       <!-- Tours Section -->
-      <section class="section-tours">
+      <section class="section-tours" id="sectionTours">
         <div class="u-center-text u-margin-bottom-large">
           <h2 class="heading-secondary">
             Most popular tours
@@ -254,7 +254,8 @@
                     <p class="card__price-value">$297</p>
                   </div>
 
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <!-- pop-up button controller -->
+                  <a href="#popUp" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -298,7 +299,8 @@
                     <p class="card__price-value">$497</p>
                   </div>
 
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <!-- pop-up button controller -->
+                  <a href="#popUp" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -342,7 +344,8 @@
                     <p class="card__price-value">$897</p>
                   </div>
 
-                  <a href="#" class="btn btn--white">Book now!</a>
+                  <!-- pop-up button controller -->
+                  <a href="#popUp" class="btn btn--white">Book now!</a>
                 </div>
               </div>
             </div>
@@ -355,6 +358,57 @@
         </div>
       </section>
 
+      <!-- Pop-up window -->
+      <div class="pop-up" id="popUp">
+        <!-- Content -->
+        <div class="pop-up__content">
+          <!-- Leftside -->
+          <div class="pop-up__left">
+            <img src="img/nat-8.jpg" alt="tour photo" class="pop-up__img" />
+            <img src="img/nat-9.jpg" alt="tour photo" class="pop-up__img" />
+          </div>
+
+          <!-- Rightside -->
+          <div class="pop-up__right">
+            <!-- Close button -->
+            <a href="#sectionTours" class="pop-up__close">&times;</a>
+
+            <!-- Headings -->
+            <h2 class="heading-secondary u-margin-bottom-medium">
+              Start booking now
+            </h2>
+            <h3 class="heading-tertiary u-margin-bottom-small">
+              Important &mdash; Please read these terms before booking
+            </h3>
+
+            <!-- Text -->
+            <p class="pop-up__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
+              reiciendis ut qui quo explicabo suscipit tenetur quisquam alias
+              velit distinctio eaque obcaecati voluptates deleniti delectus
+              eveniet veritatis, nemo nulla vel? Laborum necessitatibus
+              perferendis qui ad eaque repellat quis? Minima magni ullam amet at
+              consequatur sequi aperiam, placeat blanditiis velit in. Sunt ab,
+              blanditiis ducimus expedita quis vel iusto fugiat exercitationem
+              impedit esse veniam a velit beatae excepturi amet quibusdam atque
+              saepe quasi repellat recusandae nam porro laudantium? Beatae
+              dignissimos quo dolore tempora amet a, repudiandae reprehenderit
+              dicta soluta alias dolorem ex, iste adipisci? Qui esse eius
+              voluptatem doloremque totam nulla accusamus quod inventore
+              mollitia, labore, quae nemo, animi illum fugiat veritatis
+              voluptatum expedita blanditiis ducimus. Ea dicta repellendus
+              dolorum ab distinctio, quae aspernatur, ullam est autem ipsum
+              impedit eius voluptatibus beatae vitae. Explicabo suscipit tenetur
+              quisquam alias
+            </p>
+
+            <!-- Button -->
+            <a href="#" class="btn btn--green">Book now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stories Section -->
       <section class="section-stories">
         <!-- Video -->
         <div class="bg-video">
@@ -375,13 +429,14 @@
         <!-- Story 1 -->
         <div class="row">
           <div class="story">
-            <!-- Image -->
             <figure class="story__shape">
+              <!-- Image -->
               <img
                 src="img/nat-8.jpg"
                 alt="person on tour"
                 class="story__image"
               />
+
               <!-- Name -->
               <figcaption class="story__caption">
                 Mary Smith
@@ -390,10 +445,11 @@
 
             <!-- Testimonial -->
             <div class="story__text">
+              <!-- Heading -->
               <h3 class="heading-tertiary u-margin-bottom-small">
                 I had the best week ever with my family
               </h3>
-
+              <!-- Text -->
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
                 dicta voluptate eius, consectetur temporibus laboriosam. Nisi,
@@ -408,13 +464,14 @@
         <!-- Story 2 -->
         <div class="row">
           <div class="story">
-            <!-- Image -->
             <figure class="story__shape">
+              <!-- Image -->
               <img
                 src="img/nat-9.jpg"
                 alt="person on tour"
                 class="story__image"
               />
+
               <!-- Name -->
               <figcaption class="story__caption">
                 Jack Wilson
@@ -423,10 +480,12 @@
 
             <!-- Testimonial -->
             <div class="story__text">
+              <!-- Heading -->
               <h3 class="heading-tertiary u-margin-bottom-small">
                 WOW! My life is completly different now
               </h3>
 
+              <!-- Text -->
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque
                 dicta voluptate eius, consectetur temporibus laboriosam. Nisi,
@@ -543,6 +602,7 @@
     <footer class="footer">
       <!-- logo-box -->
       <div class="footer__logo-box">
+        <!-- logo -->
         <img
           src="img/logo-green-1x.png"
           alt="full size logo"
