@@ -36,7 +36,7 @@ $grid: (
   horizontal-gutter: 8rem
 );
 
-// Breakpoints (values are calculated assuming default browser font is 16px; therefore, Ypx/16 = Zem since media queries are not affected by root font size)
+// Breakpoints (values are calculated assuming default browser font is 16px; therefore, WANTEDpx/16px = RESULTem since media queries are not affected by root font size)
 $breakpoints: (
   // 600px
     mobile: 37.5em,
