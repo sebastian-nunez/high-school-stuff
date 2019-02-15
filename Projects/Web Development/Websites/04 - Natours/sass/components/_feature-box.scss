@@ -9,6 +9,10 @@
 
   transition: transform 300ms;
 
+  @include mediaQuery(tablet) {
+    padding: 2rem;
+  }
+
   &:hover {
     transform: translateY(-1.5rem) scale(1.03);
   }
@@ -28,5 +32,9 @@
     // adds cool clipping to text
     -webkit-background-clip: text;
     color: transparent;
+
+    @include mediaQuery(tablet) {
+      margin-bottom: 0;
+    }
   }
 }

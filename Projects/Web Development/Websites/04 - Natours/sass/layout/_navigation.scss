@@ -24,6 +24,16 @@
 
     transition: transform 150ms;
 
+    @include mediaQuery(tablet) {
+      top: 4rem;
+      right: 4rem;
+    }
+
+    @include mediaQuery(mobile) {
+      top: 3rem;
+      right: 3rem;
+    }
+
     // sets the typical button bobing animations
     &:hover {
       cursor: pointer;
@@ -55,6 +65,16 @@
     );
 
     transition: transform 750ms cubic-bezier(0.86, 0, 0.07, 1);
+
+    @include mediaQuery(tablet) {
+      top: 4.5rem;
+      right: 4.5rem;
+    }
+
+    @include mediaQuery(mobile) {
+      top: 3.5rem;
+      right: 3.5rem;
+    }
   }
 
   &__nav {

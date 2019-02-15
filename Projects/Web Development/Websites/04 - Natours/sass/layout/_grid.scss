@@ -1,12 +1,16 @@
 .row {
   max-width: grid(row-width);
 
-  @include mediaQuery(tablet) {
-    max-width: 50rem;
-  }
-
   // centers content within the row
   margin: 0 auto;
+
+  @include clearfix;
+
+  @include mediaQuery(tablet) {
+    max-width: 50rem;
+
+    padding: 0 3rem;
+  }
 
   &:not(:last-child) {
     margin-bottom: grid(horizontal-gutter);
@@ -15,8 +19,6 @@
       margin-bottom: grid(horizontal-gutter-small);
     }
   }
-
-  @include clearfix;
 
   // Selects all columns (DRY - principle)
   [class^="col-"] {

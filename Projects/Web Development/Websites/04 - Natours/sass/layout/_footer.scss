@@ -5,9 +5,17 @@
   padding: 10rem 0;
   font-size: 1.4rem;
 
+  @include mediaQuery(tablet) {
+    padding: 8rem 0;
+  }
+
   &__logo-box {
     text-align: center;
     margin-bottom: 8rem;
+
+    @include mediaQuery(tablet) {
+      margin-bottom: 6rem;
+    }
   }
 
   &__navigation {
@@ -15,6 +23,11 @@
 
     border-top: 1px solid color(grey-dark-2);
     padding-top: 2rem;
+
+    @include mediaQuery(tablet) {
+      width: 100%;
+      text-align: center;
+    }
   }
 
   &__list {
@@ -61,6 +74,11 @@
 
     border-top: 1px solid color(grey-dark-2);
     padding-top: 1.8rem;
+
+    @include mediaQuery(tablet) {
+      width: 100%;
+      text-align: center;
+    }
 
     &-span {
       display: block;

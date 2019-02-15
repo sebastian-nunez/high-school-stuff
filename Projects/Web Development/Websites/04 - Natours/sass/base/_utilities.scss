@@ -6,10 +6,18 @@
 // margin-bottom
 .u-margin-bottom-large {
   margin-bottom: 8rem !important;
+
+  @include mediaQuery(tablet) {
+    margin-bottom: 5rem !important;
+  }
 }
 
 .u-margin-bottom-medium {
   margin-bottom: 4rem !important;
+
+  @include mediaQuery(tablet) {
+    margin-bottom: 3rem !important;
+  }
 }
 
 .u-margin-bottom-small {

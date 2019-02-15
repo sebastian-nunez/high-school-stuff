@@ -27,6 +27,10 @@
 
     transition: all 250ms ease-in-out;
 
+    @include mediaQuery(tablet) {
+      width: 100%;
+    }
+
     &:focus {
       outline: none;
       box-shadow: 0 1rem 2rem rgba(color(pure-black), 0.1);
@@ -68,6 +72,12 @@
   &__radio-group {
     width: 49%;
     display: inline-block;
+
+    @include mediaQuery(tablet) {
+      width: 100%;
+
+      margin-bottom: 2rem;
+    }
   }
 
   &__radio-input {
@@ -101,7 +111,9 @@
       content: "";
       display: block;
 
-      @include absoluteCenter height: 1.3rem;
+      @include absoluteCenter;
+
+      height: 1.3rem;
       width: 1.3rem;
       border-radius: 50%;
 
