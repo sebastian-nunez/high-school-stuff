@@ -13,12 +13,12 @@
     border-radius: spacing(border-radius-small);
 
     position: absolute;
-    z-index: 0;
+    z-index: 10;
 
     // moves the outline 20px away from the image border
     outline-offset: 1.6rem;
 
-    transition: all 200ms ease-in-out;
+    transition: all 200ms;
 
     &:hover {
       // adds green outline when hovering each individual image
@@ -27,7 +27,7 @@
       transform: scale(1.05) translateY(-0.5rem);
       box-shadow: 0 2.5rem 4rem rgba(color(pure-black), 0.4);
 
-      z-index: 1;
+      z-index: 20;
     }
 
     &--p1 {

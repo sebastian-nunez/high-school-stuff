@@ -21,6 +21,7 @@
 // (900,1200px]: Tablet Large
 // (1200px, 1800px]: Desktop
 // (1800,+infinity): Desktop large
+// ORDER: base + typography > general layout + grid > page layout > components
 
 // max-width: desktop 1st design
 @mixin mediaQuery($bp) {

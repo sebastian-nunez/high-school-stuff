@@ -25,15 +25,15 @@ $font-sizes: (
 $spacing-dimensions: (
   border-radius-normal: 0.3rem,
   border-radius-large: 10rem,
-  // border-radius-large: 0rem,
-    border-radius-small: 0.2rem
+  border-radius-small: 0.2rem
 );
 
 // Float grid
 $grid: (
   row-width: 114rem,
   vertical-gutter: 6rem,
-  horizontal-gutter: 8rem
+  horizontal-gutter: 8rem,
+  horizontal-gutter-small: 6rem
 );
 
 // Breakpoints (values are calculated assuming default browser font is 16px; therefore, WANTEDpx/16px = RESULTem since media queries are not affected by root font size)

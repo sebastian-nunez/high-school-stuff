@@ -141,26 +141,3 @@
     transform: translateY(0);
   }
 }
-
-// Clickable button
-.btn-clickable {
-  &:link,
-  &:visited {
-    display: inline-block;
-
-    color: inherit;
-    text-decoration: none;
-    box-shadow: 0 1.5rem 4rem rgba(color(pure-black), 0.12);
-
-    transition: all 200ms ease-in-out;
-  }
-
-  &:hover {
-    transform: translateY(-1.5rem) scale(1.03);
-    box-shadow: 0 2.5rem 8rem rgba(color(pure-black), 0.18);
-  }
-
-  &:active {
-    transform: translateY(-0.5rem) scale(1);
-  }
-}

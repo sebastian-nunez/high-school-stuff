@@ -9,6 +9,10 @@
 
   transition: transform 300ms;
 
+  &:hover {
+    transform: translateY(-1.5rem) scale(1.03);
+  }
+
   &__icon {
     // icon font is treated as text
     font-size: 6rem;
