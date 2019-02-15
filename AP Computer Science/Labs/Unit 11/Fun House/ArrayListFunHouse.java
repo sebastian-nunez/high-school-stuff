@@ -26,18 +26,15 @@ public class ArrayListFunHouse
   }
 
   public static void keepOnlyCompositeNumbers(List<Integer> nums) {
-    System.out.println("Original List \n" + nums + "\n");
+    int index = nums.size() - 1;
+    while (index >= 0) {
+      ArrayList<Integer> temp = ArrayListFunHouse.getListOfFactors(nums.get(index));
 
-    ArrayList<Integer> output = new ArrayList<Integer>();
-
-    for (Integer num: nums) {
-      ArrayList<Integer> temp = ArrayListFunHouse.getListOfFactors(num);
-
-      if (temp.size() > 0) {
-        output.add(num);
+      if (temp.size() == 0) {
+        nums.remove(index);
       }
-    }
 
-    System.out.println("Composite List \n" + output);
+      index--;
+    }
   }
 }
