@@ -19,9 +19,9 @@
   }
 
   // allows images to be scaled up on higher res screens (> 192dpi) and the image is atleast 600px since it wouldn't make sense to display such a high res image on such a small screen (comma works as an "OR" statement); 2nd condition allows safari to work properly
-  @media (min-resolution: 192dpi) and (min-width: 37.5em),
-    (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
-    (min-width: 125em) {
+  @media only screen and (min-resolution: 192dpi) and (min-width: 37.5em),
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    only screen and (min-width: 125em) {
     background-image: linear-gradient(
         to bottom right,
         rgba(color(primary-light), 0.8),

@@ -142,6 +142,16 @@ body {
   }
 }
 
+::-moz-selection {
+  background-color: #55c57a;
+  color: #fff;
+}
+
+::selection {
+  background-color: #55c57a;
+  color: #fff;
+}
+
 body {
   font-family: "Lato", sans-serif;
   font-weight: 400;
@@ -677,7 +687,7 @@ body {
   font-weight: 300;
 }
 
-@media only screen and (max-width: 56.25em) {
+@media only screen and (max-width: 56.25em), only screen and (hover: none) {
   .card {
     height: auto;
     background-color: #fff;
@@ -729,7 +739,7 @@ body {
   }
 }
 
-@media only screen and (max-width: 56.25em) and (max-width: 56.25em) {
+@media only screen and (max-width: 56.25em) and (max-width: 56.25em), only screen and (hover: none) and (max-width: 56.25em) {
   .card__price-value {
     font-size: 5rem;
     margin-bottom: -1.5rem;
@@ -1148,7 +1158,7 @@ body {
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), only screen and (min-resolution: 192dpi) and (min-width: 37.5em), only screen and (min-width: 125em) {
   .header {
     background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.8)), to(rgba(40, 180, 133, 0.8))), url(../img/hero.jpg);
     background-image: linear-gradient(to bottom right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);

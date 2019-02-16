@@ -202,7 +202,8 @@
     font-weight: 300;
   }
 
-  @include mediaQuery(tablet) {
+  // allows the tablet version of the cards to work on devices that don't have a hover feature (use "hover: hover" to have to opposite effect)
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
     height: auto;
 
     background-color: color(pure-white);
