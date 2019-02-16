@@ -41,14 +41,25 @@
 
     transform: translateX(-3rem) skewX(12deg);
 
+    border-radius: 50%;
+
+    // cuts out the part of the image that is overflowing (when clip-path is not supported)
+    overflow: hidden;
+
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      -webkit-clip-path: circle(50% at 50% 50%);
+      clip-path: circle(50% at 50% 50%);
+
+      // sets the text wrapping text as circle at the center (for it to work, it must set dimensions)
+      -webkit-shape-outside: circle(50% at 50% 50%);
+      shape-outside: circle(50% at 50% 50%);
+
+      border-radius: none;
+    }
+
     @include mediaQuery(mobile) {
       transform: translateX(-3rem) skewX(0);
     }
-
-    clip-path: circle(50% at 50% 50%);
-
-    // sets the text wrapping text as circle at the center (for it to work, it must set dimensions)
-    shape-outside: circle(50% at 50% 50%);
   }
 
   &__image {

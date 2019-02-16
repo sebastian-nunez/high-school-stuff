@@ -115,10 +115,35 @@
             <a href="#" class="btn-text">Learn more &rarr;</a>
           </div>
 
-          <!-- Images -->
+          <!-- Images (composition) -->
           <div class="col-1-of-2">
             <div class="composition">
+              <!-- using width descriptor for resolution switching -->
               <img
+                srcset="img/nat-1.jpg 300w, img/nat-1-large.jpg 1000w"
+                sizes="(max-width: 56.25em) 20vw, 18.75em"
+                src="img/nat-1-large.jpg"
+                alt="Photo 1"
+                class="composition__photo composition__photo--p1"
+              />
+
+              <img
+                srcset="img/nat-2.jpg 300w, img/nat-2-large.jpg 1000w"
+                sizes="(max-width: 56.25em) 20vw, 18.75em"
+                src="img/nat-2-large.jpg"
+                alt="Photo 2"
+                class="composition__photo composition__photo--p2"
+              />
+
+              <img
+                srcset="img/nat-3.jpg 300w, img/nat-3-large.jpg 1000w"
+                sizes="(max-width: 56.25em) 20vw, 18.75em"
+                src="img/nat-3-large.jpg"
+                alt="Photo 3"
+                class="composition__photo composition__photo--p3"
+              />
+
+              <!-- <img
                 src="img/nat-1-large.jpg"
                 alt=""
                 class="composition__photo composition__photo--p1"
@@ -132,7 +157,7 @@
                 src="img/nat-3-large.jpg"
                 alt="  "
                 class="composition__photo composition__photo--p3"
-              />
+              /> -->
             </div>
           </div>
         </div>
@@ -390,8 +415,7 @@
               mollitia, labore, quae nemo, animi illum fugiat veritatis
               voluptatum expedita blanditiis ducimus. Ea dicta repellendus
               dolorum ab distinctio, quae aspernatur, ullam est autem ipsum
-              impedit eius voluptatibus beatae vitae. Explicabo suscipit tenetur
-              quisquam alias
+              impedit eius voluptatibus beatae vitae.
             </p>
 
             <!-- Button -->
@@ -594,12 +618,24 @@
     <footer class="footer">
       <!-- logo-box -->
       <div class="footer__logo-box">
-        <!-- logo -->
-        <img
-          src="img/logo-green-1x.png"
-          alt="full size logo"
-          class="footer__logo"
-        />
+        <picture class="footer__logo">
+          <!-- mobile devices (width < 600px) -->
+          <source
+            srcset="
+              img/logo-green-small-1x.png 1x,
+              img/logo-green-small-2x.png 2x
+            "
+            media="(max-width: 37.5em)"
+            src="img/logo-green-small-2x.png"
+          />
+
+          <!-- logo (responsive image using "srcset" for density switching) -->
+          <img
+            srcset="img/logo-green-1x.png 1x, img/logo-green-2x.png 2x"
+            src="img/logo-green-small-2x.png"
+            alt="full size logo"
+          />
+        </picture>
       </div>
 
       <div class="row">

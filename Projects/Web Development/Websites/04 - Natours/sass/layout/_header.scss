@@ -1,6 +1,6 @@
 // Header
 .header {
-  height: 95vh;
+  height: 90vh;
   position: relative;
 
   background-image: linear-gradient(
@@ -8,11 +8,27 @@
       rgba(color(primary-light), 0.8),
       rgba(color(primary-dark), 0.8)
     ),
-    url(../img/hero.jpg);
+    url(../img/hero-small.jpg);
   background-size: cover;
   background-position: top;
 
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    height: 95vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  }
+
+  // allows images to be scaled up on higher res screens (> 192dpi) and the image is atleast 600px since it wouldn't make sense to display such a high res image on such a small screen (comma works as an "OR" statement); 2nd condition allows safari to work properly
+  @media (min-resolution: 192dpi) and (min-width: 37.5em),
+    (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em),
+    (min-width: 125em) {
+    background-image: linear-gradient(
+        to bottom right,
+        rgba(color(primary-light), 0.8),
+        rgba(color(primary-dark), 0.8)
+      ),
+      url(../img/hero.jpg);
+  }
 
   @include mediaQuery(mobile) {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);

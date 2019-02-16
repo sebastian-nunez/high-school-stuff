@@ -772,9 +772,17 @@ body {
   float: left;
   -webkit-transform: translateX(-3rem) skewX(12deg);
           transform: translateX(-3rem) skewX(12deg);
-  -webkit-clip-path: circle(50% at 50% 50%);
-          clip-path: circle(50% at 50% 50%);
-  shape-outside: circle(50% at 50% 50%);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+@supports ((-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0))) or (-webkit-clip-path: polygon(0 0)) {
+  .story__shape {
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    border-radius: none;
+  }
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -980,6 +988,14 @@ body {
   transition: opacity 300ms ease-in;
 }
 
+@supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) {
+  .pop-up {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+}
+
 .pop-up__content {
   width: 75%;
   display: table;
@@ -1116,13 +1132,27 @@ body {
 }
 
 .header {
-  height: 95vh;
+  height: 90vh;
   position: relative;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.8)), to(rgba(40, 180, 133, 0.8))), url(../img/hero.jpg);
-  background-image: linear-gradient(to bottom right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.8)), to(rgba(40, 180, 133, 0.8))), url(../img/hero-small.jpg);
+  background-image: linear-gradient(to bottom right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero-small.jpg);
   background-size: cover;
   background-position: top;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+}
+
+@supports ((-webkit-clip-path: polygon(0 0)) or (clip-path: polygon(0 0))) or (-webkit-clip-path: polygon(0 0)) {
+  .header {
+    height: 95vh;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 37.5em), (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+  .header {
+    background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(126, 213, 111, 0.8)), to(rgba(40, 180, 133, 0.8))), url(../img/hero.jpg);
+    background-image: linear-gradient(to bottom right, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  }
 }
 
 @media only screen and (max-width: 37.5em) {
@@ -1245,6 +1275,11 @@ body {
   .footer__logo-box {
     margin-bottom: 6rem;
   }
+}
+
+.footer__logo {
+  width: 15rem;
+  height: auto;
 }
 
 .footer__navigation {
@@ -1425,8 +1460,8 @@ body {
   padding: 1.5rem 2.5rem;
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50.3%);
   background-size: 220%;
-  -webkit-transition: all 210ms 140ms;
-  transition: all 210ms 140ms;
+  -webkit-transition: all 200ms 50ms;
+  transition: all 200ms 50ms;
 }
 
 .navigation__link:hover, .navigation__link:active {
