@@ -18,6 +18,10 @@
   @include mediaQuery(tablet) {
     margin-bottom: 3rem !important;
   }
+
+  @include mediaQuery(mobile) {
+    margin-bottom: 1.5rem !important;
+  }
 }
 
 .u-margin-bottom-small {
