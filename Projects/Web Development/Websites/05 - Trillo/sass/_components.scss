@@ -1,0 +1,196 @@
+//////////////////////////////////////
+// LOGO
+.logo {
+  height: 3.25rem;
+  margin-left: 2rem;
+}
+
+//////////////////////////////////////
+// SEARCH
+.search {
+  flex: 0 0 40%;
+
+  // used to center the search button
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__input {
+    width: 90%;
+
+    // inputs don't automatically inherit author defined properties
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+
+    background-color: var(--color-grey-light-2);
+
+    border: none;
+
+    padding: 0.7rem 2rem;
+    margin-right: -3.25rem;
+
+    border-radius: 10rem;
+
+    transition: all 200ms;
+
+    &:focus {
+      outline: none;
+      width: 100%;
+
+      background-color: var(--color-grey-light-3);
+    }
+
+    &::-webkit-input-placeholder {
+      font-weight: 400;
+      color: var(--color-grey-light-4);
+    }
+  }
+
+  &__button {
+    border: none;
+
+    background-color: var(--color-grey-light-2);
+
+    transition: all 200ms;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:active {
+      transform: translateY(0.2rem);
+    }
+  }
+
+  // when the text-input is active, the button will have the same background color
+  &__input:focus + &__button {
+    background-color: var(--color-grey-light-3);
+  }
+
+  &__input:focus + &__button:hover {
+    cursor: pointer;
+  }
+
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+
+    fill: var(--color-grey-dark-3);
+  }
+}
+
+//////////////////////////////////////
+// USER NAVIGATION
+.user-nav {
+  // allows each of the items to take 100% of the flex-container (header)
+  align-self: stretch;
+
+  display: flex;
+  align-items: center;
+
+  // select all direct children of user box
+  & > * {
+    padding: 0 2rem;
+    cursor: pointer;
+    height: 100%;
+
+    // vertically centers the content within options
+    display: flex;
+    align-items: center;
+  }
+
+  & > *:hover {
+    background-color: var(--color-grey-light-2);
+  }
+
+  &__icon-box {
+    // allows the notifications to be centered relative to it
+    position: relative;
+  }
+
+  &__icon {
+    width: 2.25rem;
+    height: 2.25rem;
+
+    fill: var(--color-grey-dark-2);
+  }
+
+  &__notification {
+    // allows text to be centered
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 1.75rem;
+    height: 1.75rem;
+
+    // positions the circle relative to the icon-box
+    position: absolute;
+    top: 1.5rem;
+    right: 1.1rem;
+
+    font-weight: 600;
+    font-size: 0.85rem;
+
+    background-color: var(--color-primary);
+    color: var(--color-pure-white);
+
+    border-radius: 50%;
+  }
+
+  &__user-photo {
+    height: 3.75rem;
+    border-radius: 50%;
+
+    margin-right: 1rem;
+  }
+
+  &__user-name {
+    display: inline-block;
+  }
+}
+
+//////////////////////////////////////
+// SIDE NAVIGATION
+.side-nav {
+  font-size: 1.4rem;
+  list-style: none;
+  margin-top: 3.5rem;
+
+  &__item {
+  }
+
+  &__link,
+  &__link:link,
+  &__link:visited {
+    display: block;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--color-grey-light-1);
+
+    padding: 1.5rem 3rem;
+  }
+
+  &__icon {
+    width: 1.75rem;
+    height: 1.75rem;
+
+    margin-right: 2rem;
+
+    // takes color of parent
+    fill: currentColor;
+  }
+}
+
+//////////////////////////////////////
+// COPYRIGHT
+.copyright {
+  font-size: 1.3rem;
+  color: var(--color-grey-light-4);
+
+  text-align: center;
+
+  padding: 2.5rem;
+}

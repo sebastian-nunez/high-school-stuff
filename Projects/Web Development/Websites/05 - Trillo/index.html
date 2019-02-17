@@ -1,16 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="shortcut icon" type="image/png" href="img/favicon.png">
-        
-        <title>trillo &mdash; Your all-in-one booking app</title>
-    </head>
-    <body>
-        
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+
+    <title>trillo &mdash; All-in-one booking app</title>
+  </head>
+  <body>
+    <!-- Container -->
+    <div class="container">
+      <!-- Header -->
+      <header class="header">
+        <!-- Logo -->
+        <img src="img/logo.png" alt="trillo logo" class="logo" />
+
+        <!-- Search Form -->
+        <form action="#" class="search">
+          <!-- Search Bar Input -->
+          <input
+            type="text"
+            name="searchbar"
+            placeholder="Search hotels"
+            class="search__input"
+          />
+
+          <!-- Search Button -->
+          <button type="submit" class="search__button">
+            <svg class="search__icon">
+              <use xlink:href="img/sprite.svg#icon-search"></use>
+            </svg>
+          </button>
+        </form>
+
+        <!-- User Navigation -->
+        <nav class="user-nav">
+          <!-- Bookmark -->
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+            </svg>
+
+            <!-- Bookmark Notification -->
+            <span class="user-nav__notification">7</span>
+          </div>
+
+          <!-- Chat -->
+          <div class="user-nav__icon-box">
+            <svg class="user-nav__icon">
+              <use xlink:href="img/sprite.svg#icon-chat"></use>
+            </svg>
+
+            <!-- Chat Notification -->
+            <span class="user-nav__notification">13</span>
+          </div>
+
+          <!-- User Profile -->
+          <div class="user-nav__user">
+            <!-- Image -->
+            <img
+              src="img/user.jpg"
+              alt="user photo"
+              class="user-nav__user-photo"
+            />
+
+            <!-- Name -->
+            <span class="user-nav__user-name">Jonas</span>
+          </div>
+        </nav>
+      </header>
+
+      <!-- Content -->
+      <div class="content">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+          <!-- Side Navigation -->
+          <ul class="side-nav">
+            <!-- Hotel -->
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-home"></use>
+                </svg>
+
+                <span>Hotel</span>
+              </a>
+            </li>
+
+            <!-- Flight -->
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                </svg>
+
+                <span>Flight</span>
+              </a>
+            </li>
+
+            <!-- Car Rental -->
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-key"></use>
+                </svg>
+
+                <span>Car Rental</span>
+              </a>
+            </li>
+
+            <!-- Tours -->
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-map"></use>
+                </svg>
+
+                <span>Tours</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- Copyright -->
+          <div class="copyright">
+            trillo &copy; 2019. <br />All rights reserved.
+          </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="hotel-view">
+          Hotel view
+        </main>
+      </div>
+    </div>
+  </body>
 </html>
