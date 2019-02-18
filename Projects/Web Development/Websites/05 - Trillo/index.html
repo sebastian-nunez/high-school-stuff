@@ -83,7 +83,7 @@
           <!-- Side Navigation -->
           <ul class="side-nav">
             <!-- Hotel -->
-            <li class="side-nav__item">
+            <li class="side-nav__item side-nav__item--active">
               <a href="#" class="side-nav__link">
                 <svg class="side-nav__icon">
                   <use xlink:href="img/sprite.svg#icon-home"></use>
@@ -135,7 +135,90 @@
 
         <!-- Main Content -->
         <main class="hotel-view">
-          Hotel view
+          <!-- Photo Gallery -->
+          <div class="gallery">
+            <!-- Photo 1 -->
+            <figure class="gallery__item">
+              <img
+                src="img/hotel-1.jpg"
+                alt="photo of hotel 1"
+                class="gallery__photo"
+              />
+            </figure>
+
+            <!-- Photo 2 -->
+            <figure class="gallery__item">
+              <img
+                src="img/hotel-2.jpg"
+                alt="photo of hotel 2"
+                class="gallery__photo"
+              />
+            </figure>
+
+            <!-- Photo 3 -->
+            <figure class="gallery__item">
+              <img
+                src="img/hotel-3.jpg"
+                alt="photo of hotel 3"
+                class="gallery__photo"
+              />
+            </figure>
+          </div>
+
+          <!-- Hotel Overview -->
+          <div class="overview">
+            <!-- Heading -->
+            <h1 class="overview__heading">
+              Hotel Las Palmas
+            </h1>
+
+            <!-- Stars -->
+            <div class="overview__stars">
+              <!-- Star 1 -->
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+
+              <!-- Star 2 -->
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+
+              <!-- Star 3 -->
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+
+              <!-- Star 4 -->
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+
+              <!-- Star 5 -->
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+            </div>
+
+            <!-- Location -->
+            <div class="overview__location">
+              <!-- Icon -->
+              <svg class="overview__icon-location">
+                <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+              </svg>
+
+              <!-- Button -->
+              <button type="submit" class="btn-inline" aria-label="Button">
+                Albufeira, Portugal
+              </button>
+            </div>
+
+            <!-- Rating -->
+            <div class="overview__rating">
+              <div class="overview__rating-average">9.2</div>
+              <div class="overview__rating-count">429 Votes</div>
+            </div>
+          </div>
         </main>
       </div>
     </div>
