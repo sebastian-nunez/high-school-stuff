@@ -356,13 +356,13 @@
   }
 
   & span {
-    margin-left: 0.3rem;
+    margin-right: 0.3rem;
 
-    transition: margin-left 200ms;
+    transition: margin-right 200ms;
   }
 
   &:hover span {
-    margin-left: 0.8rem;
+    margin-right: 0.8rem;
   }
 }
 

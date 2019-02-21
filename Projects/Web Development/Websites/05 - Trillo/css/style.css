@@ -415,14 +415,14 @@ body {
 }
 
 .btn-inline span {
-  margin-left: 0.3rem;
-  -webkit-transition: margin-left 200ms;
-  -o-transition: margin-left 200ms;
-  transition: margin-left 200ms;
+  margin-right: 0.3rem;
+  -webkit-transition: margin-right 200ms;
+  -o-transition: margin-right 200ms;
+  transition: margin-right 200ms;
 }
 
 .btn-inline:hover span {
-  margin-left: 0.8rem;
+  margin-right: 0.8rem;
 }
 
 @-webkit-keyframes pulsate {
