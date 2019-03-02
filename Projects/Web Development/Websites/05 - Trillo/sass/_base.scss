@@ -23,6 +23,13 @@
   --horizontal-line: 0.1rem solid var(--color-grey-light-2);
 }
 
+// BREAKPOINTS
+$bp-largest: 75em; // 1200px
+$bp-large: 68.75em; // 1100px
+$bp-medium: 56.25em; // 900px
+$bp-small: 37.5em; // 600px
+$bp-smallest: 31.35em; // 500px
+
 // Global Reset
 *,
 *::before,
@@ -36,6 +43,10 @@ html {
   box-sizing: border-box;
 
   font-size: 62.5%;
+
+  @media only screen and (max-width: $bp-large) {
+    font-size: 50%;
+  }
 }
 
 body {

@@ -15,6 +15,11 @@
   justify-content: center;
   align-items: center;
 
+  @media only screen and (max-width: $bp-smallest) {
+    order: 1;
+    flex: 0 0 100%;
+  }
+
   &__input {
     width: 90%;
 
@@ -158,11 +163,24 @@
   list-style: none;
   margin-top: 3.5rem;
 
+  @media only screen and (max-width: $bp-medium) {
+    display: flex;
+    margin: 0;
+  }
+
   &__item {
     position: relative;
 
+    @media only screen and (max-width: $bp-medium) {
+      flex: 1;
+    }
+
     &:not(:last-child) {
       margin-bottom: 0.5rem;
+
+      @media only screen and (max-width: $bp-medium) {
+        margin-bottom: 0;
+      }
     }
   }
 
@@ -212,6 +230,17 @@
 
     display: flex;
     align-items: center;
+
+    @media only screen and (max-width: $bp-medium) {
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+
+      padding: 1.5rem 0.5rem;
+    }
   }
 
   &__icon {
@@ -222,6 +251,14 @@
 
     // takes color of parent
     fill: currentColor;
+
+    @media only screen and (max-width: $bp-small) {
+      margin-right: 0;
+      margin-bottom: 0.7rem;
+
+      width: 1.5rem;
+      height: 1.5rem;
+    }
   }
 }
 
@@ -234,6 +271,10 @@
   text-align: center;
 
   padding: 2.5rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    display: none;
+  }
 }
 
 //////////////////////////////////////
@@ -263,6 +304,11 @@
     letter-spacing: 0.1rem;
 
     padding: 1.5rem 3rem;
+
+    @media only screen and (max-width: $bp-small) {
+      font-style: 1.8rem;
+      padding: 1.25rem;
+    }
   }
 
   &__stars {
@@ -307,6 +353,10 @@
 
     padding: 0 2.25rem;
     margin-left: 3rem;
+
+    @media only screen and (max-width: $bp-small) {
+      padding: 0 1.5rem;
+    }
   }
 
   &__rating-average {
@@ -314,11 +364,19 @@
     font-weight: 600;
 
     margin-bottom: -0.3rem;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.8rem;
+    }
   }
 
   &__rating-count {
     font-size: 1rem;
     text-transform: uppercase;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 0.5rem;
+    }
   }
 }
 
@@ -422,14 +480,19 @@
     height: 1rem;
     margin-right: 0.7rem;
 
-    // newer browsers - masks
-    background-color: var(--color-primary);
-    mask-image: url(../img/chevron-thin-right.svg);
-    mask-size: cover;
-
     // older browsers
-    // background-image: url(../img/chevron-thin-right.svg);
-    // background-size: cover;
+    background-image: url(../img/chevron-thin-right.svg);
+    background-size: cover;
+
+    // newer browsers - masks
+    @supports (mask-image: url()) {
+      // removes the background image if masks are supported
+      background-image: none;
+
+      background-color: var(--color-primary);
+      mask-image: url(../img/chevron-thin-right.svg);
+      mask-size: cover;
+    }
   }
 }
 
@@ -447,6 +510,10 @@
     margin-right: auto;
   }
 
+  &__friends {
+    display: flex;
+  }
+
   &__photo {
     width: 4rem;
     height: 4rem;
@@ -459,7 +526,7 @@
     border-radius: 50%;
 
     &:not(:last-of-type) {
-      margin-right: -1.5rem;
+      margin-right: -2rem;
     }
   }
 }
@@ -477,6 +544,11 @@
   margin-bottom: 4.5rem;
 
   overflow: hidden;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 3rem;
+    margin-bottom: 3rem;
+  }
 
   &::before {
     content: "\201C";
@@ -546,6 +618,10 @@
 .cta {
   padding: 3.5rem 0;
   text-align: center;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2.5rem 0;
+  }
 
   &__header-text {
     font-size: 1.5rem;
