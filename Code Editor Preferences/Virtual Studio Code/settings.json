@@ -221,8 +221,8 @@
     "terminal.integrated.lineHeight": 1,
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
 
-    // Window (default: -0.12)
-    "window.zoomLevel": -0.12,
+    // Window (default: -0.03)
+    "window.zoomLevel": -0.03,
 
     // Workbench
     "workbench.activityBar.visible": true,
