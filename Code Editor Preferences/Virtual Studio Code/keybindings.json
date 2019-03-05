@@ -1,51 +1,63 @@
 [
-  // Windows keybinds
-  {
-    "key": "ctrl+k",
-    "command": "workbench.action.terminal.clear",
-    "when": "isWindows && terminalFocus"
-  },
-  {
-    "key": "ctrl+r",
-    "command": "code-runner.run",
-    "when": "isWindows && !terminalFocus"
-  },
-  {
-    "key": "ctrl+shift+e",
-    "command": "workbench.action.terminal.kill",
-    "when": "isWindows && terminalFocus"
-  },
-  {
-    "key": "ctrl+enter",
-    "command": "jupyter.execCurrentCell",
-    "when": "isWindows && editorTextFocus"
-  },
-  {
-    "key": "ctrl+alt+`",
-    "command": "shellLauncher.launch",
-    "when": "isWindows"
-  },
-
-  // macOS keybinds
-  {
-    "key": "cmd+k",
-    "command": "workbench.action.terminal.clear",
-    "when": "isMac && terminalFocus"
-  },
-  {
-    "key": "cmd+r",
-    "command": "code-runner.run",
-    "when": "isMac && !terminalFocus"
-  },
-  {
-    "key": "cmd+shift+e",
-    "command": "workbench.action.terminal.kill",
-    "when": "isMac && terminalFocus"
-  },
-  {
-    "key": "cmd+enter",
-    "command": "jupyter.execCurrentCell",
-    "when": "isMac && editorTextFocus"
-  },
-  { "key": "cmd+alt+`", "command": "shellLauncher.launch", "when": "isMac" }
+    // Windows keybinds
+    {
+        "key": "ctrl+;",
+        "command": "extension.aceJump",
+        "when": "isWindows"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "shift+escape",
+        "command": "-workbench.action.terminal.toggleTerminal",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "alt+f12",
+        "command": "-workbench.action.terminal.toggleTerminal",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+`",
+        "command": "workbench.action.selectTheme"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "-workbench.action.selectTheme"
+    },
+    {
+        "key": "ctrl+shift+alt+\\",
+        "command": "workbench.view.scm"
+    },
+    {
+        "key": "ctrl+`",
+        "command": "-workbench.view.scm"
+    },
+    {
+        "key": "shift+alt+down",
+        "command": "editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-editor.action.copyLinesDownAction",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "-editor.action.deleteLines",
+        "when": "textInputFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+alt+`",
+        "command": "shellLauncher.launch"
+    }
 ]

@@ -13,28 +13,28 @@ import static java.lang.System.*;
 
 public class ArrayListFunHouse
 {
-  public static ArrayList<Integer> getListOfFactors(int number) {
-    ArrayList<Integer> output = new ArrayList<Integer>();
+    public static ArrayList<Integer> getListOfFactors(int number) {
+        ArrayList<Integer> output = new ArrayList<Integer>();
 
-    for (int i = 2; i < number; i++) {
-      if (number % i == 0) {
-        output.add(i);
-      }
+        for (int i = 2; i < number; i++) {
+            if (number % i == 0) {
+                output.add(i);
+            }
+        }
+
+        return output;
     }
 
-    return output;
-  }
+    public static void keepOnlyCompositeNumbers(List<Integer> nums) {
+        int index = nums.size() - 1;
+        while (index >= 0) {
+            ArrayList<Integer> temp = ArrayListFunHouse.getListOfFactors(nums.get(index));
 
-  public static void keepOnlyCompositeNumbers(List<Integer> nums) {
-    int index = nums.size() - 1;
-    while (index >= 0) {
-      ArrayList<Integer> temp = ArrayListFunHouse.getListOfFactors(nums.get(index));
+            if (temp.size() == 0) {
+                nums.remove(index);
+            }
 
-      if (temp.size() == 0) {
-        nums.remove(index);
-      }
-
-      index--;
+            index--;
+        }
     }
-  }
 }

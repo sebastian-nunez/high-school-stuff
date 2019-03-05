@@ -1,11 +1,10 @@
-
 // � A+ Computer Science - www.apluscompsci.com
 // Name - Sebastian Nunez
 // Date - 10/23/18
 // Class - 10th
 // Lab - Monster
 
-import static java.lang.System.*;
+import static java.lang.System.out;
 
 public class Monster
 {
@@ -29,12 +28,12 @@ public class Monster
     public int getHowBig() {
         return howBig;
     }
-    
+
     public String comparedTo(Monster other) {
-      out.println("\nMonster 1 - " + name);
-      out.println("Monster 2 - " + other.getName());
-      
-      return "\n" + compareSize(other) + "\n" + compareName(other);
+        out.println("\nMonster 1 - " + name);
+        out.println("Monster 2 - " + other.getName());
+
+        return "\n" + compareSize(other) + "\n" + compareName(other);
     }
 
     private boolean isBigger(Monster other) {
@@ -56,11 +55,11 @@ public class Monster
         else
             return name + " does not have the same name as " + other.getName();
     }
-    
+
     private boolean namesTheSame(Monster other) {
-      if (other.getName().equals(name))
-        return true;
-      return false;
+        if (other.getName().equals(name))
+            return true;
+        return false;
     }
 
     private String compareSize(Monster other) {
@@ -69,8 +68,8 @@ public class Monster
         else if (isBigger(other))
             return name + " is smaller than " + other.getName();
         else if (isSmaller(other))
-            return name + " is bigger than " + other.getName(); 
-        return "ERROR...?"; 
+            return name + " is bigger than " + other.getName();
+        return "ERROR...?";
     }
 
     public String toString() {

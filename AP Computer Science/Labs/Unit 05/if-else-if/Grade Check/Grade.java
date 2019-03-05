@@ -9,35 +9,35 @@ import static java.lang.System.*;
 
 public class Grade
 {
-  private int numGrade;
+    private int numGrade;
 
-  public Grade() {
-    numGrade = 0;
-  }
+    public Grade() {
+        numGrade = 0;
+    }
 
-  public Grade(int grade) {
-    setGrade(grade);
-  }
+    public Grade(int grade) {
+        setGrade(grade);
+    }
 
-  public void setGrade(int grade) {
-    numGrade = grade;
-  }
+    public void setGrade(int grade) {
+        numGrade = grade;
+    }
 
-  public String getLetterGrade() {
-    if (numGrade < 70)
-      return "F";
-    else if (numGrade >= 70 && numGrade < 75)
-      return "D";
-    else if (numGrade >= 75 && numGrade < 80)
-      return "C";
-    else if (numGrade >= 80 && numGrade < 90)
-      return "B";
-    else if (numGrade >= 90)
-      return "A";
-    return "Try again...";
-  }
+    public String getLetterGrade() {
+        if (numGrade < 70)
+            return "F";
+        else if (numGrade >= 70 && numGrade < 75)
+            return "D";
+        else if (numGrade >= 75 && numGrade < 80)
+            return "C";
+        else if (numGrade >= 80 && numGrade < 90)
+            return "B";
+        else if (numGrade >= 90)
+            return "A";
+        return "Try again...";
+    }
 
-  public String toString() {
-    return numGrade + " is a " + getLetterGrade() + "\n";
-  }
+    public String toString() {
+        return numGrade + " is a " + getLetterGrade() + "\n";
+    }
 }
