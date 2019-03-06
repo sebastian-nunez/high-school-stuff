@@ -1,10 +1,10 @@
-<scheme name="IntelliJ IDEA [Color Scheme]" version="142">
+<scheme name="IntelliJ IDEA [Color Scheme]" version="5">
   <metaInfo>
     <property name="created">2019-03-04T23:44:11</property>
     <property name="ide">Idea</property>
     <property name="ideVersion">2018.3.5.0.0</property>
     <property name="modified">2019-03-04T23:44:21</property>
-    <property name="originalScheme">Atom One Dark (Photon)</property>
+    <property name="originalScheme">Atom One Dark</property>
   </metaInfo>
   <colors>
     <option name="CARET_COLOR" value="636d83" />
