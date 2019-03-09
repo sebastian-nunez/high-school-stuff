@@ -9,6 +9,9 @@
 ## **Contents** <!-- omit in toc -->
 
 - [**Integrated Development Enviroments**](#integrated-development-enviroments)
+  - [**Java**](#java)
+  - [**Web Development**](#web-development)
+  - [**Python**](#python)
 - [**Description**](#description)
   - [Languages](#languages)
 - [**Snake Game**](#snake-game)
@@ -21,8 +24,16 @@
 
 ## **Integrated Development Enviroments**
 
+### **Java**
+
 -   IntelliJ IDEA
+
+### **Web Development**
+
 -   WebStorm
+
+### **Python**
+
 -   PyCharm
 
 ## **Description**
