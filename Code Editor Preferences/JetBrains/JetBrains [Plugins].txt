@@ -1,0 +1,6 @@
+- AceJump
+- CodeGlance
+- Material Theme UI
+- Rainbow Brackets
+- Save Actions
+- Presentation Assistant
