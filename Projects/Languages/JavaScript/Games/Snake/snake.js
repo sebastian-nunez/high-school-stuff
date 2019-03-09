@@ -113,11 +113,11 @@ window.onload = function () {
 
     // if the snake hits the wall or eats its tail then it's game over
     if (
-      snakeX < 0 ||
-      snakeY < 0 ||
-      snakeX >= cvsW / snakeW ||
-      snakeY >= cvsH / snakeH ||
-      checkCollision(snakeX, snakeY, snake)
+        snakeX < 0 ||
+        snakeY < 0 ||
+        snakeX >= cvsW / snakeW ||
+        snakeY >= cvsH / snakeH ||
+        checkCollision(snakeX, snakeY, snake)
     ) {
       location.reload();
     }
@@ -128,6 +128,7 @@ window.onload = function () {
         x: Math.round(Math.random() * (cvsW / snakeW - 1)),
         y: Math.round(Math.random() * (cvsH / snakeH - 1)),
       };
+
       var newHead = {
         x: snakeX,
         y: snakeY,
