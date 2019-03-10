@@ -1,6 +1,6 @@
 # **Computer Science - Archive** <!-- omit in toc -->
 
-![Project Image](https://lh3.googleusercontent.com/Lv_KUrY6oKwqtIiuOxnU9bMNMmrGHUB7P4iqkaA8i7j0P4pa_m1PFdqCFEyCOXzyThnV9AYBZYgi8Q=w1920-h1078-rw-no)
+![Project Image](https://lh3.googleusercontent.com/N8K5kovDbSeIXTfjmSDlCMVMhn79Isic7CvMSuysC2lUIEVFfRfJS7WsIYjOT7SWMtSZNoA2qMkSTTnqqwYGM5m8EzdHaBt2n9XnkA=w1920-h1012-rw-no)
 
 > **Code Editor:** Visual Studio Code
 
