@@ -7,18 +7,31 @@
 ---
 
 ## **Contents** <!-- omit in toc -->
-
+- [**Description**](#description)
+  - [Languages](#languages)
 - [**Integrated Development Enviroments**](#integrated-development-enviroments)
   - [Java](#java)
   - [Web Development](#web-development)
   - [Python](#python)
-- [**Description**](#description)
-  - [Languages](#languages)
 - [**Snake Game**](#snake-game)
   - [HTML/CSS](#htmlcss)
   - [JavaScript](#javascript)
 - [**License**](#license)
   - [MIT](#mit)
+
+---
+
+## **Description**
+
+Personal archive to store/backup some of my personal and school work, allowing ease of acess to numerous files.
+
+### Languages
+
+-   HTML/CSS
+-   JavaScript
+-   Java
+-   Python
+-   Markdown
 
 ---
 
@@ -37,20 +50,6 @@
 -   PyCharm
 
 > **Note:** IDE Configuration: https://github.com/mikozera/JetBrains-Atom-One-Dark
-
----
-
-## **Description**
-
-Personal archive to store/backup some of my personal and school work, allowing ease of acess to numerous files.
-
-### Languages
-
--   HTML/CSS
--   JavaScript
--   Java
--   Python
--   Markdown
 
 ---
 
