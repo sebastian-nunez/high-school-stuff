@@ -1,4 +1,4 @@
-# **Computer Science - Archive** <!-- omit in toc -->
+# **Computer Science - Archive**
 
 ![Project Image](https://lh3.googleusercontent.com/N8K5kovDbSeIXTfjmSDlCMVMhn79Isic7CvMSuysC2lUIEVFfRfJS7WsIYjOT7SWMtSZNoA2qMkSTTnqqwYGM5m8EzdHaBt2n9XnkA=w1920-h1012-rw-no)
 
@@ -6,18 +6,16 @@
 
 ---
 
-## **Contents** <!-- omit in toc -->
-- [**Description**](#description)
-  - [Languages](#languages)
-- [**Integrated Development Enviroments**](#integrated-development-enviroments)
-  - [Java](#java)
-  - [Web Development](#web-development)
-  - [Python](#python)
-- [**Snake Game**](#snake-game)
-  - [HTML/CSS](#htmlcss)
-  - [JavaScript](#javascript)
-- [**License**](#license)
-  - [MIT](#mit)
+## **Contents**
+
+-   [**Description**](#description)
+    -   [Languages](#languages)
+-   [**Integrated Development Enviroments**](#integrated-development-enviroments)
+-   [**Snake Game**](#snake-game)
+    -   [HTML/CSS](#htmlcss)
+    -   [JavaScript](#javascript)
+-   [**License**](#license)
+    -   [MIT](#mit)
 
 ---
 
@@ -25,7 +23,7 @@
 
 Personal archive to store/backup some of my personal and school work, allowing ease of acess to numerous files.
 
-### Languages
+### **Languages**
 
 -   HTML/CSS
 -   JavaScript
@@ -37,19 +35,13 @@ Personal archive to store/backup some of my personal and school work, allowing e
 
 ## **Integrated Development Enviroments**
 
-### **Java**
-
 -   IntelliJ IDEA
-
-### **Web Development**
 
 -   WebStorm
 
-### **Python**
-
 -   PyCharm
 
-> **Note:** IDE Configuration: https://github.com/mikozera/JetBrains-Atom-One-Dark
+> **IDE Configuration:** https://github.com/mikozera/JetBrains-Atom-One-Dark
 
 ---
 
