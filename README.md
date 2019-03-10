@@ -36,7 +36,7 @@
 
 -   PyCharm
 
-> **Note:** Full IDE configurations are found here: https://github.com/mikozera/JetBrains-Atom-One-Dark
+> **Note:** IDE Configuration: https://github.com/mikozera/JetBrains-Atom-One-Dark
 
 ---
 
