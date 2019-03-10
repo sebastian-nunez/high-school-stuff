@@ -3,6 +3,7 @@ Temporary
 node_modules
 *.idea
 *.iml
+out
 
 # Compiled source #
 *.com
