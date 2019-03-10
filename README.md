@@ -36,6 +36,10 @@
 
 -   PyCharm
 
+> **Note:** Full IDE configurations are found here: https://github.com/mikozera/JetBrains-Atom-One-Dark
+
+---
+
 ## **Description**
 
 Personal archive to store/backup some of my personal and school work, allowing ease of acess to numerous files.
