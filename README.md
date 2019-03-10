@@ -2,16 +2,16 @@
 
 ![Project Image](https://lh3.googleusercontent.com/Lv_KUrY6oKwqtIiuOxnU9bMNMmrGHUB7P4iqkaA8i7j0P4pa_m1PFdqCFEyCOXzyThnV9AYBZYgi8Q=w1920-h1078-rw-no)
 
-> **Editor:** Visual Studio Code
+> **Code Editor:** Visual Studio Code
 
 ---
 
 ## **Contents** <!-- omit in toc -->
 
 - [**Integrated Development Enviroments**](#integrated-development-enviroments)
-  - [Java](#java)
-  - [Web Development](#web-development)
-  - [Python](#python)
+  - [**Java**](#java)
+  - [**Web Development**](#web-development)
+  - [**Python**](#python)
 - [**Description**](#description)
   - [Languages](#languages)
 - [**Snake Game**](#snake-game)
