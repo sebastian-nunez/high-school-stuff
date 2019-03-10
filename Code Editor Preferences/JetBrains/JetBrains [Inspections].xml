@@ -814,8 +814,6 @@
     <inspection_tool class="CssMissingSemicolon" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="CssNegativeValue" enabled="false" level="ERROR" enabled_by_default="false"/>
     <inspection_tool class="CssNoGenericFontName" enabled="false" level="WARNING" enabled_by_default="false"/>
-    <inspection_tool class="CssOptimizeSimilarProperties" enabled="false" level="WEAK WARNING"
-                     enabled_by_default="false"/>
     <inspection_tool class="CssOverwrittenProperties" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="CssRedundantUnit" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="CssReplaceWithShorthandSafely" enabled="false" level="WEAK WARNING"
@@ -823,19 +821,10 @@
     <inspection_tool class="CssReplaceWithShorthandUnsafely" enabled="false" level="INFORMATION"
                      enabled_by_default="false"/>
     <inspection_tool class="CssUnitlessNumber" enabled="false" level="WARNING" enabled_by_default="false"/>
-    <inspection_tool class="CssUnknownProperty" enabled="false" level="WARNING" enabled_by_default="false">
-        <option name="myCustomPropertiesEnabled" value="false"/>
-        <option name="myIgnoreVendorSpecificProperties" value="false"/>
-        <option name="myCustomPropertiesList">
-            <value>
-                <list size="0"/>
-            </value>
-        </option>
-    </inspection_tool>
+    <inspection_tool class="CssUnknownProperty" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="CssUnknownTarget" enabled="false" level="ERROR" enabled_by_default="false"/>
     <inspection_tool class="CssUnresolvedClass" enabled="false" level="ERROR" enabled_by_default="false"/>
     <inspection_tool class="CssUnresolvedCustomProperty" enabled="false" level="ERROR" enabled_by_default="false"/>
-    <inspection_tool class="CssUnresolvedCustomPropertySet" enabled="false" level="ERROR" enabled_by_default="false"/>
     <inspection_tool class="CssUnusedSymbol" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="CucumberExamplesColon" enabled="false" level="ERROR" enabled_by_default="false"/>
     <inspection_tool class="CucumberMissedExamples" enabled="false" level="ERROR" enabled_by_default="false"/>
@@ -927,7 +916,6 @@
     </inspection_tool>
     <inspection_tool class="DuplicateThrows" enabled="true" level="WARNING" enabled_by_default="true"/>
     <inspection_tool class="DuplicatedDataProviderNames" enabled="true" level="ERROR" enabled_by_default="true"/>
-    <inspection_tool class="Duplicates" enabled="false" level="WEAK WARNING" enabled_by_default="false"/>
     <inspection_tool class="DynamicRegexReplaceableByCompiledPattern" enabled="false" level="WARNING"
                      enabled_by_default="false"/>
     <inspection_tool class="DynamicallyGeneratedCodeJS" enabled="false" level="WARNING" enabled_by_default="false"/>
@@ -989,7 +977,6 @@
         <option name="commentsAreContent" value="true"/>
     </inspection_tool>
     <inspection_tool class="EmptyDirectory" enabled="false" level="WARNING" enabled_by_default="false"/>
-    <inspection_tool class="EmptyEventHandler" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="EmptyFinallyBlock" enabled="true" level="WARNING" enabled_by_default="true"/>
     <inspection_tool class="EmptyFinallyBlockJS" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="EmptyInitializer" enabled="false" level="WARNING" enabled_by_default="false"/>
@@ -998,9 +985,7 @@
     <inspection_tool class="EmptyStatementBody" enabled="false" level="WARNING" enabled_by_default="false">
         <option name="m_reportEmptyBlocks" value="true"/>
     </inspection_tool>
-    <inspection_tool class="EmptyStatementBodyJS" enabled="false" level="WARNING" enabled_by_default="false">
-        <option name="m_reportEmptyBlocks" value="false"/>
-    </inspection_tool>
+    <inspection_tool class="EmptyStatementBodyJS" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="EmptySynchronizedStatement" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="EmptyTryBlock" enabled="true" level="WARNING" enabled_by_default="true"/>
     <inspection_tool class="EmptyTryBlockJS" enabled="false" level="WARNING" enabled_by_default="false"/>
@@ -1105,9 +1090,7 @@
     <inspection_tool class="ForLoopReplaceableByWhile" enabled="true" level="INFORMATION" enabled_by_default="true">
         <option name="m_ignoreLoopsWithoutConditions" value="false"/>
     </inspection_tool>
-    <inspection_tool class="ForLoopReplaceableByWhileJS" enabled="false" level="WARNING" enabled_by_default="false">
-        <option name="m_ignoreLoopsWithoutConditions" value="false"/>
-    </inspection_tool>
+    <inspection_tool class="ForLoopReplaceableByWhileJS" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="ForLoopThatDoesntUseLoopVariableJS" enabled="false" level="WARNING"
                      enabled_by_default="false"/>
     <inspection_tool class="ForLoopWithMissingComponent" enabled="false" level="WARNING" enabled_by_default="false">
@@ -1575,19 +1558,14 @@
     <inspection_tool class="JSLint" enabled="false" level="ERROR" enabled_by_default="false"/>
     <inspection_tool class="JSMethodCanBeStatic" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="JSMismatchedCollectionQueryUpdate" enabled="false" level="WARNING"
-                     enabled_by_default="false">
-        <option name="queries" value="trace,write,forEach,length"/>
-        <option name="updates" value="pop,push,shift,splice,unshift,add,insert,remove"/>
-    </inspection_tool>
+                     enabled_by_default="false"/>
     <inspection_tool class="JSMissingSwitchBranches" enabled="false" level="INFORMATION" enabled_by_default="false"/>
     <inspection_tool class="JSMissingSwitchDefault" enabled="false" level="INFORMATION" enabled_by_default="false"/>
     <inspection_tool class="JSNonASCIINames" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="JSNonStrictModeUsed" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="JSObjectNullOrUndefined" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="JSPotentiallyInvalidConstructorUsage" enabled="false" level="WARNING"
-                     enabled_by_default="false">
-        <option name="myConsiderUppercaseFunctionsToBeConstructors" value="true"/>
-    </inspection_tool>
+                     enabled_by_default="false"/>
     <inspection_tool class="JSPotentiallyInvalidTargetOfIndexedPropertyAccess" enabled="false" level="WARNING"
                      enabled_by_default="false"/>
     <inspection_tool class="JSPotentiallyInvalidUsageOfClassThis" enabled="false" level="WARNING"
@@ -1605,11 +1583,7 @@
                      enabled_by_default="false"/>
     <inspection_tool class="JSStringConcatenationToES6Template" enabled="false" level="INFORMATION"
                      enabled_by_default="false"/>
-    <inspection_tool class="JSSuspiciousNameCombination" enabled="false" level="WARNING" enabled_by_default="false">
-        <group names="x,width,left,right"/>
-        <group names="y,height,top,bottom"/>
-        <exclude classes="Math"/>
-    </inspection_tool>
+    <inspection_tool class="JSSuspiciousNameCombination" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="JSSwitchVariableDeclarationIssue" enabled="false" level="WARNING"
                      enabled_by_default="false"/>
     <inspection_tool class="JSTestFailedLine" enabled="false" level="WARNING" enabled_by_default="false"/>
@@ -1953,9 +1927,7 @@
     <inspection_tool class="NestedConditionalExpression" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="NestedConditionalExpressionJS" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="NestedFunctionCallJS" enabled="false" level="WARNING" enabled_by_default="false"/>
-    <inspection_tool class="NestedFunctionJS" enabled="false" level="WARNING" enabled_by_default="false">
-        <option name="m_includeAnonymousFunctions" value="false"/>
-    </inspection_tool>
+    <inspection_tool class="NestedFunctionJS" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="NestedLambdaShadowedImplicitParameter" enabled="true" level="WEAK WARNING"
                      enabled_by_default="true"/>
     <inspection_tool class="NestedMethodCall" enabled="false" level="WARNING" enabled_by_default="false">
@@ -2211,9 +2183,7 @@
     <inspection_tool class="PointlessBitwiseExpression" enabled="true" level="WARNING" enabled_by_default="true">
         <option name="m_ignoreExpressionsContainingConstants" value="true"/>
     </inspection_tool>
-    <inspection_tool class="PointlessBitwiseExpressionJS" enabled="false" level="WARNING" enabled_by_default="false">
-        <option name="m_ignoreExpressionsContainingConstants" value="false"/>
-    </inspection_tool>
+    <inspection_tool class="PointlessBitwiseExpressionJS" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="PointlessBooleanExpression" enabled="true" level="WARNING" enabled_by_default="true">
         <option name="m_ignoreExpressionsContainingConstants" value="true"/>
     </inspection_tool>
@@ -2275,19 +2245,6 @@
                 value="aa,abc,bad,bar,bar2,baz,baz1,baz2,baz3,bb,blah,bogus,bool,cc,dd,defau1t,dummy,dummy2,ee,fa1se,ff,foo,foo1,foo2,foo3,foobar,four,fred,fred1,fred2,gg,hh,hello,hello1,hello2,hello3,ii,nu11,one,silly,silly2,string,two,that,then,three,whi1e,var"/>
     </inspection_tool>
     <inspection_tool class="QuickFixGetFamilyNameViolation" enabled="true" level="WARNING" enabled_by_default="true"/>
-    <inspection_tool class="QuirksModeInspectionTool" enabled="false" level="WARNING" enabled_by_default="false">
-        <option name="IE50" value="false"/>
-        <option name="IE55" value="false"/>
-        <option name="IE6" value="true"/>
-        <option name="IE7" value="true"/>
-        <option name="IE_MAC" value="false"/>
-        <option name="MOZILLA" value="true"/>
-        <option name="OPERA7" value="false"/>
-        <option name="OPERA8" value="false"/>
-        <option name="OPERA85" value="true"/>
-        <option name="OPERA9" value="true"/>
-        <option name="SAFARI" value="true"/>
-    </inspection_tool>
     <inspection_tool class="RandomDoubleForRandomInteger" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="RawTypeCanBeGeneric" enabled="true" level="INFORMATION" enabled_by_default="true"/>
     <inspection_tool class="RawUseOfParameterizedType" enabled="false" level="WARNING" enabled_by_default="false"/>
@@ -2614,7 +2571,6 @@
     <inspection_tool class="SuspiciousGetterSetter" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="SuspiciousIndentAfterControlStatement" enabled="false" level="WARNING"
                      enabled_by_default="false"/>
-    <inspection_tool class="SuspiciousInstanceOfGuard" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="SuspiciousListRemoveInLoop" enabled="true" level="WARNING" enabled_by_default="true"/>
     <inspection_tool class="SuspiciousLiteralUnderscore" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="SuspiciousLocalesLanguages" enabled="false" level="WARNING" enabled_by_default="false"/>
@@ -2637,8 +2593,6 @@
         <option name="m_limit" value="20"/>
     </inspection_tool>
     <inspection_tool class="SwitchStatementWithConfusingDeclaration" enabled="false" level="WARNING"
-                     enabled_by_default="false"/>
-    <inspection_tool class="SwitchStatementWithNoDefaultBranchJS" enabled="false" level="WARNING"
                      enabled_by_default="false"/>
     <inspection_tool class="SwitchStatementWithTooFewBranches" enabled="true" level="WARNING" enabled_by_default="true">
         <option name="m_limit" value="2"/>
@@ -2841,10 +2795,7 @@
         <option name="m_ignoreImmediatelyReturnedVariables" value="false"/>
         <option name="m_ignoreAnnotatedVariables" value="false"/>
     </inspection_tool>
-    <inspection_tool class="UnnecessaryLocalVariableJS" enabled="false" level="WARNING" enabled_by_default="false">
-        <option name="m_ignoreImmediatelyReturnedVariables" value="false"/>
-        <option name="m_ignoreAnnotatedVariables" value="false"/>
-    </inspection_tool>
+    <inspection_tool class="UnnecessaryLocalVariableJS" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="UnnecessaryModuleDependencyInspection" enabled="true" level="WARNING"
                      enabled_by_default="true"/>
     <inspection_tool class="UnnecessaryParentheses" enabled="true" level="INFORMATION" enabled_by_default="true">
@@ -2892,17 +2843,13 @@
     <inspection_tool class="UnsafeVfsRecursion" enabled="true" level="WARNING" enabled_by_default="true"/>
     <inspection_tool class="UnsecureRandomNumberGeneration" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="UnstableApiUsage" enabled="true" level="WARNING" enabled_by_default="true"/>
-    <inspection_tool class="UnterminatedStatementJS" enabled="false" level="WARNING" enabled_by_default="false">
-        <option name="ignoreSemicolonAtEndOfBlock" value="true"/>
-    </inspection_tool>
+    <inspection_tool class="UnterminatedStatementJS" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="UnusedAssignment" enabled="true" level="WARNING" enabled_by_default="true">
         <option name="REPORT_PREFIX_EXPRESSIONS" value="false"/>
         <option name="REPORT_POSTFIX_EXPRESSIONS" value="true"/>
         <option name="REPORT_REDUNDANT_INITIALIZER" value="true"/>
     </inspection_tool>
-    <inspection_tool class="UnusedCatchParameterJS" enabled="false" level="WARNING" enabled_by_default="false">
-        <option name="m_ignoreCatchBlocksWithComments" value="false"/>
-    </inspection_tool>
+    <inspection_tool class="UnusedCatchParameterJS" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="UnusedDefine" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="UnusedEquals" enabled="true" level="WARNING" enabled_by_default="true"/>
     <inspection_tool class="UnusedLabel" enabled="true" level="WARNING" enabled_by_default="true"/>
@@ -2962,10 +2909,7 @@
     <inspection_tool class="VolatileLongOrDoubleField" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="VueDataFunction" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="VueDuplicateTag" enabled="false" level="WARNING" enabled_by_default="false"/>
-    <inspection_tool class="W3CssValidation" enabled="false" level="WARNING" enabled_by_default="false">
-        <option name="myCssVersion" value="css3"/>
-        <option name="myIgnoreVendorSpecificProperties" value="false"/>
-    </inspection_tool>
+    <inspection_tool class="W3CssValidation" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="WaitCalledOnCondition" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="WaitNotInLoop" enabled="false" level="WARNING" enabled_by_default="false"/>
     <inspection_tool class="WaitNotifyNotInSynchronizedContext" enabled="false" level="WARNING"
