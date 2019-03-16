@@ -4,21 +4,23 @@
   "description": "Nexter webpage",
   "main": "index.js",
   "scripts": {
+    "dev:server": "live-server",
     "watch:sass": "node-sass sass/style.scss css/style.css -w",
-    "devserver": "live-server",
-    "start": "npm-run-all --parallel devserver watch:sass",
-    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
-    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
-    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
-    "build:css": "npm-run-all compile:sass prefix:css compress:css"
+    "compile:sass": "node-sass sass/style.scss css/style.css",
+    "concat:css": "concat -o css/style.css css/style.css",
+    "prefix:css": "postcss css/style.css --use autoprefixer -b \"last 10 versions\" -o css/style.css",
+    "compress:css": "node-sass css/style.css css/style.css --output-style compressed",
+    "start": "npm-run-all --parallel dev:server watch:sass",
+    "build": "npm-run-all compile:sass concat:css prefix:css compress:css"
   },
   "author": "mikozera",
   "license": "MIT",
   "devDependencies": {
-    "autoprefixer": "^7.1.4",
+    "autoprefixer": "^9.5.0",
     "concat": "^1.0.3",
-    "node-sass": "^4.5.3",
-    "npm-run-all": "^4.1.1",
-    "postcss-cli": "^4.1.1"
-  }
+    "node-sass": "^4.11.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.1.2"
+  },
+  "dependencies": {}
 }
