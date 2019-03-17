@@ -3,6 +3,8 @@ temp
 node_modules
 *.iml
 out
+modules.xml
+workspace.xml
 
 # Compiled source #
 *.com
@@ -35,3 +37,6 @@ out
 .Trashes
 ehthumbs.db
 Thumbs.db
+AP Computer Science/Labs/.idea/workspace.xml
+Projects/Web Development/Websites/06 - Nexter/.idea/workspace.xml
+AP Computer Science/Labs/.idea/workspace.xml
