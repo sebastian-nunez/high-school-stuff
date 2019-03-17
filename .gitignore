@@ -2,9 +2,7 @@
 temp
 node_modules
 *.iml
-out
-modules.xml
-workspace.xml
+*.idea
 
 # Compiled source #
 *.com
