@@ -25,6 +25,11 @@ window.onload = function start() {
       bird.up();
     }
   });
+  const add = () => {
+    () => {
+
+    }
+  }
 
   //bird constructor
   function Bird() {
