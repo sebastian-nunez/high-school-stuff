@@ -7,18 +7,14 @@ public class Grades
     private Grade[] grades;
 
     public Grades(String gradeList) {
-        grades = new Grade[Integer.parseInt(gradeList.substring(0, gradeList.indexOf(" ")))];
-        gradeList = gradeList.substring(gradeList.indexOf("-") + 2);
+        String[] temp = gradeList.split(" ");
 
-        int indexOfGrade = 0;
-        while (gradeList.contains(" ")) {
-            grades[indexOfGrade] = new Grade(Double.parseDouble(gradeList.substring(0, gradeList.indexOf(" "))));
-            gradeList = gradeList.substring(gradeList.indexOf(" ") + 1);
-            indexOfGrade++;
+        grades = new Grade[Integer.parseInt(temp[0])];
 
-            if (!gradeList.contains(" ")) {
-                grades[indexOfGrade] = new Grade(Double.parseDouble(gradeList));
-            }
+        int spot = 0;
+        for (int i = 2; i < temp.length; i++) {
+            grades[spot] = new Grade(Double.parseDouble(temp[i]));
+            spot++;
         }
     }
 
