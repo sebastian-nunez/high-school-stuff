@@ -1,4 +1,4 @@
-window.onload = function () {
+window.onload = function() {
   const cvs = document.getElementById("canvas");
   const ctx = cvs.getContext("2d");
 
@@ -46,14 +46,14 @@ window.onload = function () {
   for (let i = len - 1; i >= 0; i--) {
     snake.push({
       x: i,
-      y: 0,
+      y: 0
     });
   }
 
   // create some food
   let food = {
     x: Math.round(Math.random() * (cvsW / snakeW - 1)),
-    y: Math.round(Math.random() * (cvsH / snakeH - 1)),
+    y: Math.round(Math.random() * (cvsH / snakeH - 1))
   };
 
   // draw food function
@@ -113,11 +113,11 @@ window.onload = function () {
 
     // if the snake hits the wall or eats its tail then it's game over
     if (
-        snakeX < 0 ||
-        snakeY < 0 ||
-        snakeX >= cvsW / snakeW ||
-        snakeY >= cvsH / snakeH ||
-        checkCollision(snakeX, snakeY, snake)
+      snakeX < 0 ||
+      snakeY < 0 ||
+      snakeX >= cvsW / snakeW ||
+      snakeY >= cvsH / snakeH ||
+      checkCollision(snakeX, snakeY, snake)
     ) {
       location.reload();
     }
@@ -126,19 +126,18 @@ window.onload = function () {
     if (snakeX == food.x && snakeY == food.y) {
       food = {
         x: Math.round(Math.random() * (cvsW / snakeW - 1)),
-        y: Math.round(Math.random() * (cvsH / snakeH - 1)),
+        y: Math.round(Math.random() * (cvsH / snakeH - 1))
       };
-
-      var newHead = {
+      let newHead = {
         x: snakeX,
-        y: snakeY,
+        y: snakeY
       };
       score++;
     } else {
       snake.pop();
       newHead = {
         x: snakeX,
-        y: snakeY,
+        y: snakeY
       };
     }
     snake.unshift(newHead);

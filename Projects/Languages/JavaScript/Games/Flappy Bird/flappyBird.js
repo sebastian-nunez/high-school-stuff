@@ -24,11 +24,6 @@ window.onload = function start() {
     if (e.keyCode == 32) {
       bird.up();
     }
-  });
-  const add = () => {
-    () => {
-
-    }
   }
 
   //bird constructor
