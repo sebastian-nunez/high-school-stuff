@@ -31,6 +31,12 @@ body {
   font-weight: 400;
 }
 
+.heading-1 {
+  color: #f9f7f6;
+  font-size: 4.5rem;
+  line-height: 1;
+}
+
 .heading-2 {
   font-size: 4rem;
   font-style: italic;
@@ -132,6 +138,38 @@ body {
 .header {
   background-color: #6d5d4b;
   grid-column: full-start / col-end 6;
+  background-image: linear-gradient(rgba(16, 29, 44, 0.93), rgba(16, 29, 44, 0.93)), url("../img/hero.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  grid-template-rows: 1fr min-content 6rem 1fr;
+  grid-template-columns: max-content;
+  grid-row-gap: 1.5rem;
+  justify-content: center;
+  padding: 8rem;
+  padding-top: 4rem;
+}
+
+.header__logo {
+  height: 3rem;
+  justify-self: center;
+}
+
+.header__btn {
+  justify-self: start;
+  align-self: start;
+}
+
+.header__seenon-logos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 3rem;
+  justify-items: center;
+}
+
+.header__seenon-logos img {
+  height: 2.5rem;
+  filter: brightness(70%);
 }
 
 .realtors {
