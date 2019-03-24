@@ -6,12 +6,21 @@
 
   display: flex;
   justify-content: center;
+
+  @media only screen and (max-width: $bp-large) {
+    grid-row: 1 / 2;
+    grid-column: 1 / -1;
+
+    // aligns the button the right of the sidebar
+    justify-content: flex-end;
+    align-items: center;
+  }
 }
 
 .nav-btn {
 
   width: 4.5rem;
-  height: 0.2rem;
+  height: 2px;
 
   background-color: #fff;
 
@@ -27,7 +36,7 @@
     display: block;
 
     width: 4.5rem;
-    height: 0.2rem;
+    height: 2px;
 
     background-color: #fff;
   }
@@ -38,5 +47,18 @@
 
   &::after {
     transform: translateY(1.3rem);
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    margin-top: 0;
+    margin-right: 3rem;
+
+    &::before {
+      transform: translateY(-1.2rem);
+    }
+
+    &::after {
+      transform: translateY(1rem);
+    }
   }
 }
