@@ -7,10 +7,45 @@
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
-    <title>Ajax 1</title>
-    <script src="app.js"></script>
+    <title>Ajax 1 - Text File</title>
   </head>
   <body>
+    <button id="button">Get Text File</button>
+    <br>
+    <br>
 
+    <div id="text"></div>
+
+    <script>
+      document.getElementById("button").addEventListener("click", loadText);
+
+      function loadText() {
+        var xhr = new XMLHttpRequest();
+
+        // type, url/file, async
+        xhr.open("GET", "sample2.txt", true);
+
+        // xhr.onprogress (used for loader animations)
+
+        xhr.onload = function() {
+          // 200 - OK
+          // 403 - Forbidden
+          // 404 - Not Found
+          if (this.status == 200) {
+            // console.log(this.responseText);
+            document.getElementById("text").innerHTML = this.responseText;
+          } else if (this.status == 404) {
+            document.getElementById("text").innerHTML = "Not Found";
+          }
+        };
+
+        xhr.onerror = function() {
+          console.log("Request error...");
+        };
+
+        xhr.send();
+      }
+
+    </script>
   </body>
 </html>
