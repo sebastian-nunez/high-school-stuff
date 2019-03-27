@@ -47,3 +47,4 @@ int convertBinaryToDecimal(long long n) {
         ++i;
     }
     return decimalNumber;
+}
