@@ -48,3 +48,5 @@ int convertBinaryToDecimal(long long n) {
     }
     return decimalNumber;
 }
+
+
