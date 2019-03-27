@@ -27,7 +27,8 @@ if (! isset($_SERVER['PHP_AUTH_USER'])) {
 // Connect to a database
 $conn = mysqli_connect('localhost', 'root', '123456', 'ajaxtest');
 
-echo 'Processing...';
+// Fetch Data
+$users = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 // Check for POST variable
 if (isset($_POST['name'])) {
@@ -52,7 +53,5 @@ $query = "SELECT username, pswd FROM user WHERE username='$_SERVER[PHP_AUTH_USER
 // Get Result
 $result = mysqli_query($conn, $query);
 
-// Fetch Data
-$users = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
 echo json_encode($users);
