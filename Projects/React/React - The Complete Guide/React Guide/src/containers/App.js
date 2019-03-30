@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import "./App.scss";
-import Person from "./Person/Person";
+import styles from "./App.module.scss";
+import Person from "../components/People/Person/Person";
 
 class App extends Component {
   state = {
@@ -41,19 +41,10 @@ class App extends Component {
   };
 
   render() {
-    const buttonStyle = {
-      backgroundColor: "green",
-      color: "white",
-      font: "inherit",
-      border: "1px solid blue",
-      padding: "8px",
-      cursor: "pointer"
-    };
-
     let people = null;
-    if (this.state.showPeople) {
-      buttonStyle.backgroundColor = "red";
+    let buttonClass = "";
 
+    if (this.state.showPeople) {
       people = (
         <div>
           {
@@ -69,27 +60,29 @@ class App extends Component {
           }
         </div>
       );
+
+      buttonClass = styles.Red;
     }
 
     const classes = [];
     if (this.state.people.length <= 2) {
-      classes.push("red");
+      classes.push(styles.red);
     }
 
     if (this.state.people.length <= 1) {
-      classes.push("bold");
+      classes.push(styles.bold);
     }
 
     return (
-      <div className="App">
+      <div className={styles.App}>
         <h1>React App</h1>
         <p className={classes.join(" ")}>
           JSX
         </p>
 
         <button
-          onClick={this.togglePeopleHandler}
-          style={buttonStyle}>
+          className={buttonClass}
+          onClick={this.togglePeopleHandler}>
           Toggle People
         </button>
 
@@ -102,7 +95,7 @@ class App extends Component {
 export default App;
 
 // export default app;import React, { useState } from "react";
-// import "./App.scss";
+// import "./App.module.scss";
 // import Person from "./Person/Person";
 //
 // const app = (props) => {
