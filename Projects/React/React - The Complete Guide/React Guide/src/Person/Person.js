@@ -2,6 +2,7 @@ import React from "react";
 import "./Person.scss";
 
 const person = props => {
+
   return (
     <div className={"Person"}>
       <p onClick={props.click}>
