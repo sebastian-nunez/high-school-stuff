@@ -14,21 +14,5 @@
     background-color: lightgreen;
     color: black;
   }
-
-  button.Red {
-    background-color: red;
-
-    &:hover {
-      background-color: salmon;
-      color: black;
-    }
-  }
 }
 
-.red {
-  color: red;
-}
-
-.bold {
-  font-weight: bold;
-}

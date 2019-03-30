@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import styles from "./App.module.scss";
-import Person from "../components/People/Person/Person";
+
+import People from "../components/People/People";
+import Cockpit from "../components/Cockpit/Cockpit";
 
 class App extends Component {
   state = {
@@ -42,49 +44,21 @@ class App extends Component {
 
   render() {
     let people = null;
-    let buttonClass = "";
-
     if (this.state.showPeople) {
-      people = (
-        <div>
-          {
-            this.state.people.map((person, index) => {
-              return <Person
-                name={person.name}
-                age={person.age}
-                click={() => this.deletePersonHandler(index)}
-                change={(event) => this.changeNameHandler(event, person.id)}
-                key={person.id}
-              />;
-            })
-          }
-        </div>
-      );
-
-      buttonClass = styles.Red;
-    }
-
-    const classes = [];
-    if (this.state.people.length <= 2) {
-      classes.push(styles.red);
-    }
-
-    if (this.state.people.length <= 1) {
-      classes.push(styles.bold);
+      people = <People
+        people={this.state.people}
+        deletePersonHandler={this.deletePersonHandler}
+        changeNameHandler={this.changeNameHandler}
+      />;
     }
 
     return (
       <div className={styles.App}>
-        <h1>React App</h1>
-        <p className={classes.join(" ")}>
-          JSX
-        </p>
-
-        <button
-          className={buttonClass}
-          onClick={this.togglePeopleHandler}>
-          Toggle People
-        </button>
+        <Cockpit
+          people={this.state.people}
+          showPeople={this.state.showPeople}
+          togglePeopleHandler={this.togglePeopleHandler}
+        />
 
         {people}
       </div>
@@ -93,81 +67,3 @@ class App extends Component {
 }
 
 export default App;
-
-// export default app;import React, { useState } from "react";
-// import "./App.module.scss";
-// import Person from "./Person/Person";
-//
-// const app = (props) => {
-//   const [peopleState, setPeopleState] = useState({
-//     people: [
-//       { name: "Sebastian", age: 17 },
-//       { name: "Max", age: 29 },
-//       { name: "Manu", age: 26 }
-//     ]
-//   });
-//
-//   const [otherState, setOtherState] = useState({
-//     otherState: "some other state"
-//   });
-//
-//   const switchNameHandler = (name) => {
-//     setPeopleState({
-//       people: [
-//         { name: name, age: 17 },
-//         { name: "Max", age: 29 },
-//         { name: "Manu", age: 26 }]
-//     });
-//   };
-//
-//   const changeNameHandler = (event) => {
-//     setPeopleState({
-//       people: [
-//         { name: "Sebastian", age: 17 },
-//         { name: event.target.value, age: 29 },
-//         { name: "Manu", age: 26 }
-//       ]
-//     });
-//   };
-//
-//   const style = {
-//     backgroundColor: "white",
-//     font: "inherit",
-//     border: "1px solid blue",
-//     padding: "8px",
-//     cursor: "pointer"
-//   };
-//
-//   return (
-//     <div className="App">
-//       <h1>React App</h1>
-//       <p>JSX</p>
-//
-//       <button
-//         onClick={() => switchNameHandler("Seb")}
-//         style={style}>
-//         Switch Name
-//       </button>
-//
-//       <Person
-//         name={peopleState.people[0].name}
-//         age={peopleState.people[0].age}
-//         click={switchNameHandler.bind(this, "Seb!")}
-//       />
-//
-//       <Person
-//         name={peopleState.people[1].name}
-//         age={peopleState.people[1].age}
-//         changed={changeNameHandler}>
-//         My Hobbies: Racing
-//       </Person>
-//
-//       <Person
-//         name={peopleState.people[2].name}
-//         age={peopleState.people[2].age}
-//       />
-//     </div>
-//   );
-// };
-//
-// export default app;
