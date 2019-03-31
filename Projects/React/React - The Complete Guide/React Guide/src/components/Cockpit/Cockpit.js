@@ -2,13 +2,12 @@ import React from "react";
 import styles from "./Cockpit.module.scss";
 
 const cockPit = props => {
-  const classes = [];
   let buttonClass = "";
-
   if (props.showPeople) {
     buttonClass = styles.Red;
   }
 
+  const classes = [];
   if (props.people.length <= 2) {
     classes.push(styles.red);
   }
