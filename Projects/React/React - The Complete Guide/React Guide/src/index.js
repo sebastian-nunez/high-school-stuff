@@ -4,7 +4,7 @@ import "./index.scss";
 import App from "./containers/App";
 import * as serviceWorker from "./serviceWorker";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(<App appTitle={"Person Manager"} />, document.getElementById("root"));
 
 // If you want your containers to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

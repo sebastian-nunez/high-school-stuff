@@ -18,7 +18,7 @@ const cockPit = props => {
 
   return (
     <div className={styles.Cockpit}>
-      <h1>React App</h1>
+      <h1>{props.title}</h1>
       <p className={classes.join(" ")}>
         JSX
       </p>
