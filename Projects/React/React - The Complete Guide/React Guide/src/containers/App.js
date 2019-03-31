@@ -59,7 +59,7 @@ class App extends Component {
           showPeople={this.state.showPeople}
           togglePeopleHandler={this.togglePeopleHandler}
         />
-        
+
         {people}
       </div>
     );
