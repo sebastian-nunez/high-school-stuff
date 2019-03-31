@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = () => {
   const cvs = document.getElementById("canvas");
   const ctx = cvs.getContext("2d");
 
@@ -123,12 +123,13 @@ window.onload = function() {
     }
 
     // if our snake eats the food
+    let newHead;
     if (snakeX == food.x && snakeY == food.y) {
       food = {
         x: Math.round(Math.random() * (cvsW / snakeW - 1)),
         y: Math.round(Math.random() * (cvsH / snakeH - 1))
       };
-      let newHead = {
+      newHead = {
         x: snakeX,
         y: snakeY
       };
