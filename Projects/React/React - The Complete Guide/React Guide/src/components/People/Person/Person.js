@@ -1,20 +1,44 @@
-import React from "react";
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 import styles from "./Person.module.scss";
 
 import withClass from "../../../hoc/withClass/withClass";
 
-const person = props => {
-  return (
-    <>
-      <p onClick={props.click}>
-        My name is {props.name} and I am {props.age} years old!
-      </p>
+class Person extends Component {
+  constructor(props) {
+    super(props);
+    this.inputElementRef = React.createRef();
+  }
 
-      <p>{props.children}</p>
+  componentDidMount() {
+    this.inputElementRef.current.focus();
+  }
 
-      <input type="text" onChange={props.change} value={props.name} />
-    </>
-  );
+  render() {
+    return (
+      <>
+        <p onClick={this.props.deletePersonHandler}>
+          My name is {this.props.name} and I am {this.props.age} years old!
+        </p>
+
+        <p>{this.props.children}</p>
+
+        <input
+          type="text"
+          onChange={this.props.changeNameHandler}
+          value={this.props.name}
+          ref={this.inputElementRef}
+        />
+      </>
+    );
+  }
 };
 
-export default withClass(person, styles.Person);
+Person.propTypes = {
+  deletePersonHandler: PropTypes.func,
+  name: PropTypes.string,
+  age: PropTypes.number,
+  changeNameHandler: PropTypes.func
+};
+
+export default withClass(Person, styles.Person);

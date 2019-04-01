@@ -7,8 +7,8 @@ class People extends PureComponent {
       <Person
         name={person.name}
         age={person.age}
-        click={() => this.props.deletePersonHandler(index)}
-        change={event => this.props.changeNameHandler(event, person.id)}
+        deletePersonHandler={() => this.props.deletePersonHandler(index)}
+        changeNameHandler={event => this.props.changeNameHandler(event, person.id)}
         key={person.id}
       />
     ));
