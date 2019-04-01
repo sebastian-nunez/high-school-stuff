@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import styles from "./Cockpit.module.scss";
 
 const cockPit = props => {
@@ -8,11 +8,11 @@ const cockPit = props => {
   }
 
   const classes = [];
-  if (props.people.length <= 2) {
+  if (props.peopleLength <= 2) {
     classes.push(styles.red);
   }
 
-  if (props.people.length <= 1) {
+  if (props.peopleLength <= 1) {
     classes.push(styles.bold);
   }
 
@@ -32,4 +32,4 @@ const cockPit = props => {
   );
 };
 
-export default cockPit;
+export default memo(cockPit);

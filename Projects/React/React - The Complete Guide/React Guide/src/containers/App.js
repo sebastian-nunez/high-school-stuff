@@ -3,6 +3,7 @@ import styles from "./App.module.scss";
 
 import People from "../components/People/People";
 import Cockpit from "../components/Cockpit/Cockpit";
+import withClass from "../hoc/withClass/withClass";
 
 class App extends Component {
   state = {
@@ -12,7 +13,8 @@ class App extends Component {
       { id: 954, name: "Stephanie", age: 26 }
     ],
     otherState: "some other state",
-    showPeople: false
+    showPeople: false,
+    changeCounter: 0
   };
 
   deletePersonHandler = (personIndex) => {
@@ -30,7 +32,12 @@ class App extends Component {
     const people = [...this.state.people];
     people[personIndex] = person;
 
-    this.setState({ people });
+    this.setState((prevState, props) => {
+      return {
+        people,
+        changeCounter: prevState.changeCounter + 1
+      };
+    });
   };
 
   togglePeopleHandler = () => {
@@ -44,26 +51,28 @@ class App extends Component {
   render() {
     let people = null;
     if (this.state.showPeople) {
-      people = <People
-        people={this.state.people}
-        deletePersonHandler={this.deletePersonHandler}
-        changeNameHandler={this.changeNameHandler}
-      />;
+      people = (
+        <People
+          people={this.state.people}
+          deletePersonHandler={this.deletePersonHandler}
+          changeNameHandler={this.changeNameHandler}
+        />
+      );
     }
 
     return (
-      <div className={styles.App}>
+      <>
         <Cockpit
           title={this.props.appTitle}
-          people={this.state.people}
+          peopleLength={this.state.people.length}
           showPeople={this.state.showPeople}
           togglePeopleHandler={this.togglePeopleHandler}
         />
 
         {people}
-      </div>
+      </>
     );
   }
 }
 
-export default App;
+export default withClass(App, styles.App);
