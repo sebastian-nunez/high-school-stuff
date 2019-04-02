@@ -5,7 +5,7 @@ PS1="$PS1"'\u' # print: 'user'
 PS1="$PS1"'\[\033[37m\]' # Change color to white
 PS1="$PS1"': ' # print ': '
 PS1="$PS1"'\[\033[33m\]' # change color to yellow
-PS1="$PS1"'\w' # current working directory
+PS1="$PS1"'\W' # current working directory
 
 if test -z "$WINELOADERNOEXEC"
 then
