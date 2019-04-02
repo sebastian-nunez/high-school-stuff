@@ -1,7 +1,15 @@
-import React, { memo } from "react";
+import React, { memo, useEffect, useRef } from "react";
 import styles from "./Cockpit.module.scss";
 
+import AuthContext from "../../Context/authContext";
+
 const cockPit = props => {
+  const toggleButtonRef = useRef(null);
+
+  useEffect(() => {
+    toggleButtonRef.current.click();
+  }, []);
+
   let buttonClass = "";
   if (props.showPeople) {
     buttonClass = styles.Red;
@@ -25,9 +33,16 @@ const cockPit = props => {
 
       <button
         className={buttonClass}
-        onClick={props.togglePeopleHandler}>
+        onClick={props.togglePeopleHandler}
+        ref={toggleButtonRef}>
         Toggle People
       </button>
+
+      <AuthContext.Consumer>
+        {context => (
+          <button onClick={context.loginHandler}>Log in</button>
+        )}
+      </AuthContext.Consumer>
     </div>
   );
 };

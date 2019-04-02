@@ -3,7 +3,8 @@ import styles from "./App.module.scss";
 
 import People from "../components/People/People";
 import Cockpit from "../components/Cockpit/Cockpit";
-import withClass from "../hoc/withClass/withClass";
+import withClass from "../hoc/withClass";
+import AuthContext from "../Context/authContext";
 
 class App extends Component {
   state = {
@@ -14,7 +15,9 @@ class App extends Component {
     ],
     otherState: "some other state",
     showPeople: false,
-    changeCounter: 0
+    showCockpit: true,
+    changeCounter: 0,
+    isAuthenticated: false
   };
 
   deletePersonHandler = (personIndex) => {
@@ -41,10 +44,14 @@ class App extends Component {
   };
 
   togglePeopleHandler = () => {
-    const doesShow = this.state.showPeople;
+    this.setState((prevState, props) => {
+      return { showPeople: !prevState.showPeople };
+    });
+  };
 
+  loginHandler = () => {
     this.setState({
-      showPeople: !doesShow
+      isAuthenticated: true
     });
   };
 
@@ -56,20 +63,35 @@ class App extends Component {
           people={this.state.people}
           deletePersonHandler={this.deletePersonHandler}
           changeNameHandler={this.changeNameHandler}
+          isAuthenticated={this.state.isAuthenticated}
         />
       );
     }
 
     return (
       <>
-        <Cockpit
-          title={this.props.appTitle}
-          peopleLength={this.state.people.length}
-          showPeople={this.state.showPeople}
-          togglePeopleHandler={this.togglePeopleHandler}
-        />
+        <button
+          style={{ backgroundColor: "red" }}
+          onClick={() => this.setState({ showCockpit: false })}>
+          Remove Cockpit
+        </button>
 
-        {people}
+        <AuthContext.Provider
+          value={{
+            isAuthenticated: this.state.isAuthenticated,
+            loginHandler: this.loginHandler
+          }}>
+          {this.state.showCockpit ?
+            <Cockpit
+              title={this.props.appTitle}
+              peopleLength={this.state.people.length}
+              showPeople={this.state.showPeople}
+              togglePeopleHandler={this.togglePeopleHandler}
+            /> : null
+          }
+
+          {people}
+        </AuthContext.Provider>
       </>
     );
   }
