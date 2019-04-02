@@ -1,10 +1,11 @@
-import React, { memo, useEffect, useRef } from "react";
+import React, { useContext, useEffect, useRef } from "react";
 import styles from "./Cockpit.module.scss";
 
 import AuthContext from "../../Context/authContext";
 
 const cockPit = props => {
   const toggleButtonRef = useRef(null);
+  const authContext = useContext(AuthContext);
 
   useEffect(() => {
     toggleButtonRef.current.click();
@@ -38,13 +39,9 @@ const cockPit = props => {
         Toggle People
       </button>
 
-      <AuthContext.Consumer>
-        {context => (
-          <button onClick={context.loginHandler}>Log in</button>
-        )}
-      </AuthContext.Consumer>
+      <button onClick={authContext.loginHandler}>Log in</button>
     </div>
   );
 };
 
-export default memo(cockPit);
+export default React.memo(cockPit);
