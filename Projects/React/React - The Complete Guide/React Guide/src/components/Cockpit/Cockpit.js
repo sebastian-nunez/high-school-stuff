@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useRef } from "react";
 import styles from "./Cockpit.module.scss";
 
-import AuthContext from "../../Context/authContext";
+import AuthContext from "../../context/authContext";
 
 const cockPit = props => {
   const toggleButtonRef = useRef(null);

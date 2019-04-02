@@ -4,7 +4,7 @@ import styles from "./App.module.scss";
 import People from "../components/People/People";
 import Cockpit from "../components/Cockpit/Cockpit";
 import withClass from "../hoc/withClass";
-import AuthContext from "../Context/authContext";
+import AuthContext from "../context/authContext";
 
 class App extends Component {
   state = {
