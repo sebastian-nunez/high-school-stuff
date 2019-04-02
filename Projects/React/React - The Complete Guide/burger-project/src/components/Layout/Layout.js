@@ -1,13 +1,16 @@
 import React from "react";
+import styles from "./Layout.module.scss";
 
-const layOut = props => (
+const layout = props => (
   <>
-    <div>Toolbar, SideDrawer, Backdrop</div>
+    <div>
+      Toolbar, SideDrawer, Backdrop
+    </div>
 
-    <main>
+    <main className={styles.Content}>
       {props.children}
     </main>
   </>
 );
 
-export default layOut;
+export default layout;
