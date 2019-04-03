@@ -38,38 +38,36 @@ class BurgerBuilder extends Component {
     const newTotal = oldTotal + priceAddition;
 
     this.setState({
-      ingredients: updatedIngredients,
-      totalPrice: newTotal
-    }, () => {
-      this.setState({ isPurchaseable: (this.state.totalPrice > INGREDIENT_PRICES.base + 0.01) });
-    });
+        ingredients: updatedIngredients,
+        totalPrice: newTotal
+      }, () => this.setState({ isPurchaseable: (this.state.totalPrice > INGREDIENT_PRICES.base + 0.01) })
+    );
   };
 
   removeIngredientHandler = type => {
     this.setState((prevState, props) => {
-      // updates the quantity of this type
-      const oldCount = prevState.ingredients[type];
-      if (oldCount <= 0) {
-        return;
-      }
-      const updatedCount = oldCount - 1;
+        // updates the quantity of this type
+        const oldCount = prevState.ingredients[type];
+        if (oldCount <= 0) {
+          return;
+        }
+        const updatedCount = oldCount - 1;
 
-      const updatedIngredients = { ...prevState.ingredients };
-      updatedIngredients[type] = updatedCount;
+        const updatedIngredients = { ...prevState.ingredients };
+        updatedIngredients[type] = updatedCount;
 
-      // handles the new total
-      const priceDeduction = INGREDIENT_PRICES[type];
+        // handles the new total
+        const priceDeduction = INGREDIENT_PRICES[type];
 
-      const oldTotal = prevState.totalPrice;
-      const newTotal = oldTotal < INGREDIENT_PRICES.base ? INGREDIENT_PRICES.base : oldTotal - priceDeduction;
+        const oldTotal = prevState.totalPrice;
+        const newTotal = oldTotal < INGREDIENT_PRICES.base ? INGREDIENT_PRICES.base : oldTotal - priceDeduction;
 
-      return {
-        ingredients: updatedIngredients,
-        totalPrice: newTotal
-      };
-    }, () => {
-      this.setState({ isPurchaseable: (this.state.totalPrice > INGREDIENT_PRICES.base + 0.01) });
-    });
+        return {
+          ingredients: updatedIngredients,
+          totalPrice: newTotal
+        };
+      }, () => this.setState({ isPurchaseable: (this.state.totalPrice > INGREDIENT_PRICES.base + 0.01) })
+    );
   };
 
   // updatePurchaseState = (ingredients) => {
