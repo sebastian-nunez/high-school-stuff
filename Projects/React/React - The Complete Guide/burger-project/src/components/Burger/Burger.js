@@ -22,7 +22,9 @@ const burger = props => {
   let changedIngredients = [];
   for (let type in props.ingredients) {
     for (let i = 0; i < props.ingredients[type]; i++) {
-      changedIngredients.push(<BurgerIngredient type={type} key={type + i} />);
+      changedIngredients.push(
+        <BurgerIngredient type={type} key={type + i} />
+      );
     }
   }
 

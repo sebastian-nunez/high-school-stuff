@@ -2,6 +2,8 @@ import React, { Component } from "react";
 
 import Burger from "../../components/Burger/Burger";
 import BuildControls from "../../components/Burger/BuildControls/BuildControls";
+import Modal from "../../components/UI/Modal/Modal";
+import OrderSummary from "../../components/Burger/OrderSummary/OrderSummary";
 
 const INGREDIENT_PRICES = {
   salad: 0.15,
@@ -20,7 +22,8 @@ class BurgerBuilder extends Component {
       meat: 1
     },
     totalPrice: 4.99,
-    isPurchaseable: true
+    isPurchaseable: true,
+    isPurchasing: false
   };
 
   addIngredientHandler = type => {
@@ -81,6 +84,18 @@ class BurgerBuilder extends Component {
   //   this.setState({ isPurchaseable: (sum > INGREDIENT_PRICES.base + 0.01) });
   // };
 
+  purchaseHandler = () => {
+    this.setState({ isPurchasing: true });
+  };
+
+  purchaseCancelHandler = () => {
+    this.setState({ isPurchasing: false });
+  };
+
+  purchaseContinueHandler = () => {
+    alert("You Continue!");
+  };
+
   render() {
     const disabledInfo = { ...this.state.ingredients };
     for (let key in disabledInfo) {
@@ -89,12 +104,26 @@ class BurgerBuilder extends Component {
 
     return (
       <>
+        <Modal
+          isPurchasing={this.state.isPurchasing}
+          purchaseCancelHandler={this.purchaseCancelHandler}
+        >
+          <OrderSummary
+            ingredients={this.state.ingredients}
+            totalPrice={this.state.totalPrice}
+            purchaseCancelHandler={this.purchaseCancelHandler}
+            purchaseContinueHandler={this.purchaseContinueHandler}
+          />
+        </Modal>
+
         <Burger ingredients={this.state.ingredients} />
+
         <BuildControls
           totalPrice={this.state.totalPrice}
           addIngredientHandler={this.addIngredientHandler}
           removeIngredientHandler={this.removeIngredientHandler}
           isPurchaseable={this.state.isPurchaseable}
+          purchaseHandler={this.purchaseHandler}
           disabledInfo={disabledInfo}
         />
       </>
@@ -103,3 +132,4 @@ class BurgerBuilder extends Component {
 }
 
 export default BurgerBuilder;
+
