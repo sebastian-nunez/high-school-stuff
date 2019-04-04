@@ -1,9 +1,6 @@
-
 // (c) A+ Computer Science
 // www.apluscompsci.com
 // Name - Sebastian Nunez
-
-import static java.lang.System.*;
 
 public class DigitCounter
 {

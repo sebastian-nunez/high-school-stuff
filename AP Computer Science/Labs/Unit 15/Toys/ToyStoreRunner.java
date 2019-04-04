@@ -4,12 +4,12 @@
 
 public class ToyStoreRunner
 {
-    public static void main(String[] args) {
-        ToyStore store = new ToyStore();
-        System.out.println(store);
-        store.loadToys("sorry bat sorry sorry sorry train train teddy teddy ball ball");
-        System.out.println(store);
+  public static void main(String[] args) {
+    ToyStore store = new ToyStore();
+    System.out.println(store);
+    store.loadToys("sorry bat sorry sorry sorry train train teddy teddy ball ball");
+    System.out.println(store);
 
-        System.out.println("max == " + store.getMostFrequentToy());
-    }
+    System.out.println("max == " + store.getMostFrequentToy());
+  }
 }

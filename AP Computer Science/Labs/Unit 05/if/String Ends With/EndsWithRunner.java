@@ -1,4 +1,3 @@
-
 // � A+ Computer Science - www.apluscompsci.com
 // Name - Sebastian Nunez
 // Date - 10/11/18
@@ -6,26 +5,25 @@
 // Lab - String Ends With
 
 import static java.lang.System.*;
-import java.util.Scanner;
 
 public class EndsWithRunner
 {
-    public static void main(String[] args) {
-        System.out.println(StringUtilities.endsWith("chicken", "en"));
-        System.out.println(StringUtilities.endsWith("chicken", "dog"));
-        System.out.println(StringUtilities.endsWith("alligator", "gator"));
-        System.out.println(StringUtilities.endsWith("alligator", "all"));
-        System.out.println(StringUtilities.endsWith("apluscompsci", "sci"));
-        System.out.println(StringUtilities.endsWith("apluscompsci", "comp"));
+  public static void main(String[] args) {
+    System.out.println(StringUtilities.endsWith("chicken", "en"));
+    System.out.println(StringUtilities.endsWith("chicken", "dog"));
+    System.out.println(StringUtilities.endsWith("alligator", "gator"));
+    System.out.println(StringUtilities.endsWith("alligator", "all"));
+    System.out.println(StringUtilities.endsWith("apluscompsci", "sci"));
+    System.out.println(StringUtilities.endsWith("apluscompsci", "comp"));
 
-        //test cases
+    //test cases
         /*chicken en
         	chicken dog
         	alligator gator
         	alligator all
         	apluscompsci sci */
 
-        //output
+    //output
         /*true
         	false
         	true
@@ -33,5 +31,5 @@ public class EndsWithRunner
         	true
         	false*/
 
-    }
+  }
 }

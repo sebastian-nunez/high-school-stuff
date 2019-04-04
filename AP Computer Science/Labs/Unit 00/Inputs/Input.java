@@ -6,8 +6,9 @@
 // Class - 10th
 // Lab - Inputs Lab
 
-import static java.lang.System.*;
 import java.util.Scanner;
+
+import static java.lang.System.*;
 
 public class Input
 {

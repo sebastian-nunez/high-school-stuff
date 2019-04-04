@@ -1,4 +1,3 @@
-
 // � A+ Computer Science - www.apluscompsci.com
 // Name - Sebastian Nunez
 // Date - 12/07/18
@@ -6,31 +5,32 @@
 // Lab - Tringle Two
 
 import java.util.Scanner;
+
 import static java.lang.System.*;
 
 public class TriangleTwoRunner
 {
 
-    public static void main(String args[]) {
-        Scanner keyboard = new Scanner(System.in);
-        String choice = "";
+  public static void main(String args[]) {
+    Scanner keyboard = new Scanner(System.in);
+    String choice = "";
 
-        do {
-            out.print("Enter the size of the triangle : ");
-            int big = keyboard.nextInt();
+    do {
+      out.print("Enter the size of the triangle : ");
+      int big = keyboard.nextInt();
 
-            out.print("Enter a letter : ");
+      out.print("Enter a letter : ");
 
-            String value = keyboard.next();
+      String value = keyboard.next();
 
-            // instantiate a TriangleTwo object
-            TriangleTwo tw = new TriangleTwo(value, big);
+      // instantiate a TriangleTwo object
+      TriangleTwo tw = new TriangleTwo(value, big);
 
-            // call the toString method to print the triangle
-            System.out.println(tw);
+      // call the toString method to print the triangle
+      System.out.println(tw);
 
-            System.out.print("Do you want to enter more data? ");
-            choice = keyboard.next();
-        } while (choice.equals("Y") || choice.equals("y"));
-    }
+      System.out.print("Do you want to enter more data? ");
+      choice = keyboard.next();
+    } while (choice.equals("Y") || choice.equals("y"));
+  }
 }
