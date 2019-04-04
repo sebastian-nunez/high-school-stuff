@@ -20,7 +20,7 @@ class App extends Component {
     isAuthenticated: false
   };
 
-  deletePersonHandler = (personIndex) => {
+  deletePersonHandler = personIndex => {
     const people = [...this.state.people];
     people.splice(personIndex, 1);
     this.setState({ people });
@@ -72,7 +72,8 @@ class App extends Component {
       <>
         <button
           style={{ backgroundColor: "red" }}
-          onClick={() => this.setState({ showCockpit: false })}>
+          onClick={() => this.setState({ showCockpit: false })}
+        >
           Remove Cockpit
         </button>
 
@@ -80,15 +81,16 @@ class App extends Component {
           value={{
             isAuthenticated: this.state.isAuthenticated,
             loginHandler: this.loginHandler
-          }}>
-          {this.state.showCockpit ?
+          }}
+        >
+          {this.state.showCockpit ? (
             <Cockpit
               title={this.props.appTitle}
               peopleLength={this.state.people.length}
               showPeople={this.state.showPeople}
               togglePeopleHandler={this.togglePeopleHandler}
-            /> : null
-          }
+            />
+          ) : null}
 
           {people}
         </AuthContext.Provider>
