@@ -24,7 +24,7 @@ window.onload = function start() {
     if (e.keyCode == 32) {
       bird.up();
     }
-  }
+  });
 
   //bird constructor
   function Bird() {
@@ -42,18 +42,18 @@ window.onload = function start() {
     this.velocity = 0;
 
     //shows the bird
-    this.show = function () {
+    this.show = function() {
       ctx.fillStyle = "#FFF";
       ctx.fillRect(this.x, this.y, this.w, this.h);
     };
 
     //acts to counter the gravitational force (ie. elevate the bird)
-    this.up = function () {
+    this.up = function() {
       this.velocity += this.lift;
     };
 
     //uses gravity & velocity to move the bird
-    this.update = function () {
+    this.update = function() {
       this.velocity += this.gravity;
       this.velocity *= 0.92;
       this.y += this.velocity;
@@ -70,7 +70,7 @@ window.onload = function start() {
 
     this.speed = 3.5;
 
-    this.hits = function (bird) {
+    this.hits = function(bird) {
       if (
         (bird.x + bird.w >= this.x &&
           bird.x <= this.x + this.w &&
@@ -85,19 +85,19 @@ window.onload = function start() {
     //this.x < bird.x+bird.w && (bird.y > this.bottom || bird.y < this.top)
 
     //draws the top then bottom pipes
-    this.show = function () {
+    this.show = function() {
       ctx.fillStyle = "#FFF";
       ctx.fillRect(this.x, 0, this.w, this.top);
       ctx.fillRect(this.x, this.bottom, this.w, 568);
     };
 
     //moves the pipes to the right
-    this.update = function () {
+    this.update = function() {
       this.x -= this.speed;
     };
 
     //checks to see when the 'old' pipes are off the screen
-    this.offScreen = function () {
+    this.offScreen = function() {
       if (this.x < -this.w) {
         return true;
       } else {
@@ -138,7 +138,11 @@ window.onload = function start() {
         location.reload();
       }
       //determines if the player has crossed the pipe and adds 1 to the score
-      if (pipes[i].x == bird.x && bird.y < pipes[i].bottom && bird.y > pipes[i].top) {
+      if (
+        pipes[i].x == bird.x &&
+        bird.y < pipes[i].bottom &&
+        bird.y > pipes[i].top
+      ) {
         score++;
       }
     }
