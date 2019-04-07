@@ -23,12 +23,14 @@ class Blog extends Component {
                   hash: "#submit",
                   search: "?quick-submit=true"
                 }}
-                >New Post</Link>
+                >
+                  New Post
+                </Link>
               </li>
             </ul>
           </nav>
         </header>
-        
+
         <Route path={"/"} exact component={Posts} />
         <Route path={"/new-post"} component={NewPost} />
       </div>
