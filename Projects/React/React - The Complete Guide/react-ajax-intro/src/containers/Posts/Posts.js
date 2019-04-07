@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import "./Posts.css";
 
-import { Route } from "react-router-dom";
-
 import axios from "../../axios";
 
 import Post from "../../components/Post/Post";
