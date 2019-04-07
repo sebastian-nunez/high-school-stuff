@@ -1,69 +1,36 @@
 import React, { Component } from "react";
-
-// import axios from "axiosInstance";
-import axiosInstance from "../../axios";
-
-import Post from "../../components/Post/Post";
-import FullPost from "../../components/FullPost/FullPost";
-import NewPost from "../../components/NewPost/NewPost";
 import "./Blog.css";
 
+import { Route, Link } from "react-router-dom";
+
+import Posts from "../Posts/Posts";
+import NewPost from "../NewPost/NewPost";
+
 class Blog extends Component {
-  state = {
-    posts: [],
-    selectedPostId: null,
-    hasError: false
-  };
-
-  componentDidMount() {
-    axiosInstance.get("/posts")
-      .then(res => {
-        const posts = res.data.slice(0, 4);
-        const updatedPosts = posts.map(post => {
-          return {
-            ...post,
-            author: "Max"
-          };
-        });
-
-        this.setState({ posts: updatedPosts });
-      })
-      .catch(err => {
-        this.setState({ error: true });
-      });
-  }
-
-  postSelectedHandler = (postId) => {
-    this.setState({ selectedPostId: postId });
-  };
-
   render() {
-    let posts = <p style={{ textAlign: "center" }}>Oops, something went wrong!</p>;
-
-    if (!this.state.error) {
-      posts = this.state.posts.map(post => (
-        <Post
-          title={post.title}
-          author={post.author}
-          clickHandler={() => this.postSelectedHandler(post.id)}
-          key={post.id}
-        />
-      ));
-    }
-
     return (
-      <div>
-        <section className="Posts">
-          {posts}
-        </section>
+      <div className={"Blog"}>
+        <header>
+          <nav>
+            <ul>
+              <li>
+                <Link to={"/"}>Home</Link>
+              </li>
 
-        <section>
-          <FullPost postId={this.state.selectedPostId} />
-        </section>
-
-        <section>
-          <NewPost />
-        </section>
+              <li>
+                <Link to={{
+                  pathname: "/new-post",
+                  hash: "#submit",
+                  search: "?quick-submit=true"
+                }}
+                >New Post</Link>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        
+        <Route path={"/"} exact component={Posts} />
+        <Route path={"/new-post"} component={NewPost} />
       </div>
     );
   }

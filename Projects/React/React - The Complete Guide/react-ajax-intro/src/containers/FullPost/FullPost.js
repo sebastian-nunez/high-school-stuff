@@ -16,8 +16,7 @@ class FullPost extends Component {
         (this.state.loadedPost &&
           this.state.loadedPost.id !== this.props.postId)
       ) {
-        axios
-          .get("/posts/" + this.props.postId)
+        axios.get("/posts/" + this.props.postId)
           .then(res => this.setState({ loadedPost: res.data }));
       }
     }
