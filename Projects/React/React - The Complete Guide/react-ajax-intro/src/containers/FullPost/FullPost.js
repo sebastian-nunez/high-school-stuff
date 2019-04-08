@@ -1,7 +1,5 @@
-import React, { Component } from "react";
-
 import axios from "axios";
-
+import React, { Component } from "react";
 import "./FullPost.css";
 
 class FullPost extends Component {
@@ -9,28 +7,38 @@ class FullPost extends Component {
     loadedPost: null
   };
 
+  componentDidMount() {
+    this.loadData();
+  }
+
   componentDidUpdate() {
-    if (this.props.postId) {
+    this.loadData();
+  }
+
+  loadData = () => {
+    if (this.props.match.params.postId) {
       if (
         !this.state.loadedPost ||
         (this.state.loadedPost &&
-          this.state.loadedPost.id !== this.props.postId)
+          this.state.loadedPost.id !== +this.props.match.params.postId)
       ) {
-        axios.get("/posts/" + this.props.postId)
-          .then(res => this.setState({ loadedPost: res.data }));
+        axios.get("/posts/" + this.props.match.params.postId)
+          .then(res => this.setState({ loadedPost: res.data }))
+          .catch(err => console.log(err));
       }
     }
-  }
+  };
 
   deletePostHandler = () => {
-    if (this.props.postId) {
-      axios.delete("/posts/" + this.props.postId)
+    if (this.props.match.params.postId) {
+      axios.delete("/posts/" + this.props.match.params.postId)
         .then(res => console.log(res));
     }
   };
 
   render() {
     let post = <p style={{ textAlign: "center" }}>Please select a Post!</p>;
+
     if (this.props.postId) {
       post = <p style={{ textAlign: "center" }}>Loading...</p>;
     }
