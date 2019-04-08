@@ -18,11 +18,14 @@ class Course extends Component {
   }
 
   parseQueryParam = (queryParam) => {
-    let parsedOutput = "";
+    let parsedOutput = "Not Found";
 
     const query = new URLSearchParams(this.props.location.search);
     for (const param of query.entries()) {
-      parsedOutput = param[0] === queryParam ? param[1] : "";
+      if (param[0] === queryParam) {
+        parsedOutput = param[1];
+        break;
+      }
     }
 
     return parsedOutput;
