@@ -4,6 +4,7 @@ import axios from "../../axios-orders";
 
 import Order from "../../components/Order/Order";
 import withErrorHandler from "../../hoc/withErrorHandler/withErrorHandler";
+import Spinner from "../../components/UI/Spinner/Spinner";
 
 class Orders extends Component {
   state = {
@@ -38,6 +39,10 @@ class Orders extends Component {
         key={order.id}
       />
     ));
+
+    if (this.state.isLoading) {
+      orders = <Spinner />;
+    }
 
     if (orders.length === 0) {
       orders = <h2 style={{ textAlign: "center" }}>You have no orders!</h2>;
