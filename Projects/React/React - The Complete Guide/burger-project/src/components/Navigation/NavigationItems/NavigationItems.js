@@ -6,19 +6,16 @@ import NavigationItem from "./NavigationItem/NavigationItem";
 const navigationItems = props => (
   <ul className={styles.NavigationItems}>
     <NavigationItem
-      active={true}
+      exact
       href={"/"}
-      alt={"MyBurger logo"}
     >
       Burger Builder
     </NavigationItem>
 
     <NavigationItem
-      active={false}
-      href={"/"}
-      alt={"MyBurger logo"}
+      href={"/orders"}
     >
-      Checkout
+      Orders
     </NavigationItem>
   </ul>
 );

@@ -31,7 +31,14 @@ class BurgerBuilder extends Component {
   componentDidMount() {
     axiosInstance.get("/ingredients.json")
       .then(res => {
-        this.setState({ ingredients: res.data }, () => {
+        this.setState({
+          ingredients: {
+            salad: res.data.meat,
+            bacon: res.data.bacon,
+            cheese: res.data.cheese,
+            meat: res.data.meat
+          }
+        }, () => {
           let totalPrice = BASE_COST;
           for (let key in this.state.ingredients) {
             totalPrice += INGREDIENT_PRICES[key] * this.state.ingredients[key];
@@ -104,26 +111,38 @@ class BurgerBuilder extends Component {
   };
 
   purchaseContinueHandler = () => {
-    this.setState({ isLoading: true });
+    const queryParams = [];
+    for (let key in this.state.ingredients) {
+      queryParams.push(encodeURIComponent(key) + "=" + encodeURIComponent(this.state.ingredients[key]));
+    }
+    queryParams.push("totalPrice=" + encodeURIComponent(this.state.totalPrice));
 
-    const order = {
-      ingredients: this.state.ingredients,
-      totalPrice: parseFloat(this.state.totalPrice.toFixed(2)),
-      customer: {
-        name: "Max S.",
-        address: {
-          street: "123 S. Westwood Rd.",
-          zipcode: "22465",
-          country: "United States"
-        },
-        email: "max_s@gmail.com"
-      },
-      deliveryMethod: "expedited"
-    };
+    const queryString = "?" + queryParams.join("&");
+    this.props.history.push({
+      pathname: "/checkout",
+      search: queryString
+    });
 
-    axiosInstance.post("/orders.json", order)
-      .then(res => this.setState({ isLoading: false, isPurchasing: false }))
-      .catch(err => this.setState({ isLoading: false, isPurchasing: false }));
+    // this.setState({ isLoading: true });
+    //
+    // const order = {
+    //   ingredients: this.state.ingredients,
+    //   totalPrice: parseFloat(this.state.totalPrice.toFixed(2)),
+    //   customer: {
+    //     name: "Max S.",
+    //     address: {
+    //       street: "123 S. Westwood Rd.",
+    //       zipcode: "22465",
+    //       country: "United States"
+    //     },
+    //     email: "max_s@gmail.com"
+    //   },
+    //   deliveryMethod: "expedited"
+    // };
+    //
+    // axiosInstance.post("/orders.json", order)
+    //   .then(res => this.setState({ isLoading: false, isPurchasing: false }))
+    //   .catch(err => this.setState({ isLoading: false, isPurchasing: false }));
   };
 
   render() {

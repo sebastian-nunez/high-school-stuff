@@ -2,22 +2,22 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./NavigationItem.module.scss";
 
+import { NavLink } from "react-router-dom";
+
 const navigationItem = props => (
   <li className={styles.NavigationItem}>
-    <a
-      className={props.active ? styles.Active : null}
-      href={props.href}
-      alt={props.alt}
+    <NavLink
+      exact={props.exact}
+      to={props.href}
+      activeClassName={styles.Active}
     >
       {props.children}
-    </a>
+    </NavLink>
   </li>
 );
 
 navigationItem.propTypes = {
   href: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired,
-  active: PropTypes.bool.isRequired,
   children: PropTypes.string.isRequired
 };
 
