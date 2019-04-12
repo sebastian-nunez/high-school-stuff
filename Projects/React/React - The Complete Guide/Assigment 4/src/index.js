@@ -1,19 +1,17 @@
-import ReactDOM from "react-dom";
 import React from "react";
+import ReactDOM from "react-dom";
 import "./index.css";
 
+import { combineReducers, createStore } from "redux";
 import { Provider } from "react-redux";
-import { createStore, combineReducers } from "redux";
 
-import counterReducer from "./store/reducers/counterReducer";
-import resultReducer from "./store/reducers/resultReducer";
+import personsReducer from "./store/reducers/personsReducer";
 
 import App from "./App";
 import registerServiceWorker from "./registerServiceWorker";
 
 const rootReducer = combineReducers({
-  counterReducer,
-  resultReducer
+  personsReducer
 });
 
 const store = createStore(rootReducer);
