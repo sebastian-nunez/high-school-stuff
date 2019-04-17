@@ -66,7 +66,13 @@ public class Monster implements Comparable
   public int compareTo(Object obj) {
     Monster rhs = (Monster)obj;
 
-    return Integer.compare(myHeight, rhs.getHeight());
+    if (myHeight != rhs.getHeight()) {
+      return Integer.compare(myHeight, rhs.getHeight());
+    } else if (myWeight != rhs.getWeight()) {
+      return Integer.compare(myWeight, rhs.getWeight());
+    } else {
+      return Integer.compare(myAge, rhs.getAge());
+    }
   }
 
   //write a toString() method

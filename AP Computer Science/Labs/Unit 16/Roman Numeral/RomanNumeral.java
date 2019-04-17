@@ -10,55 +10,34 @@ public class RomanNumeral implements Comparable<RomanNumeral>
   private String roman;
 
   public RomanNumeral(String str) {
-    roman = str;
-    number = 0;
+    setRoman(str);
   }
 
   public RomanNumeral(Integer orig) {
-    number = orig;
-    roman = "";
+    setNumber(orig);
   }
 
   //write get methods for number and roman
   public int getNumber() {
-    int output = 0;
-    String localRoman = roman;
-
-    while (localRoman.length() > 0) {
-      int index = 0;
-      for (String letter : LETTERS) {
-        if (localRoman.length() == 1) {
-          String firstRoman = localRoman.substring(0, 1);
-
-          if (firstRoman.equals(letter)) {
-            output += NUMBERS[index];
-            localRoman = localRoman.substring(1);
-          }
-
-          index++;
-        } else if (localRoman.length() > 1) {
-          String firstRoman = localRoman.substring(0, 1);
-          String firstRomanPair = localRoman.substring(0, 2);
-
-          if (firstRoman.equals(letter)) {
-            output += NUMBERS[index];
-            localRoman = localRoman.substring(1);
-          } else if (firstRomanPair.equals(letter)) {
-            output += NUMBERS[index];
-            localRoman = localRoman.substring(2);
-          }
-
-          index++;
-        }
-      }
-    }
-
-    return output;
+    return number;
   }
 
   //write a set number method
-  public void setNumber(Integer num) {
-    number = num;
+  public void setNumber(Integer orig) {
+    String romanCopy = "";
+    int numCopy = orig;
+
+    int index = 0;
+    for (int num : NUMBERS) {
+      while (numCopy >= num) {
+        romanCopy += LETTERS[index];
+        numCopy -= num;
+      }
+      index++;
+    }
+
+    number = orig;
+    roman = romanCopy;
   }
 
   public String getRoman() {
@@ -66,8 +45,42 @@ public class RomanNumeral implements Comparable<RomanNumeral>
   }
 
   //write a set roman method
-  public void setRoman(String rom) {
-    roman = rom;
+  public void setRoman(String str) {
+    String romanCopy = str;
+    int numberCopy = 0;
+
+    while (romanCopy.length() > 0) {
+      int index = 0;
+
+      for (String letter : LETTERS) {
+        if (romanCopy.length() == 1) {
+          String firstRoman = romanCopy.substring(0, 1);
+
+          if (firstRoman.equals(letter)) {
+            numberCopy += NUMBERS[index];
+            romanCopy = romanCopy.substring(1);
+          }
+
+          index++;
+        } else if (romanCopy.length() > 1) {
+          String firstRoman = romanCopy.substring(0, 1);
+          String firstRomanPair = romanCopy.substring(0, 2);
+
+          if (firstRoman.equals(letter)) {
+            numberCopy += NUMBERS[index];
+            romanCopy = romanCopy.substring(1);
+          } else if (firstRomanPair.equals(letter)) {
+            numberCopy += NUMBERS[index];
+            romanCopy = romanCopy.substring(2);
+          }
+
+          index++;
+        }
+      }
+    }
+
+    roman = str;
+    number = numberCopy;
   }
 
   public int compareTo(RomanNumeral r) {
@@ -76,23 +89,6 @@ public class RomanNumeral implements Comparable<RomanNumeral>
 
   //write  toString() method
   public String toString() {
-    String output = "";
-    int index = 0;
-    int localNum = number;
-
-    for (int num : NUMBERS) {
-      while (localNum >= num) {
-        output += LETTERS[index];
-        localNum -= num;
-      }
-      index++;
-    }
-
-    if (number == 0) {
-      return roman;
-    }
-
-    return output + "\n";
+    return roman + "\n";
   }
-
 }
