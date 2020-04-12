@@ -29,7 +29,6 @@ Personal archive to store/backup some of my personal and school work, allowing e
 -   JavaScript
 -   Java
 -   Python
--   Markdown
 
 ---
 
