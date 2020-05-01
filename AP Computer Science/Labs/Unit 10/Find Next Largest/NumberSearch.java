@@ -6,27 +6,25 @@
 
 import java.util.Arrays;
 
-import static java.lang.System.*;
-
 public class NumberSearch
 {
-  public static int getNextLargest(int[] numArray, int searchNum) {
-    for (int num : numArray) {
-      System.out.print(num + " ");
-    }
-    System.out.println();
-    Arrays.sort(numArray);
+    public static int getNextLargest(int[] numArray, int searchNum) {
+        for (int num: numArray) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+        Arrays.sort(numArray);
 
-    int numIndexFound = Arrays.binarySearch(numArray, searchNum + 1);
+        int numIndexFound = Arrays.binarySearch(numArray, searchNum + 1);
 
-    if (numIndexFound >= 0) {
-      return numArray[numIndexFound];
-    } else {
-      while (numIndexFound < 0) {
-        searchNum++;
-        numIndexFound = Arrays.binarySearch(numArray, searchNum);
-      }
-      return numArray[numIndexFound];
+        if (numIndexFound >= 0) {
+            return numArray[numIndexFound];
+        } else {
+            while (numIndexFound < 0) {
+                searchNum++;
+                numIndexFound = Arrays.binarySearch(numArray, searchNum);
+            }
+            return numArray[numIndexFound];
+        }
     }
-  }
 }

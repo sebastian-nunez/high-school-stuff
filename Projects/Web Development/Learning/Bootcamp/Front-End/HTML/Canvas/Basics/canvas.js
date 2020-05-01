@@ -32,8 +32,9 @@ window.onload = function () {
     let xCord = Math.random() * canvas.width;
     let yCord = Math.random() * canvas.height;
     let radius = Math.random() * 50 + 1;
-    let color = `rgba(${Math.random() * 254 + 1},${Math.random() * 254 +
-      1},${Math.random() * 254 + 1},${Math.random()})`;
+    let color = `rgba(${Math.random() * 254 + 1},${Math.random() * 254 + 1},${
+      Math.random() * 254 + 1
+    },${Math.random()})`;
 
     context.beginPath();
     context.arc(

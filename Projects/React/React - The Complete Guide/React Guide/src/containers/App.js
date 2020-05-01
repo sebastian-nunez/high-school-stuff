@@ -1,33 +1,34 @@
 import React, { Component } from "react";
-import styles from "./App.module.scss";
-
-import People from "../components/People/People";
 import Cockpit from "../components/Cockpit/Cockpit";
-import withClass from "../hoc/withClass";
+import People from "../components/People/People";
 import AuthContext from "../context/authContext";
+import withClass from "../hoc/withClass";
+import styles from "./App.module.scss";
 
 class App extends Component {
   state = {
     people: [
       { id: 213, name: "Max", age: 28 },
       { id: 435, name: "Manu", age: 29 },
-      { id: 954, name: "Stephanie", age: 26 }
+      { id: 954, name: "Stephanie", age: 26 },
     ],
     otherState: "some other state",
     showPeople: false,
     showCockpit: true,
     changeCounter: 0,
-    isAuthenticated: false
+    isAuthenticated: false,
   };
 
-  deletePersonHandler = personIndex => {
+  deletePersonHandler = (personIndex) => {
     const people = [...this.state.people];
     people.splice(personIndex, 1);
     this.setState({ people });
   };
 
   changeNameHandler = (event, id) => {
-    const personIndex = this.state.people.findIndex(person => person.id === id);
+    const personIndex = this.state.people.findIndex(
+      (person) => person.id === id
+    );
 
     const person = { ...this.state.people[personIndex] };
     person.name = event.target.value;
@@ -38,7 +39,7 @@ class App extends Component {
     this.setState((prevState, props) => {
       return {
         people,
-        changeCounter: prevState.changeCounter + 1
+        changeCounter: prevState.changeCounter + 1,
       };
     });
   };
@@ -51,7 +52,7 @@ class App extends Component {
 
   loginHandler = () => {
     this.setState({
-      isAuthenticated: true
+      isAuthenticated: true,
     });
   };
 
@@ -80,7 +81,7 @@ class App extends Component {
         <AuthContext.Provider
           value={{
             isAuthenticated: this.state.isAuthenticated,
-            loginHandler: this.loginHandler
+            loginHandler: this.loginHandler,
           }}
         >
           {this.state.showCockpit ? (

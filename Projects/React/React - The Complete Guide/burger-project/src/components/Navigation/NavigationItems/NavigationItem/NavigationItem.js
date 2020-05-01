@@ -1,10 +1,9 @@
-import React from "react";
 import PropTypes from "prop-types";
+import React from "react";
+import { NavLink } from "react-router-dom";
 import styles from "./NavigationItem.module.scss";
 
-import { NavLink } from "react-router-dom";
-
-const navigationItem = props => (
+const navigationItem = (props) => (
   <li className={styles.NavigationItem}>
     <NavLink
       exact={props.exact}
@@ -18,7 +17,7 @@ const navigationItem = props => (
 
 navigationItem.propTypes = {
   href: PropTypes.string.isRequired,
-  children: PropTypes.string.isRequired
+  children: PropTypes.string.isRequired,
 };
 
 export default navigationItem;

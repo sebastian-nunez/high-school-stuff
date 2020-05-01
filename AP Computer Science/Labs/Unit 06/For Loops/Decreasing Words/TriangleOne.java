@@ -4,27 +4,27 @@
 // Class - 10th
 // Lab - Decreasing Word
 
-import static java.lang.System.*;
+import static java.lang.System.out;
 
 public class TriangleOne
 {
-  private String word;
+    private String word;
 
-  public TriangleOne() {
-    word = "";
-  }
-
-  public TriangleOne(String s) {
-    setWord(s);
-  }
-
-  public void setWord(String s) {
-    word = s;
-  }
-
-  public void print() {
-    for (int i = word.length(); i > 0; i--) {
-      out.println(word.substring(0, i));
+    public TriangleOne() {
+        word = "";
     }
-  }
+
+    public TriangleOne(String s) {
+        setWord(s);
+    }
+
+    public void setWord(String s) {
+        word = s;
+    }
+
+    public void print() {
+        for (int i = word.length(); i > 0; i--) {
+            out.println(word.substring(0, i));
+        }
+    }
 }

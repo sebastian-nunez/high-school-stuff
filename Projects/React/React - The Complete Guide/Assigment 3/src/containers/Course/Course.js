@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 class Course extends Component {
   state = {
-    courseTitle: ""
+    courseTitle: "",
   };
 
   componentDidMount() {
@@ -35,7 +35,9 @@ class Course extends Component {
     return (
       <div>
         <h1>{this.state.courseTitle ? this.state.courseTitle : null}</h1>
-        <p>You selected the Course with ID: {this.props.match.params.courseId}</p>
+        <p>
+          You selected the Course with ID: {this.props.match.params.courseId}
+        </p>
       </div>
     );
   }

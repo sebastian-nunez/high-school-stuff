@@ -1,17 +1,19 @@
 #include <iostream>
 
-
-struct student {
+struct student
+{
     char name[50];
     int roll;
     float marks;
 } s[10];
 
-int main() {
+int main()
+{
     cout << "Enter information of students: " << endl;
 
     // storing information
-    for (int i = 0; i < 10; ++i) {
+    for (int i = 0; i < 10; ++i)
+    {
         s[i].roll = i + 1;
         cout << "For roll number" << s[i].roll << "," << endl;
 
@@ -27,7 +29,8 @@ int main() {
     cout << "Displaying Information: " << endl;
 
     // Displaying information
-    for (int i = 0; i < 10; ++i) {
+    for (int i = 0; i < 10; ++i)
+    {
         cout << "\nRoll number: " << i + 1 << endl;
         cout << "Name: " << s[i].name << endl;
         cout << "Marks: " << s[i].marks << endl;
@@ -36,7 +39,8 @@ int main() {
     return 0;
 }
 
-void cyclicSwap(int *a, int *b, int *c) {
+void cyclicSwap(int *a, int *b, int *c)
+{
     int temp;
     temp = *b;
     *b = *a;
@@ -49,14 +53,12 @@ void cyclicSwap(int *a, int *b, int *c) {
     cin >> r >> c;
 
     // Storing element of matrix entered by user in array a[][].
-    cout << endl << "Enter elements of matrix: " << endl;
+    cout << endl
+         << "Enter elements of matrix: " << endl;
     for (i = 0; i < r; ++i)
-        for (j = 0; j < c; ++j) {
+        for (j = 0; j < c; ++j)
+        {
             cout << "Enter elements a" << i + 1 << j + 1 << ": ";
             cin >> a[i][j];
         }
-
-
 }
-
-

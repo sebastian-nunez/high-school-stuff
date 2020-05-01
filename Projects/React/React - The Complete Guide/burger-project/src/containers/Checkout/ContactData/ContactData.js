@@ -1,12 +1,10 @@
 import React, { Component } from "react";
-import styles from "./ContactData.module.scss";
-
 import { connect } from "react-redux";
 import axios from "../../../axios-orders";
-
 import Button from "../../../components/UI/Button/Button";
-import Spinner from "../../../components/UI/Spinner/Spinner";
 import Input from "../../../components/UI/Input/Input";
+import Spinner from "../../../components/UI/Spinner/Spinner";
+import styles from "./ContactData.module.scss";
 
 const formInputField = (elementType, type, placeholder, name, value, rules) => {
   return {
@@ -14,45 +12,51 @@ const formInputField = (elementType, type, placeholder, name, value, rules) => {
     elementAttributes: {
       type: type,
       placeholder: placeholder,
-      name: name
+      name: name,
     },
     value: value,
     validation: {
       isValid: false,
-      rules: rules
+      rules: rules,
     },
-    touched: false
+    touched: false,
   };
 };
 
 class ContactData extends Component {
   state = {
     orderForm: {
-      name: formInputField("input", "text", "Name", "name", "", { isRequired: true }),
-      street: formInputField("input", "text", "Street", "street", "", { isRequired: true }),
+      name: formInputField("input", "text", "Name", "name", "", {
+        isRequired: true,
+      }),
+      street: formInputField("input", "text", "Street", "street", "", {
+        isRequired: true,
+      }),
       zipcode: formInputField("input", "number", "Zipcode", "zipcode", "", {
         isRequired: true,
         minLength: 5,
-        maxLength: 5
+        maxLength: 5,
       }),
-      email: formInputField("input", "email", "Email", "email", "", { isRequired: true }),
+      email: formInputField("input", "email", "Email", "email", "", {
+        isRequired: true,
+      }),
       deliveryMethod: {
         elementType: "select",
         elementAttributes: {
           options: [
             { value: "regular", displayValue: "Regular" },
-            { value: "expedited", displayValue: "Expedited" }
-          ]
+            { value: "expedited", displayValue: "Expedited" },
+          ],
         },
         value: "regular",
         validation: {
           isValid: true,
-          rules: { isRequired: true }
-        }
-      }
+          rules: { isRequired: true },
+        },
+      },
     },
     formIsValid: false,
-    isLoading: false
+    isLoading: false,
   };
 
   orderHandler = (event) => {
@@ -67,31 +71,32 @@ class ContactData extends Component {
     const order = {
       ingredients: this.props.ingredients,
       totalPrice: this.props.totalPrice,
-      orderData: formData
+      orderData: formData,
     };
 
     console.log(order);
-    axios.post("/orders.json", order)
-      .then(res => {
+    axios
+      .post("/orders.json", order)
+      .then((res) => {
         this.setState({ isLoading: false });
         this.props.history.replace("/");
       })
-      .catch(err => this.setState({ isLoading: false }));
+      .catch((err) => this.setState({ isLoading: false }));
   };
 
   checkValidity = (value, rules) => {
     let isValid = true;
 
     if (rules.isRequired) {
-      isValid = (value.trim() !== "" && isValid);
+      isValid = value.trim() !== "" && isValid;
     }
 
     if (rules.minLength) {
-      isValid = (value.length >= rules.minLength && isValid);
+      isValid = value.length >= rules.minLength && isValid;
     }
 
     if (rules.maxLength) {
-      isValid = (value.length <= rules.maxLength && isValid);
+      isValid = value.length <= rules.maxLength && isValid;
     }
 
     return isValid;
@@ -103,7 +108,10 @@ class ContactData extends Component {
     const formValidation = { ...formElement.validation };
 
     formElement.value = event.target.value;
-    formValidation.isValid = this.checkValidity(formElement.value, formValidation.rules);
+    formValidation.isValid = this.checkValidity(
+      formElement.value,
+      formValidation.rules
+    );
     formElement.touched = true;
 
     formElement.validation = formValidation;
@@ -111,14 +119,16 @@ class ContactData extends Component {
 
     let formIsValid = true;
     for (let key in orderForm) {
-      formIsValid = (orderForm[key].validation.isValid && formIsValid);
+      formIsValid = orderForm[key].validation.isValid && formIsValid;
     }
 
     this.setState({ orderForm, formIsValid });
   };
 
   render() {
-    const formElementsArray = Object.entries(this.state.orderForm).map(([inputName, data], index) => (
+    const formElementsArray = Object.entries(
+      this.state.orderForm
+    ).map(([inputName, data], index) => (
       <Input
         elementType={data.elementType}
         elementAttributes={data.elementAttributes}
@@ -136,7 +146,9 @@ class ContactData extends Component {
         <form onSubmit={this.orderHandler}>
           {formElementsArray}
 
-          <Button buttonType={"Success"} disabled={!this.state.formIsValid}>ORDER</Button>
+          <Button buttonType={"Success"} disabled={!this.state.formIsValid}>
+            ORDER
+          </Button>
         </form>
       </>
     );
@@ -145,18 +157,14 @@ class ContactData extends Component {
       form = <Spinner />;
     }
 
-    return (
-      <div className={styles.ContactData}>
-        {form}
-      </div>
-    );
+    return <div className={styles.ContactData}>{form}</div>;
   }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
     ingredients: state.ingredients,
-    totalPrice: state.totalPrice
+    totalPrice: state.totalPrice,
   };
 };
 

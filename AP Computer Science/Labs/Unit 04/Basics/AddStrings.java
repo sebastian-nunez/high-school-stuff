@@ -4,8 +4,6 @@
 // Class - 10th
 // Lab - Adding Strings
 
-import static java.lang.System.*;
-
 public class AddStrings
 {
   private String first, last;

@@ -1,32 +1,31 @@
 import React, { Component } from "react";
-import "./Posts.css";
-
-import axios from "../../axios";
 import { Route } from "react-router-dom";
-
+import axios from "../../axios";
 import Post from "../../components/Post/Post";
 import FullPost from "../FullPost/FullPost";
+import "./Posts.css";
 
 class Posts extends Component {
   state = {
-    posts: []
+    posts: [],
   };
 
   componentDidMount() {
     console.log(this.props);
-    axios.get("/posts")
-      .then(res => {
+    axios
+      .get("/posts")
+      .then((res) => {
         const posts = res.data.slice(0, 4);
-        const updatedPosts = posts.map(post => {
+        const updatedPosts = posts.map((post) => {
           return {
             ...post,
-            author: "Max"
+            author: "Max",
           };
         });
 
         this.setState({ posts: updatedPosts });
       })
-      .catch(err => {
+      .catch((err) => {
         console.log(err);
       });
   }
@@ -40,12 +39,10 @@ class Posts extends Component {
 
   render() {
     let posts = (
-      <p style={{ textAlign: "center" }}>
-        Oops, something went wrong!
-      </p>
+      <p style={{ textAlign: "center" }}>Oops, something went wrong!</p>
     );
 
-    posts = this.state.posts.map(post => (
+    posts = this.state.posts.map((post) => (
       // <Link to={"/" + post.id} key={post.id}>
       <Post
         title={post.title}
@@ -58,11 +55,13 @@ class Posts extends Component {
 
     return (
       <div>
-        <section className="Posts">
-          {posts}
-        </section>
+        <section className="Posts">{posts}</section>
 
-        <Route exact path={this.props.match.url + "/:postId"} component={FullPost} />
+        <Route
+          exact
+          path={this.props.match.url + "/:postId"}
+          component={FullPost}
+        />
       </div>
     );
   }

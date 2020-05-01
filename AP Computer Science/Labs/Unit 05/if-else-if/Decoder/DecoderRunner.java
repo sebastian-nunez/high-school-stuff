@@ -10,44 +10,44 @@ import static java.lang.System.*;
 
 public class DecoderRunner
 {
-  public static void main(String args[]) {
-    //Scanner
-    Scanner keyboard = new Scanner(in);
+    public static void main(String args[]) {
+        //Scanner
+        Scanner keyboard = new Scanner(in);
 
-    //add test cases
-    Decoder test = new Decoder();
+        //add test cases
+        Decoder test = new Decoder();
 
-    out.print("Enter a letter :: ");
-    test.setLetter(keyboard.next().charAt(0));
-    out.println(test);
+        out.print("Enter a letter :: ");
+        test.setLetter(keyboard.next().charAt(0));
+        out.println(test);
 
-    out.print("Enter a letter :: ");
-    test.setLetter(keyboard.next().charAt(0));
-    out.println(test);
+        out.print("Enter a letter :: ");
+        test.setLetter(keyboard.next().charAt(0));
+        out.println(test);
 
-    out.print("Enter a letter :: ");
-    test.setLetter(keyboard.next().charAt(0));
-    out.println(test);
+        out.print("Enter a letter :: ");
+        test.setLetter(keyboard.next().charAt(0));
+        out.println(test);
 
-    out.print("Enter a letter :: ");
-    test.setLetter(keyboard.next().charAt(0));
-    out.println(test);
+        out.print("Enter a letter :: ");
+        test.setLetter(keyboard.next().charAt(0));
+        out.println(test);
 
-    out.print("Enter a letter :: ");
-    test.setLetter(keyboard.next().charAt(0));
-    out.println(test);
+        out.print("Enter a letter :: ");
+        test.setLetter(keyboard.next().charAt(0));
+        out.println(test);
 
-    out.print("Enter a letter :: ");
-    test.setLetter(keyboard.next().charAt(0));
-    out.println(test);
+        out.print("Enter a letter :: ");
+        test.setLetter(keyboard.next().charAt(0));
+        out.println(test);
 
-    out.print("Enter a letter :: ");
-    test.setLetter(keyboard.next().charAt(0));
-    out.println(test);
+        out.print("Enter a letter :: ");
+        test.setLetter(keyboard.next().charAt(0));
+        out.println(test);
 
-    out.print("Enter a letter :: ");
-    test.setLetter(keyboard.next().charAt(0));
-    out.println(test);
+        out.print("Enter a letter :: ");
+        test.setLetter(keyboard.next().charAt(0));
+        out.println(test);
 
-  }
+    }
 }

@@ -6,22 +6,22 @@
 
 public class ForLoopDemoRunner
 {
-  public static void main(String[] args) {
-    ForLoopDemo.runForLoop(2, 90, 5);
-    System.out.println();
+    public static void main(String[] args) {
+        ForLoopDemo.runForLoop(2, 90, 5);
+        System.out.println();
 
-    //add more test cases
-    ForLoopDemo.runForLoop(3, 76, 4);
-    System.out.println();
+        //add more test cases
+        ForLoopDemo.runForLoop(3, 76, 4);
+        System.out.println();
 
-    ForLoopDemo.runForLoop(-10, 8, 2);
-    System.out.println();
+        ForLoopDemo.runForLoop(-10, 8, 2);
+        System.out.println();
 
-    ForLoopDemo.runForLoop(5, 30, 2);
-    System.out.println();
+        ForLoopDemo.runForLoop(5, 30, 2);
+        System.out.println();
 
-    ForLoopDemo.runForLoop(100, 150, 5);
-    System.out.println();
+        ForLoopDemo.runForLoop(100, 150, 5);
+        System.out.println();
 
-  }
+    }
 }

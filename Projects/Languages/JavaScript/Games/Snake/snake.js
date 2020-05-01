@@ -46,14 +46,14 @@ window.onload = () => {
   for (let i = len - 1; i >= 0; i--) {
     snake.push({
       x: i,
-      y: 0
+      y: 0,
     });
   }
 
   // create some food
   let food = {
     x: Math.round(Math.random() * (cvsW / snakeW - 1)),
-    y: Math.round(Math.random() * (cvsH / snakeH - 1))
+    y: Math.round(Math.random() * (cvsH / snakeH - 1)),
   };
 
   // draw food function
@@ -127,18 +127,18 @@ window.onload = () => {
     if (snakeX == food.x && snakeY == food.y) {
       food = {
         x: Math.round(Math.random() * (cvsW / snakeW - 1)),
-        y: Math.round(Math.random() * (cvsH / snakeH - 1))
+        y: Math.round(Math.random() * (cvsH / snakeH - 1)),
       };
       newHead = {
         x: snakeX,
-        y: snakeY
+        y: snakeY,
       };
       score++;
     } else {
       snake.pop();
       newHead = {
         x: snakeX,
-        y: snakeY
+        y: snakeY,
       };
     }
     snake.unshift(newHead);

@@ -1,24 +1,29 @@
-import React, { Component } from "react";
 import PropTypes from "prop-types";
-import styles from "./Modal.module.scss";
-
+import React, { Component } from "react";
 import Backdrop from "../Backdrop/Backdrop";
+import styles from "./Modal.module.scss";
 
 class Modal extends Component {
   shouldComponentUpdate(nextProps, nextState) {
-    return (this.props.show !== nextProps.show || this.props.children !== nextProps.children);
+    return (
+      this.props.show !== nextProps.show ||
+      this.props.children !== nextProps.children
+    );
   }
 
   render() {
     return (
       <>
-        <Backdrop show={this.props.show} closeModal={this.props.closeModalHandler} />
+        <Backdrop
+          show={this.props.show}
+          closeModal={this.props.closeModalHandler}
+        />
 
         <div
           className={styles.Modal}
           style={{
             transform: this.props.show ? "translateY(0)" : "translateY(-100vh)",
-            opacity: this.props.show ? "1" : "0"
+            opacity: this.props.show ? "1" : "0",
           }}
         >
           {this.props.children}
@@ -26,13 +31,12 @@ class Modal extends Component {
       </>
     );
   }
-};
+}
 
 Modal.propTypes = {
   children: PropTypes.any,
   closeModalHandler: PropTypes.func,
-  show: PropTypes.bool
+  show: PropTypes.bool,
 };
 
 export default Modal;
-

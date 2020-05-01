@@ -1,44 +1,44 @@
-//(c) A+ Computer Science
-//www.apluscompsci.com
-//Name -
+// (c) A+ Computer Science
+// www.apluscompsci.com
+// Name -
 
 public class Number
 {
-  private Integer number;
+    private Integer number;
 
-  public Number() {
-    this(0);
-  }
-
-  public Number(int num) {
-    setNumber(num);
-  }
-
-  public void setNumber(int num) {
-    number = num;
-  }
-
-  public int getNumber() {
-    return number;
-  }
-
-  public boolean isOdd() {
-    return number % 2 != 0;
-  }
-
-  public boolean isPerfect() {
-    int total = 0;
-
-    for (int factor = 1; factor < number; factor++) {
-      if (number % factor == 0) {
-        total += factor;
-      }
+    public Number() {
+        this(0);
     }
 
-    return (number == total);
-  }
+    public Number(int num) {
+        setNumber(num);
+    }
 
-  public String toString() {
-    return "" + number;
-  }
+    public void setNumber(int num) {
+        number = num;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public boolean isOdd() {
+        return number % 2 != 0;
+    }
+
+    public boolean isPerfect() {
+        int total = 0;
+
+        for (int factor = 1; factor < number; factor++) {
+            if (number % factor == 0) {
+                total += factor;
+            }
+        }
+
+        return (number == total);
+    }
+
+    public String toString() {
+        return "" + number;
+    }
 }

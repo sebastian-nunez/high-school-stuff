@@ -18,7 +18,7 @@ public class BigHouse extends Canvas
     /*   public void paint( Graphics window )
      {
     //call bigHouse
-    
+
      }
     */
 

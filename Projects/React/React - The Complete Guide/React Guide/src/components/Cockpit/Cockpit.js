@@ -1,9 +1,8 @@
 import React, { useContext, useEffect, useRef } from "react";
+import AuthContext from "../../context/authContext";
 import styles from "./Cockpit.module.scss";
 
-import AuthContext from "../../context/authContext";
-
-const cockPit = props => {
+const cockPit = (props) => {
   const toggleButtonRef = useRef(null);
   const authContext = useContext(AuthContext);
 
@@ -28,14 +27,13 @@ const cockPit = props => {
   return (
     <div className={styles.Cockpit}>
       <h1>{props.title}</h1>
-      <p className={classes.join(" ")}>
-        JSX
-      </p>
+      <p className={classes.join(" ")}>JSX</p>
 
       <button
         className={buttonClass}
         onClick={props.togglePeopleHandler}
-        ref={toggleButtonRef}>
+        ref={toggleButtonRef}
+      >
         Toggle People
       </button>
 

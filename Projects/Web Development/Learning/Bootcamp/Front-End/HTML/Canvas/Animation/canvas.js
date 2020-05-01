@@ -1,4 +1,4 @@
-window.onload = function() {
+window.onload = function () {
   let canvas = document.getElementById("canvas");
   canvas.width = 500;
   canvas.height = 500;
@@ -29,14 +29,7 @@ window.onload = function() {
     // draws circle
     context.beginPath();
     context.strokeStyle = "blue";
-    context.arc(
-      x,
-      y,
-      radius,
-      (Math.PI / 180) * 0,
-      (Math.PI / 180) * 360,
-      true
-    );
+    context.arc(x, y, radius, (Math.PI / 180) * 0, (Math.PI / 180) * 360, true);
     context.stroke();
 
     // update velocity and checks if circle is out of bounds

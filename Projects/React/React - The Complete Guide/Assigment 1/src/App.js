@@ -5,12 +5,12 @@ import UserOutput from "./UserOutput/UserOutput";
 
 class App extends Component {
   state = {
-    userName: "Sebastian"
+    userName: "Sebastian",
   };
 
   changeEventHandler = (event) => {
     this.setState({
-      userName: event.target.value
+      userName: event.target.value,
     });
   };
 

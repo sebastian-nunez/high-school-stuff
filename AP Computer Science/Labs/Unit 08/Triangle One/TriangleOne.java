@@ -4,23 +4,21 @@
 // Class - 10th
 // Lab - Triangle One
 
-import static java.lang.System.*;
-
 public class TriangleOne
 {
-  //this lab is setup with a single static method
-  //there are no instance variables or additional methods / constructors
+    //this lab is setup with a single static method
+    //there are no instance variables or additional methods / constructors
 
-  public static String createTriangle(String let, int size) {
-    String output = "";
+    public static String createTriangle(String let, int size) {
+        String output = "";
 
-    for (int rows = 1; rows <= size; rows++) {
-      for (int cols = 1; cols <= rows; cols++) {
-        output += let;
-      }
-      output += "\n";
+        for (int rows = 1; rows <= size; rows++) {
+            for (int cols = 1; cols <= rows; cols++) {
+                output += let;
+            }
+            output += "\n";
+        }
+
+        return output;
     }
-
-    return output;
-  }
 }

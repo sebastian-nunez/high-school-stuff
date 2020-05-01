@@ -9,42 +9,42 @@ import static java.lang.System.*;
 
 public class LeapYearRunner
 {
-  public static void main(String args[]) {
-    //instantiation
-    Scanner keyboard = new Scanner(System.in);
-    LeapYear test = new LeapYear();
+    public static void main(String args[]) {
+        //instantiation
+        Scanner keyboard = new Scanner(System.in);
+        LeapYear test = new LeapYear();
 
-    //inputs
-    out.print("Enter a year :: ");
-    int year = keyboard.nextInt();
-    test.result(year);
+        //inputs
+        out.print("Enter a year :: ");
+        int year = keyboard.nextInt();
+        test.result(year);
 
-    out.print("Enter a year :: ");
-    year = keyboard.nextInt();
-    test.result(year);
+        out.print("Enter a year :: ");
+        year = keyboard.nextInt();
+        test.result(year);
 
-    out.print("Enter a year :: ");
-    year = keyboard.nextInt();
-    test.result(year);
+        out.print("Enter a year :: ");
+        year = keyboard.nextInt();
+        test.result(year);
 
-    out.print("Enter a year :: ");
-    year = keyboard.nextInt();
-    test.result(year);
+        out.print("Enter a year :: ");
+        year = keyboard.nextInt();
+        test.result(year);
 
-    out.print("Enter a year :: ");
-    year = keyboard.nextInt();
-    test.result(year);
+        out.print("Enter a year :: ");
+        year = keyboard.nextInt();
+        test.result(year);
 
-    out.print("Enter a year :: ");
-    year = keyboard.nextInt();
-    test.result(year);
+        out.print("Enter a year :: ");
+        year = keyboard.nextInt();
+        test.result(year);
 
-    out.print("Enter a year :: ");
-    year = keyboard.nextInt();
-    test.result(year);
+        out.print("Enter a year :: ");
+        year = keyboard.nextInt();
+        test.result(year);
 
-    out.print("Enter a year :: ");
-    year = keyboard.nextInt();
-    test.result(year);
-  }
+        out.print("Enter a year :: ");
+        year = keyboard.nextInt();
+        test.result(year);
+    }
 }

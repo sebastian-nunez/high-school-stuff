@@ -2,7 +2,7 @@ const redux = require("redux");
 const createStore = redux.createStore;
 
 const initialState = {
-  counter: 0
+  counter: 0,
 };
 
 // reducer
@@ -10,14 +10,14 @@ const rootReducer = (state = initialState, action) => {
   if (action.type === "INC_COUNTER") {
     return {
       ...state,
-      counter: state.counter + 1
+      counter: state.counter + 1,
     };
   }
 
   if (action.type === "ADD_COUNTER") {
     return {
       ...state,
-      counter: state.counter + action.value
+      counter: state.counter + action.value,
     };
   }
 
@@ -37,4 +37,3 @@ store.subscribe(() => {
 store.dispatch({ type: "INC_COUNTER" });
 store.dispatch({ type: "ADD_COUNTER", value: 10 });
 console.log(store.getState());
-

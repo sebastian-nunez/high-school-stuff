@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
@@ -12,8 +12,8 @@
   <body>
     <button id="button1">Get User</button>
     <button id="button2">Get Users</button>
-    <br>
-    <br>
+    <br />
+    <br />
 
     <h1>User</h1>
     <div id="user"></div>
@@ -30,23 +30,29 @@
 
         xhr.open("GET", "user.json", true);
 
-        xhr.onload = function() {
+        xhr.onload = function () {
           if (this.status == 200) {
             var user = JSON.parse(this.responseText);
 
             var output = "";
-            output += "<ul>" +
-              "<li>ID: " + user.id + "</li>" +
-              "<li>Name: " + user.name + "</li>" +
-              "<li>Email: " + user.email + "</li>" +
+            output +=
+              "<ul>" +
+              "<li>ID: " +
+              user.id +
+              "</li>" +
+              "<li>Name: " +
+              user.name +
+              "</li>" +
+              "<li>Email: " +
+              user.email +
+              "</li>" +
               "</ul>";
 
             document.getElementById("user").innerHTML = output;
           }
-
         };
 
-        xhr.onerror = function() {
+        xhr.onerror = function () {
           console.log("Response error...");
         };
 
@@ -58,16 +64,23 @@
 
         xhr.open("GET", "users.json", true);
 
-        xhr.onload = function() {
+        xhr.onload = function () {
           if (this.status == 200) {
             var users = JSON.parse(this.responseText);
 
             var output = "";
             for (var user in users) {
-              output += "<ul>" +
-                "<li>ID: " + users[user].id + "</li>" +
-                "<li>Name: " + users[user].name + "</li>" +
-                "<li>Email: " + users[user].email + "</li>" +
+              output +=
+                "<ul>" +
+                "<li>ID: " +
+                users[user].id +
+                "</li>" +
+                "<li>Name: " +
+                users[user].name +
+                "</li>" +
+                "<li>Email: " +
+                users[user].email +
+                "</li>" +
                 "</ul>";
             }
 
@@ -75,7 +88,7 @@
           }
         };
 
-        xhr.onerror = function() {
+        xhr.onerror = function () {
           console.log("Response error...");
         };
 

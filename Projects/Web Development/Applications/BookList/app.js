@@ -12,7 +12,7 @@ class UI {
   static displayBooks() {
     const books = Store.getBooks();
 
-    books.forEach(book => {
+    books.forEach((book) => {
       UI.addBookToList(book);
     });
   }
@@ -131,7 +131,9 @@ document.getElementById("book-list").addEventListener("click", (event) => {
   UI.deleteBook(event.target);
 
   // remove book from store
-  Store.removeBook(event.target.parentElement.previousElementSibling.textContent);
+  Store.removeBook(
+    event.target.parentElement.previousElementSibling.textContent
+  );
   // Store.removeBook(event);
   UI.showAlert("Book removed!", "success");
 });

@@ -13,19 +13,19 @@ $colors: (
   grey-dark-2: #999,
   grey-dark-3: #333,
   grey-light-1: #f7f7f7,
-  grey-light-2: #eee
+  grey-light-2: #eee,
 );
 
 // Fonts
 $font-sizes: (
-  default: 1.6rem
+  default: 1.6rem,
 );
 
 // Spacing
 $spacing-dimensions: (
   border-radius-normal: 0.3rem,
   border-radius-large: 10rem,
-  border-radius-small: 0.2rem
+  border-radius-small: 0.2rem,
 );
 
 // Float grid
@@ -33,7 +33,7 @@ $grid: (
   row-width: 114rem,
   vertical-gutter: 6rem,
   horizontal-gutter: 8rem,
-  horizontal-gutter-small: 6rem
+  horizontal-gutter-small: 6rem,
 );
 
 // Breakpoints (values are calculated assuming default browser font is 16px; therefore, WANTEDpx/16px = RESULTem since media queries are not affected by root font size)

@@ -1,6 +1,6 @@
 import React from "react";
 
-const noMatch = props => (
+const noMatch = (props) => (
   <h1 style={{ textAlign: "center" }}>Page not found!</h1>
 );
 

@@ -3,4 +3,3 @@ const personsReducer = (state, action) => {
 };
 
 export default personsReducer;
-

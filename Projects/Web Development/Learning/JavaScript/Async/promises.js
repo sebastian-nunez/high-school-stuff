@@ -1,6 +1,6 @@
 const posts = [
-  {title: "Post One", body: "This is post one"},
-  {title: "Post Two", body: "This is post two"}
+  { title: "Post One", body: "This is post one" },
+  { title: "Post Two", body: "This is post two" },
 ];
 
 function getPosts() {
@@ -65,7 +65,3 @@ fetchUsers();
 //
 // Promise.all([promise1, promise2, promise3, promise4])
 //   .then((values) => console.log(values));
-
-
-
-

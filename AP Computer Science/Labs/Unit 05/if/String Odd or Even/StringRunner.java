@@ -10,42 +10,42 @@ import static java.lang.System.*;
 
 public class StringRunner
 {
-  public static void main(String[] args) {
-    //instantiation
-    Scanner keyboard = new Scanner(in);
-    StringOddOrEven test = new StringOddOrEven();
+    public static void main(String[] args) {
+        //instantiation
+        Scanner keyboard = new Scanner(in);
+        StringOddOrEven test = new StringOddOrEven();
 
-    //inputs
-    out.print("Enter a word :: ");
-    test.setString(keyboard.next());
-    test.print();
+        //inputs
+        out.print("Enter a word :: ");
+        test.setString(keyboard.next());
+        test.print();
 
-    out.print("Enter a word :: ");
-    test.setString(keyboard.next());
-    test.print();
+        out.print("Enter a word :: ");
+        test.setString(keyboard.next());
+        test.print();
 
-    out.print("Enter a word :: ");
-    test.setString(keyboard.next());
-    test.print();
+        out.print("Enter a word :: ");
+        test.setString(keyboard.next());
+        test.print();
 
-    out.print("Enter a word :: ");
-    test.setString(keyboard.next());
-    test.print();
+        out.print("Enter a word :: ");
+        test.setString(keyboard.next());
+        test.print();
 
-    out.print("Enter a word :: ");
-    test.setString(keyboard.next());
-    test.print();
+        out.print("Enter a word :: ");
+        test.setString(keyboard.next());
+        test.print();
 
-    out.print("Enter a word :: ");
-    test.setString(keyboard.next());
-    test.print();
+        out.print("Enter a word :: ");
+        test.setString(keyboard.next());
+        test.print();
 
-    out.print("Enter a word :: ");
-    test.setString(keyboard.next());
-    test.print();
+        out.print("Enter a word :: ");
+        test.setString(keyboard.next());
+        test.print();
 
-    out.print("Enter a word :: ");
-    test.setString(keyboard.next());
-    test.print();
-  }
+        out.print("Enter a word :: ");
+        test.setString(keyboard.next());
+        test.print();
+    }
 }

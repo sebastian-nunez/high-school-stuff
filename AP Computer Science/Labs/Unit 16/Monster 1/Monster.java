@@ -1,16 +1,16 @@
-//(c) A+ Computer Science
-//www.apluscompsci.com
-//Name -
+// (c) A+ Computer Science
+// www.apluscompsci.com
+// Name -
 
 public interface Monster
 {
-  int getHowBig();
+    int getHowBig();
 
-  String getName();
+    String getName();
 
-  boolean isBigger(Monster other);
+    boolean isBigger(Monster other);
 
-  boolean isSmaller(Monster other);
+    boolean isSmaller(Monster other);
 
-  boolean namesTheSame(Monster other);
+    boolean namesTheSame(Monster other);
 }

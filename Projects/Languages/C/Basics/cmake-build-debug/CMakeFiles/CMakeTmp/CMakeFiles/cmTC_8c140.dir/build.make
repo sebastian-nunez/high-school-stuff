@@ -99,4 +99,3 @@ CMakeFiles/cmTC_8c140.dir/clean:
 CMakeFiles/cmTC_8c140.dir/depend:
 	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" D:\Computer-Science-Archive\Projects\Languages\C\Basics\cmake-build-debug\CMakeFiles\CMakeTmp D:\Computer-Science-Archive\Projects\Languages\C\Basics\cmake-build-debug\CMakeFiles\CMakeTmp D:\Computer-Science-Archive\Projects\Languages\C\Basics\cmake-build-debug\CMakeFiles\CMakeTmp D:\Computer-Science-Archive\Projects\Languages\C\Basics\cmake-build-debug\CMakeFiles\CMakeTmp D:\Computer-Science-Archive\Projects\Languages\C\Basics\cmake-build-debug\CMakeFiles\CMakeTmp\CMakeFiles\cmTC_8c140.dir\DependInfo.cmake
 .PHONY : CMakeFiles/cmTC_8c140.dir/depend
-

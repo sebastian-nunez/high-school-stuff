@@ -1,9 +1,8 @@
-import React, { Component } from "react";
 import PropTypes from "prop-types";
-import styles from "./Person.module.scss";
-
-import withClass from "../../../hoc/withClass";
+import React, { Component } from "react";
 import AuthContext from "../../../context/authContext";
+import withClass from "../../../hoc/withClass";
+import styles from "./Person.module.scss";
 
 class Person extends Component {
   constructor(props) {
@@ -27,11 +26,11 @@ class Person extends Component {
 
     return (
       <>
-        {this.context.isAuthenticated ?
+        {this.context.isAuthenticated ? (
           <p>Authenticated!</p>
-          :
+        ) : (
           <p>Please log in</p>
-        }
+        )}
 
         <p onClick={this.props.deletePersonHandler}>
           My name is {this.props.name} and I am {this.props.age} years old!
@@ -48,14 +47,14 @@ class Person extends Component {
       </>
     );
   }
-};
+}
 
 Person.propTypes = {
   deletePersonHandler: PropTypes.func,
   name: PropTypes.string,
   age: PropTypes.number,
   changeNameHandler: PropTypes.func,
-  shouldInputFocus: PropTypes.bool
+  shouldInputFocus: PropTypes.bool,
 };
 
 export default withClass(Person, styles.Person);

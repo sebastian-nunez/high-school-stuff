@@ -1,16 +1,14 @@
 import React, { Component } from "react";
-import "./Blog.css";
-
-import { Route, Switch, NavLink } from "react-router-dom";
-
-import Posts from "../Posts/Posts";
+import { NavLink, Route, Switch } from "react-router-dom";
 import asyncComponent from "../../hoc/asyncComponent";
+import Posts from "../Posts/Posts";
+import "./Blog.css";
 
 const AsyncNewPost = asyncComponent(() => import("../NewPost/NewPost"));
 
 class Blog extends Component {
   state = {
-    isAuth: true
+    isAuth: true,
   };
 
   render() {
@@ -26,7 +24,7 @@ class Blog extends Component {
                   activeClassName={"my-active"}
                   activeStyle={{
                     color: "#fa923f",
-                    textDecoration: "underline"
+                    textDecoration: "underline",
                   }}
                 >
                   Posts
@@ -38,7 +36,7 @@ class Blog extends Component {
                   to={{
                     pathname: "/new-post",
                     hash: "#submit",
-                    search: "?quick-submit=true"
+                    search: "?quick-submit=true",
                   }}
                 >
                   New Post
@@ -49,7 +47,9 @@ class Blog extends Component {
         </header>
 
         <Switch>
-          {this.state.isAuth ? <Route path={"/new-post"} component={AsyncNewPost} /> : null}
+          {this.state.isAuth ? (
+            <Route path={"/new-post"} component={AsyncNewPost} />
+          ) : null}
           <Route path={"/posts"} component={Posts} />
           {/*<Redirect from={"/"} to={"/posts"} />*/}
           <Route render={() => <h1>Not Found</h1>} />
@@ -57,6 +57,6 @@ class Blog extends Component {
       </div>
     );
   }
-};
+}
 
 export default Blog;

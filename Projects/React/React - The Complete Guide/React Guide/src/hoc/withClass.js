@@ -1,7 +1,7 @@
 import React from "react";
 
 const withClass = (Component, classes) => {
-  return props => (
+  return (props) => (
     <div className={classes}>
       <Component {...props} />
     </div>

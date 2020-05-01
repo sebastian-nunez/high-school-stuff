@@ -3,13 +3,13 @@ import React, { Component } from "react";
 class ErrorBoundary extends Component {
   state = {
     hasError: false,
-    errorMessage: ""
+    errorMessage: "",
   };
 
   componentDidCatch = (error, info) => {
     this.setState({
       hasError: true,
-      errorMessage: error
+      errorMessage: error,
     });
   };
 

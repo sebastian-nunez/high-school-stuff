@@ -1,17 +1,15 @@
 import React, { Component } from "react";
-
 import { connect } from "react-redux";
-import * as actionTypes from "../store/actionTypes";
-
-import Person from "../components/Person/Person";
 import AddPerson from "../components/AddPerson/AddPerson";
+import Person from "../components/Person/Person";
+import * as actionTypes from "../store/actionTypes";
 
 class Persons extends Component {
   render() {
     return (
       <div>
         <AddPerson personAdded={this.props.onAddPerson} />
-        {this.props.persons.map(person => (
+        {this.props.persons.map((person) => (
           <Person
             key={person.id}
             name={person.name}
@@ -24,26 +22,28 @@ class Persons extends Component {
   }
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = (state) => {
   return {
-    persons: state.personsReducer.persons
+    persons: state.personsReducer.persons,
   };
 };
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch) => {
   return {
-    onAddPerson: (name, age) => dispatch({
-      type: actionTypes.ADD_PERSON,
-      payload: {
-        id: Math.random(),
-        name,
-        age
-      }
-    }),
-    onRemovePerson: (id) => dispatch({
-      type: actionTypes.REMOVE_PERSON,
-      id
-    })
+    onAddPerson: (name, age) =>
+      dispatch({
+        type: actionTypes.ADD_PERSON,
+        payload: {
+          id: Math.random(),
+          name,
+          age,
+        },
+      }),
+    onRemovePerson: (id) =>
+      dispatch({
+        type: actionTypes.REMOVE_PERSON,
+        id,
+      }),
   };
 };
 

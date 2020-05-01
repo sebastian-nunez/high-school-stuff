@@ -1,9 +1,8 @@
 import React from "react";
 import styles from "./Burger.module.scss";
-
 import BurgerIngredient from "./BurgerIngredient/BurgerIngredient";
 
-const burger = props => {
+const burger = (props) => {
   // const transformedIngredients = Object.keys(props.ingredients)
   //   .map(type => {
   //     return [...Array(props.ingredients[type])]
@@ -22,14 +21,14 @@ const burger = props => {
   let changedIngredients = [];
   for (let type in props.ingredients) {
     for (let i = 0; i < props.ingredients[type]; i++) {
-      changedIngredients.push(
-        <BurgerIngredient type={type} key={type + i} />
-      );
+      changedIngredients.push(<BurgerIngredient type={type} key={type + i} />);
     }
   }
 
   if (changedIngredients.length === 0) {
-    changedIngredients.push(<p key={"no-ingredients"}>Please start adding ingredients!</p>);
+    changedIngredients.push(
+      <p key={"no-ingredients"}>Please start adding ingredients!</p>
+    );
   }
 
   return (

@@ -113,11 +113,11 @@ main .index-banner {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -159,17 +159,17 @@ main .index-banner h1 {
 
 main .index-boxes {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 @media only screen and (min-width: 768px) {
   main .index-boxes {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: (1fr) [4];
+    grid-template-columns: repeat(4, 1fr);
     grid-gap: 15px;
-        grid-template-areas: "cases portfolio portfolio lorem" "youtube youtube about contact";
+    grid-template-areas: "cases portfolio portfolio lorem" "youtube youtube about contact";
   }
   main .index-boxes #index-box-1 {
     -ms-grid-row: 1;
@@ -214,11 +214,11 @@ main .index-boxes .index-box {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -239,7 +239,7 @@ main .index-boxes .index-box h3 {
 
 footer {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   padding: 40px 40px;
   margin-top: 20px;
@@ -249,8 +249,8 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 footer ul {

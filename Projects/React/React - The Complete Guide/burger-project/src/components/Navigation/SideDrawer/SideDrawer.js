@@ -1,12 +1,14 @@
 import React from "react";
+import Logo from "../../Logo/Logo";
+import Backdrop from "../../UI/Backdrop/Backdrop";
+import NavigationItems from "../NavigationItems/NavigationItems";
 import styles from "./SideDrawer.module.scss";
 
-import Logo from "../../Logo/Logo";
-import NavigationItems from "../NavigationItems/NavigationItems";
-import Backdrop from "../../UI/Backdrop/Backdrop";
-
-const sideDrawer = props => {
-  const sideDrawerClasses = [styles.SideDrawer, props.isOpen ? styles.Open : styles.Closed];
+const sideDrawer = (props) => {
+  const sideDrawerClasses = [
+    styles.SideDrawer,
+    props.isOpen ? styles.Open : styles.Closed,
+  ];
   return (
     <>
       <Backdrop show={props.isOpen} closeModal={props.closeSideDrawerHandler} />

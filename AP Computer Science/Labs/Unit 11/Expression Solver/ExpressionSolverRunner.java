@@ -9,31 +9,31 @@ import static java.lang.System.*;
 
 public class ExpressionSolverRunner
 {
-  public static void main(String args[]) {
-    ExpressionSolver exp = new ExpressionSolver("3 + 5");
+    public static void main(String args[]) {
+        ExpressionSolver exp = new ExpressionSolver("3 + 5");
 
-    exp.solveExpression();
-    System.out.println(exp + "\n");
+        exp.solveExpression();
+        System.out.println(exp + "\n");
 
-    exp.setExpression("3 * 5");
-    exp.solveExpression();
-    System.out.println(exp + "\n");
+        exp.setExpression("3 * 5");
+        exp.solveExpression();
+        System.out.println(exp + "\n");
 
-    exp.setExpression("3 - 5");
-    exp.solveExpression();
-    System.out.println(exp + "\n");
+        exp.setExpression("3 - 5");
+        exp.solveExpression();
+        System.out.println(exp + "\n");
 
-    exp.setExpression("3 / 5");
-    exp.solveExpression();
-    System.out.println(exp + "\n");
+        exp.setExpression("3 / 5");
+        exp.solveExpression();
+        System.out.println(exp + "\n");
 
-    exp.setExpression("5 / 5 * 2 + 8 / 2 + 5");
-    exp.solveExpression();
-    System.out.println(exp + "\n");
+        exp.setExpression("5 / 5 * 2 + 8 / 2 + 5");
+        exp.solveExpression();
+        System.out.println(exp + "\n");
 
-    exp.setExpression("5 * 5 + 2 / 2 - 8 + 5 * 5 - 2");
-    exp.solveExpression();
-    System.out.println(exp + "\n");
+        exp.setExpression("5 * 5 + 2 / 2 - 8 + 5 * 5 - 2");
+        exp.solveExpression();
+        System.out.println(exp + "\n");
 
-  }
+    }
 }

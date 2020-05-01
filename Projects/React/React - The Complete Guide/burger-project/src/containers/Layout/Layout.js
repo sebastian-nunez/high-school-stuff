@@ -1,12 +1,11 @@
 import React, { Component } from "react";
-import styles from "./Layout.module.scss";
-
-import Toolbar from "../../components/Navigation/Toolbar/Toolbar";
 import SideDrawer from "../../components/Navigation/SideDrawer/SideDrawer";
+import Toolbar from "../../components/Navigation/Toolbar/Toolbar";
+import styles from "./Layout.module.scss";
 
 class Layout extends Component {
   state = {
-    showSideDrawer: false
+    showSideDrawer: false,
   };
 
   closeSideDrawerHandler = () => {
@@ -29,9 +28,7 @@ class Layout extends Component {
           closeSideDrawerHandler={this.closeSideDrawerHandler}
         />
 
-        <main className={styles.Content}>
-          {this.props.children}
-        </main>
+        <main className={styles.Content}>{this.props.children}</main>
       </>
     );
   }

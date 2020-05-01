@@ -4,7 +4,7 @@ import "./FullPost.css";
 
 class FullPost extends Component {
   state = {
-    loadedPost: null
+    loadedPost: null,
   };
 
   componentDidMount() {
@@ -22,17 +22,19 @@ class FullPost extends Component {
         (this.state.loadedPost &&
           this.state.loadedPost.id !== +this.props.match.params.postId)
       ) {
-        axios.get("/posts/" + this.props.match.params.postId)
-          .then(res => this.setState({ loadedPost: res.data }))
-          .catch(err => console.log(err));
+        axios
+          .get("/posts/" + this.props.match.params.postId)
+          .then((res) => this.setState({ loadedPost: res.data }))
+          .catch((err) => console.log(err));
       }
     }
   };
 
   deletePostHandler = () => {
     if (this.props.match.params.postId) {
-      axios.delete("/posts/" + this.props.match.params.postId)
-        .then(res => console.log(res));
+      axios
+        .delete("/posts/" + this.props.match.params.postId)
+        .then((res) => console.log(res));
     }
   };
 
@@ -53,7 +55,9 @@ class FullPost extends Component {
           <p>{this.state.loadedPost.body}</p>
 
           <div className="Edit">
-            <button className="Delete" onClick={this.deletePostHandler}>Delete</button>
+            <button className="Delete" onClick={this.deletePostHandler}>
+              Delete
+            </button>
           </div>
         </div>
       );

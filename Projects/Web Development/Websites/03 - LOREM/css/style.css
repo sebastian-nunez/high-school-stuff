@@ -5,7 +5,7 @@
   list-style: none;
   text-decoration: none;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html {
@@ -55,7 +55,7 @@ blockquote {
   padding-top: 1rem;
   border-top-left-radius: 60px;
   -webkit-transform: skewY(-2.5deg);
-          transform: skewY(-2.5deg);
+  transform: skewY(-2.5deg);
 }
 
 .info-container::before {
@@ -94,7 +94,7 @@ blockquote {
   color: #fff;
   border-top-right-radius: 60px;
   -webkit-transform: skewY(2.5deg);
-          transform: skewY(2.5deg);
+  transform: skewY(2.5deg);
 }
 
 .footer-container::before {
@@ -125,8 +125,8 @@ header > .container {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 header > .container a:visited {
@@ -212,7 +212,7 @@ nav .nav-links {
 
 .info-section > .container > ul {
   -webkit-transform: skewY(2.5deg);
-          transform: skewY(2.5deg);
+  transform: skewY(2.5deg);
 }
 
 .info-section > .container > ul li {
@@ -310,7 +310,7 @@ footer > .container {
   color: #fff;
   margin: 0.8rem auto;
   -webkit-transform: skewY(-2.5deg);
-          transform: skewY(-2.5deg);
+  transform: skewY(-2.5deg);
   position: relative;
 }
 

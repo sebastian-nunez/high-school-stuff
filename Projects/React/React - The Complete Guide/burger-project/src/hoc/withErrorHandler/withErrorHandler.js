@@ -1,22 +1,24 @@
 import React, { Component } from "react";
-
 import Modal from "../../components/UI/Modal/Modal";
 
 const withErrorHandler = (WrappedComponent, axios) => {
   return class extends Component {
     state = {
-      error: null
+      error: null,
     };
 
     componentWillMount() {
-      this.requestInterceptor = axios.interceptors.request.use(req => {
+      this.requestInterceptor = axios.interceptors.request.use((req) => {
         this.setState({ error: null });
         return req;
       });
 
-      this.responseInterceptor = axios.interceptors.response.use(res => res, err => {
-        this.setState({ error: err });
-      });
+      this.responseInterceptor = axios.interceptors.response.use(
+        (res) => res,
+        (err) => {
+          this.setState({ error: err });
+        }
+      );
     }
 
     componentWillUnmount() {
@@ -40,7 +42,7 @@ const withErrorHandler = (WrappedComponent, axios) => {
           <WrappedComponent {...this.props} />
         </>
       );
-    };
+    }
   };
 };
 

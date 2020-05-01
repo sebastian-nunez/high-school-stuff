@@ -1,11 +1,12 @@
-#intergers
+# intergers
 interger = int(input("Enter a Interger :: "))
 
-#floats
+# floats
 decimal = float(input("Enter a Float :: "))
 
-#strings
+# strings
 input("Enter a String :: ")
 
-#Print
-print("\nInterger: " + str(interger) + "\nFloat: " + str(decimal) + "\nString: " + string)
+# Print
+print("\nInterger: " + str(interger) + "\nFloat: " +
+      str(decimal) + "\nString: " + string)

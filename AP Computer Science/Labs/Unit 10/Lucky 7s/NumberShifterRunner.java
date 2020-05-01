@@ -10,11 +10,11 @@ import static java.lang.System.*;
 
 public class NumberShifterRunner
 {
-  public static void main(String args[]) throws IOException {
-    //add test cases
-    NumberShifter.shiftEm(NumberShifter.makeLucky7Array(20));
-    NumberShifter.shiftEm(NumberShifter.makeLucky7Array(20));
-    NumberShifter.shiftEm(NumberShifter.makeLucky7Array(20));
-    NumberShifter.shiftEm(NumberShifter.makeLucky7Array(20));
-  }
+    public static void main(String args[]) throws IOException {
+        //add test cases
+        NumberShifter.shiftEm(NumberShifter.makeLucky7Array(20));
+        NumberShifter.shiftEm(NumberShifter.makeLucky7Array(20));
+        NumberShifter.shiftEm(NumberShifter.makeLucky7Array(20));
+        NumberShifter.shiftEm(NumberShifter.makeLucky7Array(20));
+    }
 }

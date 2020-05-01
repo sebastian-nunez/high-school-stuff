@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, viewport-fit=cover"
     />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
     <style>
       #fact {
@@ -25,8 +29,12 @@
             <h1>Number Facts</h1>
 
             <p>Enter a number and get a random fact</p>
-            <input type="number" class="form-control form-control-lg" placeholder="Enter any number..."
-                   id="numberInput">
+            <input
+              type="number"
+              class="form-control form-control-lg"
+              placeholder="Enter any number..."
+              id="numberInput"
+            />
 
             <div class="card-body" id="fact">
               <h4 class="card-title">Number Fact</h4>
@@ -53,14 +61,14 @@
 
         xhr.open("GET", "http://numbersapi.com/" + number, true);
 
-        xhr.onload = function() {
+        xhr.onload = function () {
           if (this.status == 200 && number != null) {
             fact.style.display = "block";
             factText.innerText = this.responseText;
           }
         };
 
-        xhr.onerror = function() {
+        xhr.onerror = function () {
           console.log("Response error...");
         };
 
@@ -72,14 +80,14 @@
         const number = numberInput.value;
 
         fetch("http://numbersapi.com/" + number)
-          .then(response => response.text())
-          .then(data => {
+          .then((response) => response.text())
+          .then((data) => {
             if (number != null) {
               fact.style.display = "block";
               factText.innerText = data;
             }
           })
-          .catch(error => console.log(error));
+          .catch((error) => console.log(error));
       }
     </script>
   </body>

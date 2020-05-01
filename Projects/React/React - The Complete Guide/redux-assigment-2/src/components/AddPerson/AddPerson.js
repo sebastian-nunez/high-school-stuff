@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-
 import "./AddPerson.css";
 
 class AddPerson extends Component {
   state = {
     name: "",
-    age: ""
+    age: "",
   };
 
   changeNameHandler = (event) => {
@@ -33,10 +32,16 @@ class AddPerson extends Component {
           value={this.state.age}
         />
 
-        <button onClick={() => this.props.personAdded(this.state.name, this.state.age)}>Add Person</button>
+        <button
+          onClick={() =>
+            this.props.personAdded(this.state.name, this.state.age)
+          }
+        >
+          Add Person
+        </button>
       </div>
     );
   }
-};
+}
 
 export default AddPerson;

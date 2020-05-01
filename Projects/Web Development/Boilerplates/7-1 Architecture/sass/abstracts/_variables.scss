@@ -1,14 +1,14 @@
 // Colors
 $colors: (
   pure-white: #fff,
-  pure-black: #000
+  pure-black: #000,
 );
 
 // Float grid
 $grid: (
   row-width: 114rem,
   vertical-gutter: 6rem,
-  horizontal-gutter: 8rem
+  horizontal-gutter: 8rem,
 );
 
 // Breakpoints
@@ -16,5 +16,5 @@ $breakpoints: (
   mobile: 600px,
   tablet: 900px,
   tablet-large: 1200px,
-  desktop-large: 1800px
+  desktop-large: 1800px,
 );

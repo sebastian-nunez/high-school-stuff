@@ -1,8 +1,7 @@
 import React, { Component, Suspense } from "react";
 import { BrowserRouter, NavLink, Route } from "react-router-dom";
-
-import Welcome from "./containers/Welcome";
 import User from "./containers/User";
+import Welcome from "./containers/Welcome";
 
 const Posts = React.lazy(() => import("./containers/Posts"));
 

@@ -1,12 +1,11 @@
 import React from "react";
-import styles from "./Toolbar.module.scss";
-
 import Logo from "../../Logo/Logo";
 import NavigationItems from "../NavigationItems/NavigationItems";
-import SideDrawer from "../SideDrawer/SideDrawer";
 import DrawerToggle from "../SideDrawer/DrawerToggle/DrawerToggle";
+import SideDrawer from "../SideDrawer/SideDrawer";
+import styles from "./Toolbar.module.scss";
 
-const toolbar = props => (
+const toolbar = (props) => (
   <header className={styles.Toolbar}>
     <DrawerToggle toggleSideDrawer={props.toggleSideDrawerHandler} />
 

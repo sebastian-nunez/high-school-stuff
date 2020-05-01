@@ -4,28 +4,28 @@
 // Class - 10th
 // Lab - Box World
 
-import static java.lang.System.*;
+import static java.lang.System.out;
 
 public class Box
 {
-  private String word;
+    private String word;
 
-  public Box() {
-    word = "";
-  }
-
-  public Box(String s) {
-    setWord(s);
-  }
-
-  public void setWord(String s) {
-    word = s;
-  }
-
-  public void print() {
-    for (int i = 0; i <= word.length() - 1; i++) {
-      out.println(word);
+    public Box() {
+        word = "";
     }
-    out.println();
-  }
+
+    public Box(String s) {
+        setWord(s);
+    }
+
+    public void setWord(String s) {
+        word = s;
+    }
+
+    public void print() {
+        for (int i = 0; i <= word.length() - 1; i++) {
+            out.println(word);
+        }
+        out.println();
+    }
 }

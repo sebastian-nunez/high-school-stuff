@@ -1,16 +1,16 @@
 import React, { Component } from "react";
 import "./App.css";
-import Validation from "./Validation/Validation";
 import Char from "./Char/Char";
+import Validation from "./Validation/Validation";
 
 class App extends Component {
   state = {
-    input: ""
+    input: "",
   };
 
-  textInputHandler = input => {
+  textInputHandler = (input) => {
     this.setState({
-      input
+      input,
     });
   };
 
@@ -19,22 +19,27 @@ class App extends Component {
     text.splice(index, 1);
 
     this.setState({
-      input: text.join("")
+      input: text.join(""),
     });
   };
 
   render() {
     const charArray = this.state.input.split("").map((char, index) => {
-      return <Char
-        character={char}
-        click={() => this.deleteCharHandler(index)}
-        key={index}
-      />;
+      return (
+        <Char
+          character={char}
+          click={() => this.deleteCharHandler(index)}
+          key={index}
+        />
+      );
     });
 
     return (
       <div className="App">
-        <input type="text" onChange={(event) => this.textInputHandler(event.target.value)} />
+        <input
+          type="text"
+          onChange={(event) => this.textInputHandler(event.target.value)}
+        />
         <p>Length: {this.state.input.length}</p>
 
         <Validation inputLength={this.state.input.length} />

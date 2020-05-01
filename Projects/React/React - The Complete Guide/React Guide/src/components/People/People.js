@@ -1,5 +1,4 @@
 import React, { PureComponent } from "react";
-
 import Person from "./Person/Person";
 
 class People extends PureComponent {
@@ -16,7 +15,9 @@ class People extends PureComponent {
           age={person.age}
           shouldInputFocus={shouldInputFocus}
           deletePersonHandler={() => this.props.deletePersonHandler(index)}
-          changeNameHandler={event => this.props.changeNameHandler(event, person.id)}
+          changeNameHandler={(event) =>
+            this.props.changeNameHandler(event, person.id)
+          }
           key={person.id}
         />
       );

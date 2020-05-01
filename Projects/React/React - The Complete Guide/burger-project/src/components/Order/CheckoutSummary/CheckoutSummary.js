@@ -1,11 +1,10 @@
-import React from "react";
 import PropTypes from "prop-types";
-import styles from "./CheckoutSummary.module.scss";
-
+import React from "react";
 import Burger from "../../Burger/Burger";
 import Button from "../../UI/Button/Button";
+import styles from "./CheckoutSummary.module.scss";
 
-const checkoutSummary = props => {
+const checkoutSummary = (props) => {
   return (
     <div className={styles.CheckoutSummary}>
       <h1>We hope it tastes well!</h1>
@@ -14,15 +13,18 @@ const checkoutSummary = props => {
         <Burger ingredients={props.ingredients} />
       </div>
 
-      <Button clickHandler={props.checkoutCancelled} buttonType={"Danger"}>CANCEL</Button>
-      <Button clickHandler={props.checkoutContinued} buttonType={"Success"}>CONTINUE</Button>
+      <Button clickHandler={props.checkoutCancelled} buttonType={"Danger"}>
+        CANCEL
+      </Button>
+      <Button clickHandler={props.checkoutContinued} buttonType={"Success"}>
+        CONTINUE
+      </Button>
     </div>
   );
 };
 
 checkoutSummary.propTypes = {
-  ingredients: PropTypes.object.isRequired
+  ingredients: PropTypes.object.isRequired,
 };
 
 export default checkoutSummary;
-

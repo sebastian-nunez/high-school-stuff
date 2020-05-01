@@ -4,42 +4,42 @@
 // Class - 10th
 // Lab - String - Odd/Even
 
-import static java.lang.System.*;
+import static java.lang.System.out;
 
 public class StringOddOrEven
 {
-  private String word;
+    private String word;
 
-  public StringOddOrEven() {
-    word = "";
-  }
+    public StringOddOrEven() {
+        word = "";
+    }
 
-  public StringOddOrEven(String s) {
-    setString(s);
-  }
+    public StringOddOrEven(String s) {
+        setString(s);
+    }
 
-  public void setString(String s) {
-    word = s;
-  }
+    public void setString(String s) {
+        word = s;
+    }
 
-  public boolean isEven() {
-    int calc = word.length() % 2;
+    public boolean isEven() {
+        int calc = word.length() % 2;
 
-    if (calc == 0)
-      return true;
+        if (calc == 0)
+            return true;
 
-    return false;
-  }
+        return false;
+    }
 
-  public void print() {
-    if (isEven())
-      out.println(word + " is even." + "\n");
-    else
-      out.println(word + " is odd." + "\n");
-  }
+    public void print() {
+        if (isEven())
+            out.println(word + " is even." + "\n");
+        else
+            out.println(word + " is odd." + "\n");
+    }
 
-  public String toString() {
-    String output = "word :: " + word;
-    return output;
-  }
+    public String toString() {
+        String output = "word :: " + word;
+        return output;
+    }
 }
