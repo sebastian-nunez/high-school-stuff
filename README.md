@@ -1,6 +1,6 @@
 # **Computer Science - Archive**
 
-![Project Image](https://lh3.googleusercontent.com/N8K5kovDbSeIXTfjmSDlCMVMhn79Isic7CvMSuysC2lUIEVFfRfJS7WsIYjOT7SWMtSZNoA2qMkSTTnqqwYGM5m8EzdHaBt2n9XnkA=w1920-h1012-rw-no)
+![Project Image](https://i.imgur.com/WIen4lt.jpg)
 
 > **Code Editor:** Visual Studio Code
 
