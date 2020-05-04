@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useRef } from "react";
-import AuthContext from "../../context/authContext";
+import AuthContext from "../../context/AuthContext";
 import styles from "./Cockpit.module.scss";
 
-const cockPit = (props) => {
+const Cockpit = (props) => {
   const toggleButtonRef = useRef(null);
   const authContext = useContext(AuthContext);
 
@@ -42,4 +42,4 @@ const cockPit = (props) => {
   );
 };
 
-export default React.memo(cockPit);
+export default React.memo(Cockpit);
