@@ -1,7 +1,5 @@
 # **Computer Science - Archive**
 
-![Project Image](https://i.imgur.com/WIen4lt.jpg)
-
 > **Code Editor:** Visual Studio Code
 
 ---
